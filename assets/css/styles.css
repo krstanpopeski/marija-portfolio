@@ -257,7 +257,7 @@ img {
   padding: 10px 16px;
   margin-bottom: var(--mb-4);
   border-radius: 5px;
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 
 .skills__icon {
@@ -281,7 +281,7 @@ img {
 }
 
 .work__img {
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   border-radius: 5px;
 }
 
@@ -289,8 +289,28 @@ img {
   transition: 1s;
 }
 
-.work__img img:hover {
-  transform: scale(1.1);
+
+.btn-secondary {
+  display: inline-block;
+  /* background-color: var(--first-color); */
+  color: rgb(72, 72, 72);
+  padding: 10px 40px;
+  font-weight: var(--font-semi);
+  font-size: var(--smaller-font-size);
+  font-family: var(--body-font-h);
+  border-radius: 5px;
+  transition: .3s;
+  text-decoration:underline;
+  text-decoration-color: #0e7bda;
+  
+  
+}
+.btn-secondary:hover {
+  
+  color: var(--first-color);
+  transition: .3s;
+  
+  
 }
 
 /* ===== Hobbies =====*/
@@ -319,6 +339,8 @@ img {
   font-family: var(--body-font-h);
   
 }
+
+
 
 
 
