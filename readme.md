@@ -1,4 +1,4 @@
 This is my portfolio written in HTML/CSS.
+[CV Marija Popeska.pdf](https://github.com/marijapopeska/Portfolio/files/11735549/CV.Marija.Popeska.pdf)
 
-* [Click here to view my CV](https://github.com/marijapopeska/Portfolio/blob/master/assets/CV_Marija%20Popeska.pdf)
 
