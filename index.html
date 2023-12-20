@@ -4,107 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="assets\css\styles.css">
-
+    <title>Document</title>
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- =====BOOTSTRAP===== -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
-    <title>Portfolio</title>
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-    <!--===== HEADER =====-->
-    <nav class="navbar navbar-expand-lg navbar-light bs-white px-0 py-1">
-        <div class="container-xl">
-            <!-- Logo -->
-            <a class="navbar-brand " href="#">
-                <a class=" nav-logo px-auto" href="#" aria-current="page">Portfolio</a>
+<body class="font-lato">
+    <!-- Navbar -->
+    <nav>
+        <div
+            class="flex flex-wrap items-center justify-between pt-6 border-b lg:px-[200px] md:px-[24px] px-[24px] py-6">
+            <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span
+                    class="self-center text-2xl font-futura font-semibold whitespace-nowrap text-blue-700">Portfolio</span>
             </a>
-            <!-- Navbar toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-900 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
             </button>
-            <!-- Collapse -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <!-- Nav -->
-                <div class="navbar-nav mx-lg-auto nav-logo">
-                    <a class=" nav-logo" href="#" aria-current="page"></a>
-                </div>
-                <!-- Right navigation -->
-                <div class="navbar-nav ms-lg-4 ">
-
-
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link  text-truncate"><span
-                                class="ms-1 text-container ">Home</span></a>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-bold text-base md:text-xl max-lg:text-lg flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
+                    <li>
+                        <a href="#home"
+                            class="block py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                            aria-current="page">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link  text-truncate"><span
-                                class="ms-1 text-container ">About</span></a>
+                    <li>
+                        <a href="#about"
+                            class="block py-2 px-3 text-gray-900 rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#skills" class="nav-link  text-truncate"><span
-                                class="ms-1 text-container ">Skills</span></a>
+                    <li>
+                        <a href="#skills"
+                            class="block py-2 px-3 text-gray-900 rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Skills</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#work" class="nav-link  text-truncate"><span
-                                class="ms-1 text-container ">Work</span></a>
+                    <li>
+                        <a href="#work"
+                            class="block py-2 px-3 text-gray-900 rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Work</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link  text-truncate"><span
-                                class="ms-1 text-container ">Contact</span></a>
+                    <li>
+                        <a href="#contact"
+                            class="block py-2 px-3 text-gray-900 rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a>
                     </li>
-                </div>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <main class="main">
-        <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
+    <!-- About -->
 
-            <div class="home__data">
-                <h1 class="home__title">Hello,<br>I'am <span class="home__title-color">Marija Popeska</span><br>
-                    Frontend Developer</h1>
-
-                <a href="#" class="button">Contact</a>
-            </div>
-
-            <div class="home__social">
-                <a href="https://www.linkedin.com/in/marija-p-b23912167/" class="home__social-icon"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://dribbble.com/marijapopeska" class="home__social-icon"><i
-                        class='bx bxl-dribbble'></i></a>
-                <a href="https://github.com/marijapopeska" class="home__social-icon"><i class='bx bxl-github'></i></a>
-            </div>
-
-            <div class="home__img">
-                <img src="assets/img/home profile picture.png" alt="">
-                </svg>
-            </div>
-        </section>
-
-        <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-            <h2 class="section-title">About</h2>
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/Frame 1.jpg" alt="">
-                </div>
-
-                <div class="about__text">
-                    <h2 class="about__subtitle">I'am Marija</h2>
-                    <p class="about__text">Master of Architecture and interior designing, after 4 years experience as an
-                        argitchitect I
-                        transitioned to Frontend Developer and was completely self-directed because I found
+    <section id="about" class="mt-10 md:mt-10 lg:mt-24 overflow-x-clip lg:px-[200px] md:px-[24px] px-[24px]">
+        <div>
+            <div class="grid grid-cols-2 max-lg:grid-cols-1 max-lg:gap-6">
+                <div class=" order-2 md:order-1 pr-14 max-2xl:pr-20 max-xl:pr-14 max-lg:pr-0" data-aos="fade-left"
+                    data-aos-duration="700">
+                    <h3
+                        class="mb-5 text-3xl md:text-3xl font-futura lg:text-5xl max-xl:text-4xl max-sm:text-3xl text-gray-900">
+                        Hello, I'm <span class="text-blue-700">Marija Popeska</span>
+                    </h3>
+                    <p class="text-xl max-lg:text-lg text-gray-900">
+                        Master of Architecture and interior designing, after 4 years experience as an
+                        architect I
+                        transitioned to UX Design and Frontend Developer and was completely self-directed because I
+                        found
                         many similarities.
                         <br>Architects strive to design functional and aesthetically pleasing spaces in ways that make
                         their
@@ -118,229 +90,455 @@
                         of transferable skills, plus the advantage of bringing a different perspective into the field of
                         UX Designing.
                     </p>
+                    <ul class="mt-6 flex fade">
+                        <li class="py-4 px-4 opacity-70 hover:opacity-100 transition-all ease-in-out duration-300">
+                            <div class="flex items-center gap-3">
+                                <span>
+                                    <a href="https://www.linkedin.com/in/marija-p-b23912167/"
+                                        class="home__social-icon text-3xl hover:text-blue-700"><i
+                                            class='bx bxl-linkedin'></i></a>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="py-4 px-4 opacity-70 hover:opacity-100 transition-all ease-in-out duration-300">
+
+                            <div class="flex items-center gap-3">
+                                <span>
+                                    <a href="https://dribbble.com/marijapopeska"
+                                        class="home__social-icon text-3xl hover:text-blue-700"><i
+                                            class='bx bxl-dribbble'></i></a>
+                                </span>
+                            </div>
+
+                        </li>
+                        <li class="py-4 px-4 opacity-70 hover:opacity-100 transition-all ease-in-out duration-300 ">
+                            <div class="flex items-center gap-3">
+                                <span>
+                                    <a href="https://github.com/marijapopeska"
+                                        class="home__social-icon text-3xl hover:text-blue-700"><i
+                                            class='bx bxl-github'></i></a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-
-        <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
-
-            <div class="skills__container bd-grid">
-                <div>
-                    <h2 class="skills__subtitle">Profesional Skills</h2>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-html5 skills__icon'></i>
-                            <span class="skills__name">HTML5</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-css3 skills__icon'></i>
-                            <span class="skills__name">CSS</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-javascript skills__icon'></i>
-                            <span class="skills__name">JavaScript</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-react skills__icon'></i>
-                            <span class="skills__name">React</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxs-paint skills__icon'></i>
-                            <span class="skills__name">UX/UI</span>
-                        </div>
-                    </div>
+                <div class="order-1 md:order-2 h-[300px] md:h-[600px]">
+                    <img class="rounded-[3rem] max-sm:rounded-[2rem] object-cover h-full w-full"
+                        src="./assets/img/img-marija.jpg" alt="" />
                 </div>
-
-                <div>
-                    <img src="assets/img/ux-store-jJT2r2n7lYA-unsplash.jpg" alt="" class="skills__img">
-                </div>
-            </div>
-        </section>
-
-        <!--===== WORK =====-->
-        <section class="work section" id="work">
-            <h2 class="section-title">Work</h2>
-
-            <div class="work__container bd-grid">
-                <div class="work__img">
-                    <img src="assets/img/CV.jpg" alt="Domus_magazine">
-                    <a href="https://www.figma.com/file/OROAyWx1RW5XGhKgfZKfJq/CV-Marija-Popeska?type=design&node-id=0%3A1&mode=design&t=w2JjjCUtIZEPv1Go-1"
-                        class="home__social-icon"><iconify-icon icon="logos:figma"></iconify-icon></a>
-                </div>
-
-                <div class="work__img">
-                    <img src="assets/img/domus magazine -2.png" alt="Domus_magazine">
-
-                    <span class="icon-container">
-                        <a href="https://www.figma.com/file/vzxhWNI5eujkMBjea73y8w/Magazine" class="home__social-icon">
-                            <iconify-icon icon="logos:figma"></iconify-icon>
-                        </a>
-                    </span>
-
-                    <span class="icon-container">
-                        <a href="https://github.com/marijapopeska/Magazine_home_page.git" class="home__social-icon">
-                            <i class='bx bxl-github'></i>
-                        </a>
-                    </span>
-                </div>
-
-                <div class="work__img">
-                    <img src="assets/img/hiking-club.jpg" alt="hiking-club">
-
-                    <span class="icon-container">
-                        <a href="https://www.figma.com/file/bz0gC3ibsgktoB2vcl61fj/Dipsakus-hiking-club?type=design&node-id=0%3A1&mode=design&t=fmnPfTXhOeFQmZKQ-1"
-                            class="home__social-icon">
-                            <iconify-icon icon="logos:figma"></iconify-icon>
-                        </a>
-                    </span>
-
-                    <span class="icon-container">
-                        <a href="https://dipsakus.mk" class="home__social-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                                <path
-                                    d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z" />
-                            </svg>
-                        </a>
-                    </span>
-                </div>
-
-                <div class="work__img height">
-                    <img src="assets/img/grocery app.jpg" alt="Grocery_app">
-                    <a href="https://www.figma.com/file/QUAG08Wkymc4M9s61ckA2n/Grocery-app"
-                        class="home__social-icon"><iconify-icon icon="logos:figma"></iconify-icon></a>
-                </div>
-
-                <div class="work__img">
-                    <img src="assets/img/Nike.jpg" alt="Nike_app">
-                    <a href="https://www.figma.com/file/n94A8ZMo2wOdsjfmxVKSyS/Nike-mobile-app"
-                        class="home__social-icon"><iconify-icon icon="logos:figma"></iconify-icon></a>
-                </div>
-
-                <div class="work__img">
-                    <img src="assets/img/movie.jpg" alt="Movie app">
-                    <a href="https://www.figma.com/file/u6L9r20XTE9HVRLWDdfkyg/CINEVERSE?type=design&node-id=11%3A1833&mode=design&t=w2JjjCUtIZEPv1Go-1"
-                        class="home__social-icon"><iconify-icon icon="logos:figma"></iconify-icon></a>
-                </div>
-
-                <div class="work__img">
-                    <img src="assets/img/Menu.jpg" alt="Menu">
-                    <a href="https://github.com/marijapopeska/Menu_JS.git" class="home__social-icon"><i
-                            class='bx bxl-github'></i></a>
-                </div>
-
-            </div>
-
-        </section>
-
-        <div class="gif-grid">
-            <div class="work__img size">
-                <img src="assets/img/Magazine.gif" alt="Magazine">
-                <a href="https://github.com/marijapopeska/Homepage-website.git" class="home__social-icon"><i
-                        class='bx bxl-github'></i></a>
-            </div>
-
-            <div class="work__img">
-                <img src="assets/img/vertical_slider.gif" alt="Vertical slider">
-                <a href="https://github.com/marijapopeska/Double_vertical_slider.git" class="home__social-icon"><i
-                        class='bx bxl-github'></i></a>
             </div>
         </div>
+    </section>
 
-        <!--===== Hobbies =====-->
-        <section class="hobbies section" id="hobby">
-            <h2 class="section-title">Hobbies</h2>
+    <!-- Skills -->
 
-            <div class="hobby__container bd-grid">
-                <div>
-                    <a href="" class="hobby__img">
-                        <img src="assets/img/hobby_piano.jpg" alt="">
-                    </a>
-                    <span class="hobby_size">Playing Piano</span>
+    <section id="skills" class="mt-10 md:mt-10 lg:mt-20 overflow-x-clip lg:px-[200px] md:px-[24px] px-[24px]">
+        <div>
+            <h1
+                class="fade py-5 px-5 border-b mb-10 md:mb-10 lg:mb-20 border-gray-200 text-3xl md:text-3xl lg:text-5xl font-bold font-futura text-gray-900 flex justify-start">
+                Skills
+            </h1>
+            <div class="grid grid-cols-2 max-lg:grid-cols-1 max-lg:gap-x-6 max-lg:gap-y-10">
+                <div class="pr-14 max-2xl:pr-20 max-xl:pr-14 max-lg:pr-0" data-aos="fade-left" data-aos-duration="700">
+                    <ul class=" space-y-3">
+                        <li
+                            class="py-4 bg-slate-100 px-5 border-l-[0.36rem] border-gray-200 hover:border-blue-700 hover:text-blue-700 group opacity-70 hover:opacity-100 transition-all ease-in-out duration-300 hover:bg-gray-50">
+                            <a href="#0">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <span>
+                                        <i class='bx bxs-paint skills__icon text-3xl'></i>
+                                    </span>
+                                    <h5 class="text-xl max-sm:text-lg font-semibold">
+                                        UX/UI
+                                    </h5>
+                                </div>
+                            </a>
+                        </li>
+                        <li
+                            class="py-4 bg-slate-100 px-5 border-l-[0.36rem] border-gray-200 hover:border-blue-700 hover:text-blue-700 group opacity-70 hover:opacity-100 transition-all ease-in-out duration-300 hover:bg-gray-50">
+                            <a href="#0">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <span>
+                                        <i class='bx bxl-html5 skills__icon text-3xl'></i>
+                                    </span>
+                                    <h5 class="text-xl max-sm:text-lg font-semibold">
+                                        HTML
+                                    </h5>
+                                </div>
+                            </a>
+                        </li>
+                        <li
+                            class="py-4 bg-slate-100 px-5 border-l-[0.36rem] border-gray-200 hover:border-blue-700 hover:text-blue-700 group opacity-70 hover:opacity-100 transition-all ease-in-out duration-300 hover:bg-gray-50">
+                            <a href="#0">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <span>
+                                        <i class='bx bxl-css3 skills__icon text-3xl'></i>
+                                    </span>
+                                    <h5 class="text-xl max-sm:text-lg font-semibold">
+                                        CSS
+                                    </h5>
+                                </div>
+                            </a>
+                        </li>
+                        <li
+                            class="py-4 bg-slate-100 px-5 border-l-[0.36rem] border-gray-200 hover:border-blue-700 hover:fill-blue-700 hover:text-blue-700 group opacity-70 hover:opacity-100 transition-all ease-in-out duration-300 hover:bg-gray-50">
+                            <a href="#0">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <span>
+                                        <iconify-icon icon="mdi:tailwind" class="text-3xl"></iconify-icon>
+                                    </span>
+                                    <h5 class="text-xl max-sm:text-lg font-semibold">
+                                        Tailwind CSS
+                                    </h5>
+                                </div>
+                            </a>
+                        </li>
+                        <li
+                            class="py-4 bg-slate-100 px-5 border-l-[0.36rem] border-gray-200 hover:border-blue-700 hover:text-blue-700 group opacity-70 hover:opacity-100 transition-all ease-in-out duration-300 hover:bg-gray-50">
+                            <a href="#0">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <span>
+                                        <i class='bx bxl-javascript skills__icon text-3xl'></i>
+                                    </span>
+                                    <h5 class="text-xl max-sm:text-lg font-semibold">
+                                        JavaScript
+                                    </h5>
+                                </div>
+                            </a>
+                        </li>
+                        <li
+                            class="py-4 bg-slate-100 px-5 border-l-[0.36rem] border-gray-200 hover:border-blue-700 hover:text-blue-700 group opacity-70 hover:opacity-100 transition-all ease-in-out duration-300 hover:bg-gray-50">
+                            <a href="#0">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <span>
+                                        <i class='bx bxl-react skills__icon text-3xl'></i>
+                                    </span>
+                                    <h5 class="text-xl max-sm:text-lg font-semibold">
+                                        React
+                                    </h5>
+                                </div>
+                            </a>
+                        </li>
+                        <li
+                            class="py-4 bg-slate-100 px-5 border-l-[0.36rem] border-gray-200 hover:fill-blue-700 hover:border-blue-700 hover:text-blue-700 group opacity-70 hover:opacity-100 transition-all ease-in-out duration-300 hover:bg-gray-50">
+                            <a href="#0">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <span>
+                                        <iconify-icon icon="cib:next-js" class="text-3xl"></iconify-icon>
+                                    </span>
+                                    <h5 class="text-xl max-sm:text-lg font-semibold">
+                                        Next.js
+                                    </h5>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div>
-                    <a href="" class="hobby__img">
-                        <img src="assets/img/hobby_fitness.jpg" alt="">
-                    </a>
-                    <span class="hobby_size">Fitness training</span>
+                <div class="h-[300px] md:h-[600px]">
+                    <img class="rounded-[3rem] max-sm:rounded-[2rem] h-full w-full object-cover"
+                        src="./assets/img/img-skills-2.jpg" alt="" />
                 </div>
-                <div>
-                    <a href="" class="hobby__img">
-                        <img src="assets/img/hobby_sketches.jpg" alt="">
-                    </a>
-                    <span class="hobby_size">Sketching</span>
-                </div>
-                <div>
-                    <a href="" class="hobby__img">
-                        <img src="assets/img/3d_visualizations2.jpg" alt="">
-                    </a>
-                    <span class="hobby_size">3D Visualizations</span>
-                </div>
-
             </div>
-        </section>
+        </div>
+    </section>
 
+    <!-- Work -->
 
-
-        <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
-
-            <div class="contact__container bd-grid">
-                <form action="https://formsubmit.co/marija.popeska@gmail.com" class="contact__form" method="POST">
-                    <input type="text" placeholder="Name..." class="contact__input">
-                    <input type="mail" placeholder="Email..." class="contact__input" src="">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Submit" class="contact__button button">
-                </form>
+    <section id="work" class="mt-10 md:mt-10 lg:mt-20 lg:mx-[200px] mx-[24px] md:mx-[24px]">
+        <h1
+            class="fade py-5 px-5 border-b mb-10 md:mb-10 lg:mb-20 border-gray-200 text-3xl md:text-3xl lg:text-5xl font-bold font-futura text-gray-900 flex justify-start">
+            Work
+        </h1>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10">
+            <div
+                class="shadow-xl hover:scale-105 hover:ease-in-out hover:duration-500 rounded-xl p-6 flex flex-col justify-between">
+                <div class="mb-6">
+                    <img class="w-full rounded-xl h-full object-cover overflow-hidden" src="./assets/img/img-cv.jpg"
+                        alt="">
+                </div>
+                <a
+                    href="https://www.figma.com/file/OROAyWx1RW5XGhKgfZKfJq/CV-Marija-Popeska?type=design&node-id=0%3A1&mode=design&t=w2JjjCUtIZEPv1Go-1">
+                    <span class="w-6">
+                        <svg width="30" height="30" viewBox="0 0 385 494" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="154" height="153" rx="74.5" transform="matrix(-1 0 0 1 385 0)"
+                                fill="#FF8181" />
+                            <rect width="154" height="153" rx="74.5" transform="matrix(-1 0 0 1 352 153)"
+                                fill="#00D1FF" />
+                            <rect width="192" height="188" rx="94" transform="matrix(-1 0 0 1 198 306)"
+                                fill="#00FF19" />
+                            <rect width="103" height="107" transform="matrix(-1 0 0 1 198 306)" fill="#00FF19" />
+                            <rect width="154" height="153" rx="74.5" fill="#FF3939" />
+                            <rect y="153" width="154" height="153" rx="74.5" fill="#AD00FF" />
+                            <rect width="111" height="153" transform="matrix(-1 0 0 1 309 0)" fill="#FF8181" />
+                            <rect x="76" width="122" height="153" fill="#FF3939" />
+                            <rect x="76" y="153" width="122" height="153" fill="#AD00FF" />
+                        </svg>
+                    </span>
+                </a>
             </div>
-        </section>
-    </main>
 
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-        <p class="footer__title">Feel free to contact me!</p>
-        <div class="footer__social">
-            <a href="https://www.facebook.com/popeskamarija/" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-            <a href="https://www.instagram.com/popeskamarija/" class="footer__icon"><i class='bx bxl-instagram'></i></a>
-            <a href="https://www.linkedin.com/in/marija-p-b23912167/" class="footer__icon"><i
-                    class='bx bxl-linkedin'></i></a>
+            <div
+                class="shadow-xl hover:scale-105 hover:ease-in-out hover:duration-500 rounded-xl p-6 flex flex-col justify-between">
+                <div class="mb-6">
+                    <img class="w-full rounded-xl h-full object-cover overflow-hidden"
+                        src="./assets/img/img-dipsakus.jpg" alt="">
+                </div>
+                <div class="flex gap-6">
+                    <a
+                        href="https://www.figma.com/file/bz0gC3ibsgktoB2vcl61fj/Dipsakus-hiking-club?type=design&mode=design&t=y4HJBDbNLpOAqH71-1">
+                        <span class="w-6">
+                            <svg width="30" height="30" viewBox="0 0 385 494" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="154" height="153" rx="74.5" transform="matrix(-1 0 0 1 385 0)"
+                                    fill="#FF8181" />
+                                <rect width="154" height="153" rx="74.5" transform="matrix(-1 0 0 1 352 153)"
+                                    fill="#00D1FF" />
+                                <rect width="192" height="188" rx="94" transform="matrix(-1 0 0 1 198 306)"
+                                    fill="#00FF19" />
+                                <rect width="103" height="107" transform="matrix(-1 0 0 1 198 306)" fill="#00FF19" />
+                                <rect width="154" height="153" rx="74.5" fill="#FF3939" />
+                                <rect y="153" width="154" height="153" rx="74.5" fill="#AD00FF" />
+                                <rect width="111" height="153" transform="matrix(-1 0 0 1 309 0)" fill="#FF8181" />
+                                <rect x="76" width="122" height="153" fill="#FF3939" />
+                                <rect x="76" y="153" width="122" height="153" fill="#AD00FF" />
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="https://dipsakus.mk">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                            <path
+                                d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="shadow-xl hover:scale-105 hover:ease-in-out hover:duration-500 rounded-xl p-6 flex flex-col justify-between">
+                <div class="mb-6">
+                    <img class="w-full rounded-xl h-full object-cover overflow-hidden" src="./assets/img/img-domus.jpg"
+                        alt="">
+                </div>
+                <a href="https://www.figma.com/file/vzxhWNI5eujkMBjea73y8w/Magazine">
+                    <span class="w-6">
+                        <svg width="30" height="30" viewBox="0 0 385 494" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="154" height="153" rx="74.5" transform="matrix(-1 0 0 1 385 0)"
+                                fill="#FF8181" />
+                            <rect width="154" height="153" rx="74.5" transform="matrix(-1 0 0 1 352 153)"
+                                fill="#00D1FF" />
+                            <rect width="192" height="188" rx="94" transform="matrix(-1 0 0 1 198 306)"
+                                fill="#00FF19" />
+                            <rect width="103" height="107" transform="matrix(-1 0 0 1 198 306)" fill="#00FF19" />
+                            <rect width="154" height="153" rx="74.5" fill="#FF3939" />
+                            <rect y="153" width="154" height="153" rx="74.5" fill="#AD00FF" />
+                            <rect width="111" height="153" transform="matrix(-1 0 0 1 309 0)" fill="#FF8181" />
+                            <rect x="76" width="122" height="153" fill="#FF3939" />
+                            <rect x="76" y="153" width="122" height="153" fill="#AD00FF" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+
+            <div
+                class="shadow-xl hover:scale-105 hover:ease-in-out hover:duration-500 rounded-xl p-6 flex flex-col justify-between">
+                <div class="mb-6">
+                    <img class="w-full rounded-xl h-full object-cover overflow-hidden"
+                        src="./assets/img/img-cinevers.jpg" alt="">
+                </div>
+                <a
+                    href="https://www.figma.com/file/u6L9r20XTE9HVRLWDdfkyg/CINEVERSE?type=design&node-id=11%3A1833&mode=design&t=w2JjjCUtIZEPv1Go-1">
+                    <span class="w-6">
+                        <svg width="30" height="30" viewBox="0 0 385 494" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="154" height="153" rx="74.5" transform="matrix(-1 0 0 1 385 0)"
+                                fill="#FF8181" />
+                            <rect width="154" height="153" rx="74.5" transform="matrix(-1 0 0 1 352 153)"
+                                fill="#00D1FF" />
+                            <rect width="192" height="188" rx="94" transform="matrix(-1 0 0 1 198 306)"
+                                fill="#00FF19" />
+                            <rect width="103" height="107" transform="matrix(-1 0 0 1 198 306)" fill="#00FF19" />
+                            <rect width="154" height="153" rx="74.5" fill="#FF3939" />
+                            <rect y="153" width="154" height="153" rx="74.5" fill="#AD00FF" />
+                            <rect width="111" height="153" transform="matrix(-1 0 0 1 309 0)" fill="#FF8181" />
+                            <rect x="76" width="122" height="153" fill="#FF3939" />
+                            <rect x="76" y="153" width="122" height="153" fill="#AD00FF" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+
+            <div
+                class="shadow-xl hover:scale-105 hover:ease-in-out hover:duration-500 rounded-xl p-6 flex flex-col justify-between">
+                <div class="mb-6">
+                    <img class="w-full rounded-xl h-full object-cover overflow-hidden" src="./assets/img/img-login.jpg"
+                        alt="">
+                </div>
+                <a href="https://dribbble.com/shots/22443427-Sign-Up">
+                    <svg height="30px" width="30px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 291.32 291.32" xml:space="preserve">
+                        <g>
+                            <path style="fill:#EA4C89;" d="M145.66,0.001C65.21,0.001,0,65.22,0,145.661S65.21,291.32,145.66,291.32
+		s145.66-65.219,145.66-145.66S226.109,0.001,145.66,0.001z M241.239,70.5c15.658,19.883,25.245,44.717,26,71.746
+		c-32.682-5.726-60.867-5.899-85.22-2.039c-3.086-7.083-6.263-13.965-9.522-20.629C198.616,108.836,222.04,93.168,241.239,70.5z
+		 M224.479,53.094c-17.151,20.82-38.682,35.149-63.043,44.9c-15.595-28.895-31.635-52.975-44.453-70.554
+		c9.204-2.249,18.79-3.45,28.668-3.45C175.72,23.98,203.231,34.968,224.479,53.094z M93.359,35.824
+		c12.39,16.541,28.877,40.502,45,69.88c-34.175,9.386-72.402,11.917-111.093,12.026C35.805,81.534,60.512,51.528,93.359,35.824z
+		 M23.997,145.65l0.1-3.933h0.655c43.352,0,86.394-2.84,124.985-14.211c2.877,5.854,5.708,11.862,8.476,18.044
+		c-50.771,14.885-82.425,48.295-104.119,80.085C35.377,204.252,23.997,176.258,23.997,145.65z M71.828,242.26
+		c20.538-30.934,49.16-61.541,95.735-74.396c10.879,27.876,19.755,58.3,24.453,90.254c-14.293,5.936-29.942,9.213-46.347,9.213
+		C117.911,267.331,92.312,257.982,71.828,242.26z M214.393,245.993c-4.98-29.196-13.137-57.044-22.96-82.862
+		c21.285-2.704,45.755-2.048,74.122,3.168C259.884,199.271,240.93,227.758,214.393,245.993z" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+
+            <div
+                class="shadow-xl hover:scale-105 hover:ease-in-out hover:duration-500 rounded-xl p-6 flex flex-col justify-between">
+                <div class="mb-6">
+                    <img class="w-full rounded-xl h-full object-cover overflow-hidden" src="./assets/img/img-nike.jpg"
+                        alt="">
+                </div>
+                <span class="w-6">
+                    <a href="https://www.figma.com/file/n94A8ZMo2wOdsjfmxVKSyS/Nike-mobile-app">
+                        <svg width="30" height="30" viewBox="0 0 385 494" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="154" height="153" rx="74.5" transform="matrix(-1 0 0 1 385 0)"
+                                fill="#FF8181" />
+                            <rect width="154" height="153" rx="74.5" transform="matrix(-1 0 0 1 352 153)"
+                                fill="#00D1FF" />
+                            <rect width="192" height="188" rx="94" transform="matrix(-1 0 0 1 198 306)"
+                                fill="#00FF19" />
+                            <rect width="103" height="107" transform="matrix(-1 0 0 1 198 306)" fill="#00FF19" />
+                            <rect width="154" height="153" rx="74.5" fill="#FF3939" />
+                            <rect y="153" width="154" height="153" rx="74.5" fill="#AD00FF" />
+                            <rect width="111" height="153" transform="matrix(-1 0 0 1 309 0)" fill="#FF8181" />
+                            <rect x="76" width="122" height="153" fill="#FF3939" />
+                            <rect x="76" y="153" width="122" height="153" fill="#AD00FF" />
+                        </svg>
+                    </a>
+                </span>
+            </div>
+
+            <div
+                class="shadow-xl hover:scale-105 hover:ease-in-out hover:duration-500 rounded-xl p-6 flex flex-col justify-between">
+                <div class="mb-6">
+                    <img class="w-full rounded-xl h-full object-cover overflow-hidden"
+                        src="./assets/img/img-grocery.jpg" alt="">
+                </div>
+                <a href="https://www.figma.com/file/QUAG08Wkymc4M9s61ckA2n/Grocery-app">
+                    <span class="w-6">
+                        <svg width="30" height="30" viewBox="0 0 385 494" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="154" height="153" rx="74.5" transform="matrix(-1 0 0 1 385 0)"
+                                fill="#FF8181" />
+                            <rect width="154" height="153" rx="74.5" transform="matrix(-1 0 0 1 352 153)"
+                                fill="#00D1FF" />
+                            <rect width="192" height="188" rx="94" transform="matrix(-1 0 0 1 198 306)"
+                                fill="#00FF19" />
+                            <rect width="103" height="107" transform="matrix(-1 0 0 1 198 306)" fill="#00FF19" />
+                            <rect width="154" height="153" rx="74.5" fill="#FF3939" />
+                            <rect y="153" width="154" height="153" rx="74.5" fill="#AD00FF" />
+                            <rect width="111" height="153" transform="matrix(-1 0 0 1 309 0)" fill="#FF8181" />
+                            <rect x="76" width="122" height="153" fill="#FF3939" />
+                            <rect x="76" y="153" width="122" height="153" fill="#AD00FF" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+
+            <div
+                class="shadow-xl hover:scale-105 hover:ease-in-out hover:duration-500 rounded-xl p-6 flex flex-col justify-between">
+                <div class="mb-6">
+                    <img class="w-full rounded-xl h-full object-cover overflow-hidden" src="./assets/img/img-menu.jpg"
+                        alt="">
+                </div>
+                <a href="https://github.com/marijapopeska/Menu_JS.git" class="home__social-icon text-3xl">
+                    <i class='bx bxl-github'></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobby -->
+
+    <section id="hobby" class="mt-10 md:mt-10 lg:mt-20 overflow-x-clip lg:px-[200px] md:px-[24px] px-[24px]">
+        <div>
+            <h1
+                class="fade py-5 px-5 border-b mb-10 md:mb-10 lg:mb-20 border-gray-200 text-3xl md:text-3xl lg:text-5xl font-futura text-gray-900 flex justify-start">
+                Hobbies
+            </h1>
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 gap-10">
+                <img class="w-full rounded-xl h-full object-cover overflow-hidden" src="./assets/img/hobby-fitness.jpg"
+                    alt="">
+                <img class="w-full rounded-xl h-full object-cover overflow-hidden" src="./assets/img/hobby-piano.jpg"
+                    alt="">
+                <img class="w-full rounded-xl h-full object-cover overflow-hidden" src="./assets/img/hobby-sketches.jpg"
+                    alt="">
+                <img class="w-full rounded-xl h-full object-cover overflow-hidden" src="./assets/img/hobby-3d.jpg"
+                    alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="contact" class="bg-slate-100 mt-10 md:mt-10 lg:mt-20">
+        <div class="w-full lg:px-[200px] md:px-[24px] px-[24px] p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="https://flowbite.com/" class="flex items-center">
+                        <span class="self-center text-2xl font-futura whitespace-nowrap text-gray-900">Marija
+                            Popeska</span>
+                    </a>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-300 sm:mx-auto lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-gray-900 sm:text-center">© 2023 <a href="https://flowbite.com/"
+                        class="hover:underline">Portfolio</a>. All Rights Reserved.
+                </span>
+                <div class="flex mt-4 sm:justify-center sm:mt-0">
+                    <ul class="flex gap-8">
+                        <li
+                            class="opacity-70 hover:opacity-100 transition-all ease-in-out duration-300 hover:text-blue-700">
+                            <div class="flex items-center gap-3">
+                                <span class="hover:animate-bounce">
+                                    <a href="https://www.linkedin.com/in/marija-p-b23912167/"
+                                        class="home__social-icon text-2xl"><i class='bx bxl-linkedin'></i></a>
+                                </span>
+                            </div>
+                        </li>
+                        <li
+                            class="opacity-70 hover:opacity-100 transition-all ease-in-out duration-300 hover:text-blue-700">
+                            <div class="flex items-center gap-3">
+                                <span class="hover:animate-bounce">
+                                    <a href="https://dribbble.com/marijapopeska" class="home__social-icon text-2xl"><i
+                                            class='bx bxl-dribbble'></i></a>
+                                </span>
+                            </div>
+                        </li>
+                        <li
+                            class="opacity-70 hover:opacity-100 transition-all ease-in-out duration-300 hover:text-blue-700">
+                            <div class="flex items-center gap-3">
+                                <span class="hover:animate-bounce">
+                                    <a href="https://github.com/marijapopeska" class="home__social-icon text-2xl "><i
+                                            class='bx bxl-github'></i></a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
-
-    <!--===== BOOTSTRAP JS =====-->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-        crossorigin="anonymous"></script>
-
-    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 
 </html>
