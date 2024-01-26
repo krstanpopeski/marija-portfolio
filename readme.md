@@ -8,7 +8,7 @@
 
 # CV
 
-  [CV Marija Popeska.pdf](https://github.com/marijapopeska/Portfolio/files/13795089/CV.Marija.Popeska.pdf)
+  [CV-Marija Popeska.pdf](https://github.com/marijapopeska/Portfolio/files/14065318/CV-Marija.Popeska.pdf)
 
 # Courses
 
