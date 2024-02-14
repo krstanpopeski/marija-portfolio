@@ -2,9 +2,22 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags added -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Marija Popeska">
+    <meta name="keywords" content="ux designer, architecture, digital experience, portfolio">
+    <meta name="description" content="Explore the UX design case study of Dipsakus, a hiking club website.">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="nositelinkssearchbox">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="rating" content="adult">
+    <meta property="og:image" content="../assets/img/dipsakus/unsplash_1.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+    <title>Dipsakus UX Design Case Study</title>
+
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <!-- TailwindCSS -->
@@ -68,8 +81,14 @@
                         comprehensive information about upcoming tours, past experiences, club news, and resources for
                         hiking enthusiasts.</p>
                     <a class="text-[#F36F64] underline" href="https://dipsakus.mk/">https://dipsakus.mk/</a>
-                    <img class="mt-10 h-[300px] md:h-[500px] w-full object-cover"
-                        src="../assets/img/dipsakus/unsplash_1.jpg" alt="">
+                    <picture>
+                        <source srcset="../assets/img/dipsakus/unsplash_1.jpg 800w,
+                                             ../assets/img/dipsakus/unsplash_1.jpg 480w,
+                                             ../assets/img/dipsakus/unsplash_1.jpg 320w"
+                            sizes="(max-width: 800px) 100vw, 800px">
+                        <img class="mt-10 h-[300px] md:h-[500px] w-full object-cover"
+                            src="../assets/img/dipsakus/unsplash_1.jpg" alt="Dipsakus">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -128,7 +147,14 @@
                         The interviews helped us understand what motivates users to join a hiking club, their
                         preferences for tour destinations and difficulty levels, and their expectations from the club's
                         website.</p>
-                    <img class="mt-10" src="../assets/img/dipsakus/dipsakus/questions.jpg" alt="">
+                    <picture>
+                        <source srcset="../assets/img/dipsakus/questions.jpg 800w,
+                                             ../assets/img/dipsakus/questions.jpg 480w,
+                                             ../assets/img/dipsakus/questions.jpg 320w"
+                            sizes="(max-width: 800px) 100vw, 800px">
+                        <img class="mt-10 h-full w-full" src="../assets/img/dipsakus/questions.jpg" alt="Questions">
+                    </picture>
+
                 </div>
                 <div>
                     <div>
@@ -138,11 +164,21 @@
                             demographic research.
                             Created fictional representations of typical users, including their goals, preferences, and
                             challenges related to hiking and club membership.</p>
-                        <div class="flex justify-center mx-auto">
-                            <img class="mt-10 max-w-[calc(100%/3)]" src="../assets/img/dipsakus/user-1.png" alt="">
-                            <img class="mt-10 max-w-[calc(100%/3)]" src="../assets/img/dipsakus/user-2.png" alt="">
-                            <img class="mt-10 max-w-[calc(100%/3)]" src="../assets/img/dipsakus/user-3.png" alt="">
-                        </div>
+
+                        <picture class="flex justify-center mx-auto">
+                            <img class="mt-10 max-w-[calc(100%/3)]" src="../assets/img/dipsakus/user-1.jpg" srcset="../assets/img/dipsakus/user-1.jpg 800w,
+                                             ../assets/img/dipsakus/user-1.jpg 480w,
+                                             ../assets/img/dipsakus/user-1.jpg 320w"
+                                sizes="(max-width: 800px) 100vw, (max-width: 480px) 50vw, 33.3vw" alt="">
+                            <img class="mt-10 max-w-[calc(100%/3)]" src="../assets/img/dipsakus/user-2.jpg" srcset="../assets/img/dipsakus/user-2.jpg 800w,
+                                             ../assets/img/dipsakus/user-2.jpg 480w,
+                                             ../assets/img/dipsakus/user-2.jpg 320w"
+                                sizes="(max-width: 800px) 100vw, (max-width: 480px) 50vw, 33.3vw" alt="">
+                            <img class="mt-10 max-w-[calc(100%/3)]" src="../assets/img/dipsakus/user-3.jpg" srcset="../assets/img/dipsakus/user-3.jpg 800w,
+                                             ../assets/img/dipsakus/user-3.jpg 480w,
+                                             ../assets/img/dipsakus/user-3.jpg 320w"
+                                sizes="(max-width: 800px) 100vw, (max-width: 480px) 50vw, 33.3vw" alt="">
+                        </picture>
 
                         <div>
                             <p class="mt-10 text-slate-600"> The
@@ -153,9 +189,14 @@
                                 acquisition,
                                 and
                                 service.</p>
-                            <div class="flex justify-center">
-                                <img class="mt-10" src="../assets/img/dipsakus/journey-map.jpg" alt="">
-                            </div>
+                            <picture class="flex justify-center">
+                                <source srcset="../assets/img/dipsakus/journey-map.jpg 800w,
+                                                         ../assets/img/dipsakus/journey-map.jpg 480w,
+                                                         ../assets/img/dipsakus/journey-map.jpg 320w"
+                                    sizes="(max-width: 800px) 100vw, 800px">
+                                <img class="mt-10 h-full w-full" src="../assets/img/dipsakus/journey-map.jpg"
+                                    alt="Journey map">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -171,10 +212,13 @@
                             from
                             their initial interaction with the website to the completion of specific tasks or actions.
                         </p>
-                        <div class="mt-10">
-                            <img src="../assets/img/dipsakus/user-flow.jpg" alt="">
-                        </div>
-
+                        <picture class="flex justify-center">
+                            <source srcset="../assets/img/dipsakus/user-flow.jpg 800w,
+                                                     ../assets/img/dipsakus/user-flow.jpg 480w,
+                                                     ../assets/img/dipsakus/user-flow.jpg 320w"
+                                sizes="(max-width: 800px) 100vw, 800px">
+                            <img class="mt-10 h-full w-full" src="../assets/img/dipsakus/user-flow.jpg" alt="User flow">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -185,7 +229,13 @@
                     exploring various
                     layouts and features. This process helps me visualize the website's structure and functionality
                     before moving on to digital wireframes and prototypes.</p>
-                <img class="mt-10" src="../assets/img/dipsakus/sketches.jpg" alt="">
+                <picture class="flex justify-center">
+                    <source srcset="../assets/img/dipsakus/sketches.jpg 800w,
+                                                 ../assets/img/dipsakus/sketches.jpg 480w,
+                                                 ../assets/img/dipsakus/sketches.jpg 320w"
+                        sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="mt-10 h-full w-full" src="../assets/img/dipsakus/sketches.jpg" alt="Sketches">
+                </picture>
             </div>
             <div class="px-0 md:px-10 lg:px-[200px] flex flex-col items-start justify-center text-start">
                 <h3 class="mt-10 mb-6 underline text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
@@ -204,8 +254,21 @@
                     <li>What would they like to improve?</li>
                     <li>Does the overall design/flow meet their needs?</li>
                 </ul>
-                <img class="mt-10" src="../assets/img/dipsakus/wireframes-1.jpg" alt="">
-                <img class="mt-10" src="../assets/img/dipsakus/wireframes-2.jpg" alt="">
+                <picture class="flex justify-center">
+                    <source srcset="../assets/img/dipsakus/wireframes-1.jpg 800w,
+                                                 ../assets/img/dipsakus/wireframes-1.jpg 480w,
+                                                 ../assets/img/dipsakus/wireframes-1.jpg 320w"
+                        sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="mt-10 h-full w-full" src="../assets/img/dipsakus/wireframes-1.jpg" alt="Wireframes">
+                </picture>
+
+                <picture class="flex justify-center">
+                    <source srcset="../assets/img/dipsakus/wireframes-2.jpg 800w,
+                                                 ../assets/img/dipsakus/wireframes-2.jpg 480w,
+                                                 ../assets/img/dipsakus/wireframes-2.jpg 320w"
+                        sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="mt-10 h-full w-full" src="../assets/img/dipsakus/wireframes-2.jpg" alt="Wireframes">
+                </picture>
             </div>
             <div class="px-0 md:px-10 lg:px-[200px] flex flex-col items-start justify-center text-start">
                 <h3 class="mt-10 mb-6 underline text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
@@ -217,10 +280,37 @@
                     articles, or user profiles, presented in a visually appealing and easily accessible format. Through
                     meticulous attention to detail and adherence to responsive design principles, I aimed to provide
                     users with a cohesive and engaging experience across all devices.</p>
-                <img class="mt-10" src="../assets/img/dipsakus/final-1.jpg" alt="">
-                <img class="mt-10" src="../assets/img/dipsakus/final-2.jpg" alt="">
-                <img class="mt-10" src="../assets/img/dipsakus/final-3.jpg" alt="">
-                <img class="mt-10" src="../assets/img/dipsakus/final-4.jpg" alt="">
+                <!-- First image -->
+                <picture>
+                    <source srcset="../assets/img/dipsakus/final-1.jpg 800w,
+                     ../assets/img/dipsakus/final-1.jpg 480w,
+                     ../assets/img/dipsakus/final-1.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="mt-10" src="../assets/img/dipsakus/final-1.jpg" alt="Final image">
+                </picture>
+
+                <!-- Second image -->
+                <picture>
+                    <source srcset="../assets/img/dipsakus/final-2.jpg 800w,
+                     ../assets/img/dipsakus/final-2.jpg 480w,
+                     ../assets/img/dipsakus/final-2.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="mt-10" src="../assets/img/dipsakus/final-2.jpg" alt="Final image">
+                </picture>
+
+                <!-- Third image -->
+                <picture>
+                    <source srcset="../assets/img/dipsakus/final-3.jpg 800w,
+                     ../assets/img/dipsakus/final-3.jpg 480w,
+                     ../assets/img/dipsakus/final-3.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="mt-10" src="../assets/img/dipsakus/final-3.jpg" alt="Final image">
+                </picture>
+
+                <!-- Fourth image -->
+                <picture>
+                    <source srcset="../assets/img/dipsakus/final-4.jpg 800w,
+                     ../assets/img/dipsakus/final-4.jpg 480w,
+                     ../assets/img/dipsakus/final-4.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="mt-10" src="../assets/img/dipsakus/final-4.jpg" alt="Final image">
+                </picture>
                 <p class="mt-10 text-slate-600">I translated UX design concepts and wireframes into functional
                     components using Next.js and Tailwind CSS. Leveraging my frontend development skills, I implemented
                     responsive layouts and interactive features to enhance user engagement and usability. Key tasks
@@ -232,7 +322,12 @@
                     functionality. Together, we worked as a team to bring the Dipsakus Hiking Club website to life,
                     combining UX design principles with robust frontend development techniques to deliver a seamless
                     digital experience for users.</p>
-                <img class="mt-10" src="../assets/img/dipsakus/code.png" alt="">
+                <picture>
+                    <source srcset="../assets/img/dipsakus/code.jpg 800w,
+                         ../assets/img/dipsakus/code.jpg 480w,
+                         ../assets/img/dipsakus/code.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="mt-10" src="../assets/img/dipsakus/code.jpg" alt="Final image">
+                </picture>
 
             </div>
         </section>
