@@ -38,7 +38,6 @@
 
 <body class="font-lato text-base md:text-xl">
     <!-- Navbar -->
-    <!-- Navbar -->
     <nav class="fixed top-0 w-full z-50 bg-white shadow-sm">
         <div class="flex items-center justify-between py-6 lg:px-[300px] md:px-[24px] px-[24px]">
             <a href="../index.html">
@@ -47,10 +46,14 @@
             <div>
                 <ul class="text-[18px] md:text-[20px] flex flex-col md:flex-row md:gap-6">
                     <li>
-                        <a href="./about.html" class="text-[#F36F64]" data-page="hello">Hello</a>
+                        <a href="./about.html"
+                            class="text-[#F36F64] relative text-md md:w-fit md:block md:after:block md:after:content-[''] md:after:absolute md:after:h-[2px] md:after:bg-[#F36F64] md:after:w-full md:after:scale-x-0 md:after:hover:scale-x-100 md:after:transition md:after:duration-300 md:after:origin-center"
+                            data-page="hello">About</a>
                     </li>
                     <li>
-                        <a href="../index.html" class="text-[#F36F64]" data-page="index">Case studies</a>
+                        <a href="../index.html"
+                            class="text-[#F36F64] relative text-md md:w-fit md:block md:after:block md:after:content-[''] md:after:absolute md:after:h-[2px] md:after:bg-[#F36F64] md:after:w-full md:after:scale-x-0 md:after:hover:scale-x-100 md:after:transition md:after:duration-300 md:after:origin-center"
+                            data-page="index">Case studies</a>
                     </li>
                 </ul>
             </div>
@@ -121,12 +124,12 @@
 
                             </p>
                         </div>
-                        <picture>
+                        <picture class="fullscreen-container">
                             <source srcset="../assets/img/collection/img-2.jpg 800w,
                                             ../assets/img/collection/img-2.jpg 480w,
                                             ../assets/img/collection/img-2.jpg 320w"
                                 sizes="(max-width: 800px) 100vw, 800px">
-                            <img class="mt-10 h-full md:h-full w-full object-cover"
+                            <img class="mt-10 h-full md:h-full w-full object-cover cursor-zoom-in"
                                 src="../assets/img/collection/img-2.jpg" alt="Final image">
                         </picture>
                     </div>
@@ -180,20 +183,20 @@
                             <p>
                             </p>
                         </div>
-                        <picture>
+                        <picture class="fullscreen-container">
                             <source srcset="../assets/img/collection/img-3.jpg 800w,
                                             ../assets/img/collection/img-3.jpg 480w,
                                             ../assets/img/collection/img-3.jpg 320w"
                                 sizes="(max-width: 800px) 100vw, 800px">
-                            <img class="mt-10 h-full md:h-full w-full object-cover"
+                            <img class="mt-10 h-full md:h-full w-full object-cover cursor-zoom-in"
                                 src="../assets/img/collection/img-3.jpg" alt="Final image">
                         </picture>
-                        <picture>
+                        <picture class="fullscreen-container">
                             <source srcset="../assets/img/collection/img-4.jpg 800w,
                                             ../assets/img/collection/img-4.jpg 480w,
                                             ../assets/img/collection/img-4.jpg 320w"
                                 sizes="(max-width: 800px) 100vw, 800px">
-                            <img class="mt-10 h-full md:h-full w-full object-cover"
+                            <img class="mt-10 h-full md:h-full w-full object-cover cursor-zoom-in"
                                 src="../assets/img/collection/img-4.jpg" alt="Final image">
                         </picture>
                     </div>
@@ -238,12 +241,12 @@
                             <p>
                             </p>
                         </div>
-                        <picture>
+                        <picture class="fullscreen-container">
                             <source srcset="../assets/img/collection/img-5.jpg 800w,
                                             ../assets/img/collection/img-5.jpg 480w,
                                             ../assets/img/collection/img-5.jpg 320w"
                                 sizes="(max-width: 800px) 100vw, 800px">
-                            <img class="mt-10 mb-10 h-full md:h-full w-full object-cover"
+                            <img class="mt-10 mb-10 h-full md:h-full w-full object-cover cursor-zoom-in"
                                 src="../assets/img/collection/img-5.jpg" alt="Final image">
                         </picture>
                         <div>
@@ -274,7 +277,7 @@
             <hr class="my-3 border-gray-300 sm:mx-auto lg:my-6" />
             <div class="sm:flex sm:items-center sm:justify-between align-middle">
                 <div class="flex mt-4 sm:justify-center sm:mt-0 order-2 mb-2 md:mb-0">
-                    <ul class="flex gap-8 text-slate-800">
+                    <ul class="flex gap-6 text-slate-800">
                         <li
                             class="opacity-70 hover:opacity-100 transition-all ease-in-out duration-300 hover:text-[#F36F64]">
                             <div class="flex items-center gap-3">
@@ -299,6 +302,16 @@
                                 <span class="hover:animate-bounce">
                                     <a href="https://github.com/marijapopeska" class="home__social-icon text-2xl "><i
                                             class='bx bxl-github'></i></a>
+                                </span>
+                            </div>
+                        </li>
+                        <li
+                            class="opacity-70 hover:opacity-100 transition-all ease-in-out duration-300 hover:text-[#F36F64]">
+                            <div class="flex items-center gap-3">
+                                <span class="hover:animate-bounce">
+                                    <a href="mailto:marija.popeska@gmail.com" class="home__social-icon text-2xl">
+                                        <i class='bx bx-envelope'></i>
+                                    </a>
                                 </span>
                             </div>
                         </li>

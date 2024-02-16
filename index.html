@@ -48,10 +48,14 @@
 			<div>
 				<ul class="text-[18px] md:text-[20px] flex flex-col md:flex-row md:gap-6">
 					<li>
-						<a href="./pages/about.html" class="text-[#F36F64]" data-page="hello">Hello</a>
+						<a href="./pages/about.html"
+							class="text-[#F36F64] relative text-md md:w-fit md:block md:after:block md:after:content-[''] md:after:absolute md:after:h-[2px] md:after:bg-[#F36F64] md:after:w-full md:after:scale-x-0 md:after:hover:scale-x-100 md:after:transition md:after:duration-300 md:after:origin-center"
+							data-page="index">About</a>
 					</li>
 					<li>
-						<a href="./index.html" class="text-[#F36F64]" data-page="index">Case studies</a>
+						<a href="./index.html"
+							class="text-[#F36F64] relative text-md w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-[#F36F64] after:w-full after:origin-center"
+							data-page="index">Case studies</a>
 					</li>
 				</ul>
 			</div>
@@ -60,27 +64,57 @@
 
 	<!-- About -->
 	<section id="about"
-		class="top sticky top-0 w-full bg-[#F36F64] pt-[200px] pb-[250px] overflow-x-clip lg:px-[300px] md:px-[24px] px-[24px] -z-10">
+		class="sticky top top-0 w-full h-[650px] bg-[#F36F64]  pt-[200px] pb-[200px] lg:px-[300px] md:px-[24px] px-[24px] z-0">
 		<div class="flex items-center justify-center text-center">
 			<div class=" lg:px-[300px] px-[24px] md:px-[24px]" data-aos="fade-left" data-aos-duration="700">
 				<h3
-					class="top mb-10 text-2xl md:text-3xl font-futura lg:text-5xl max-xl:text-4xl max-sm:text-3xl text-slate-50">
+					class="mb-10 text-2xl md:text-3xl font-futura lg:text-5xl max-xl:text-4xl max-sm:text-3xl text-slate-50">
 					Hello, I'm <span>Marija Popeska</span>
 				</h3>
-				<p class="top text-[18px] md:text-[22px] text-slate-50">
+				<p class="text-[18px] md:text-[22px] text-slate-50">
 					I'm a UX Designer & Frontend Developer who believes in the power of combining technology
 					and design to create something truly magical
 				</p>
+				<div class="z-50 relative">
+					<div class="text-[18px] mt-16 md:mt-20 mb-3 md:text-[22px] text-slate-50">
+						Get in touch
+					</div>
+					<div>
+						<div class="flex justify-center sm:mt-0 mb-2 md:mb-0">
+							<ul class="flex gap-6 text-slate-50">
+								<li
+									class="hover:opacity-100 transition-all ease-in-out duration-300 hover:text-slate-100">
+									<div class="flex items-center gap-3">
+										<span class="hover:animate-bounce">
+											<a href="https://www.linkedin.com/in/marija-p-b23912167/"
+												class="home__social-icon text-2xl"><i class='bx bxl-linkedin'></i></a>
+										</span>
+									</div>
+								</li>
+								<li
+									class="hover:opacity-100 transition-all ease-in-out duration-300 hover:text-slate-100">
+									<div class="flex items-center gap-3">
+										<span class="hover:animate-bounce">
+											<a href="mailto:marija.popeska@gmail.com"
+												class="home__social-icon text-2xl">
+												<i class='bx bx-envelope'></i>
+											</a>
+										</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="arrow mt-[150px] top"></div>
 		</div>
 	</section>
 
 	<!-- Work -->
-	<section id="work" class="bg-white lg:px-[300px] px-[24px] md:px-[24px] pt-1">
-		<section class="container space-y-20 mx-auto p-10 md:py-20 px-0 md:p-20 md:px-0 antialiased">
+	<section id="work" class="bg-white relative h-full lg:px-[300px] px-[24px] md:px-[24px] pt-1">
+		<section class="container space-y-20 mx-auto p-10 md:py-20 px-0 md:p-20 md:px-0">
 			<!-- Project 1 -->
-			<div>
+			<div id="project-1">
 				<a href="./pages/project-1.html">
 					<article class="flex flex-col justify-center text-center">
 						<div>
@@ -194,7 +228,6 @@
 				</a>
 			</div>
 		</section>
-
 	</section>
 
 	<!-- Footer -->
@@ -212,7 +245,7 @@
 			<hr class="my-3 border-gray-300 sm:mx-auto lg:my-6" />
 			<div class="sm:flex sm:items-center sm:justify-between align-middle">
 				<div class="flex mt-4 sm:justify-center sm:mt-0 order-2 mb-2 md:mb-0">
-					<ul class="flex gap-8 text-slate-800">
+					<ul class="flex gap-6 text-slate-800">
 						<li
 							class="opacity-70 hover:opacity-100 transition-all ease-in-out duration-300 hover:text-[#F36F64]">
 							<div class="flex items-center gap-3">
@@ -237,6 +270,16 @@
 								<span class="hover:animate-bounce">
 									<a href="https://github.com/marijapopeska" class="home__social-icon text-2xl "><i
 											class='bx bxl-github'></i></a>
+								</span>
+							</div>
+						</li>
+						<li
+							class="opacity-70 hover:opacity-100 transition-all ease-in-out duration-300 hover:text-[#F36F64]">
+							<div class="flex items-center gap-3">
+								<span class="hover:animate-bounce">
+									<a href="mailto:marija.popeska@gmail.com" class="home__social-icon text-2xl">
+										<i class='bx bx-envelope'></i>
+									</a>
 								</span>
 							</div>
 						</li>
