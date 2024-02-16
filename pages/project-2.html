@@ -38,7 +38,6 @@
 
 <body class="font-lato text-base md:text-xl">
     <!-- Navbar -->
-    <!-- Navbar -->
     <nav class="fixed top-0 w-full z-50 bg-white shadow-sm">
         <div class="flex items-center justify-between py-6 lg:px-[300px] md:px-[24px] px-[24px]">
             <a href="../index.html">
@@ -47,10 +46,14 @@
             <div>
                 <ul class="text-[18px] md:text-[20px] flex flex-col md:flex-row md:gap-6">
                     <li>
-                        <a href="./about.html" class="text-[#F36F64]" data-page="hello">Hello</a>
+                        <a href="./about.html"
+                            class="text-[#F36F64] relative text-md md:w-fit md:block md:after:block md:after:content-[''] md:after:absolute md:after:h-[2px] md:after:bg-[#F36F64] md:after:w-full md:after:scale-x-0 md:after:hover:scale-x-100 md:after:transition md:after:duration-300 md:after:origin-center"
+                            data-page="hello">About</a>
                     </li>
                     <li>
-                        <a href="../index.html" class="text-[#F36F64]" data-page="index">Case studies</a>
+                        <a href="../index.html"
+                            class="text-[#F36F64] relative text-md md:w-fit md:block md:after:block md:after:content-[''] md:after:absolute md:after:h-[2px] md:after:bg-[#F36F64] md:after:w-full md:after:scale-x-0 md:after:hover:scale-x-100 md:after:transition md:after:duration-300 md:after:origin-center"
+                            data-page="index">Case studies</a>
                     </li>
                 </ul>
             </div>
@@ -92,11 +95,11 @@
                             app
                             is designed to cater to your unique preferences and lifestyle.</p>
                     </div>
-                    <picture>
+                    <picture class="fullscreen-container">
                         <source srcset="../assets/img/grocery-app/img-1.jpg 800w,
                              ../assets/img/grocery-app/img-1.jpg 480w,
                              ../assets/img/grocery-app/img-1.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-                        <img class="mt-10 h-[300px] md:h-[500px] w-full object-cover"
+                        <img class="mt-10 h-[300px] md:h-[500px] w-full object-cover cursor-zoom-in"
                             src="../assets/img/grocery-app/img-1.jpg" alt="Final image">
                     </picture>
                 </div>
@@ -127,7 +130,6 @@
         </div>
 
         <!-- Design process -->
-
         <section>
             <div class="px-0 md:px-10 lg:px-[200px] flex flex-col items-start justify-center text-start">
                 <div class="text-slate-600">
@@ -142,18 +144,18 @@
                             competitors' offerings, strengths, and weaknesses to glean insights that can inform your own
                             app's design and positioning.</p>
                     </div>
-                    <picture>
+                    <picture class="fullscreen-container">
                         <source srcset="../assets/img/grocery-app/img-2.jpg 800w,
                              ../assets/img/grocery-app/img-2.jpg 480w,
                              ../assets/img/grocery-app/img-2.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-                        <img class="mt-10 h-full md:h-full w-full object-cover"
+                        <img class="mt-10 h-full md:h-full w-full object-cover cursor-zoom-in"
                             src="../assets/img/grocery-app/img-2.jpg" alt="Final image">
                     </picture>
-                    <picture>
+                    <picture class="fullscreen-container">
                         <source srcset="../assets/img/grocery-app/img-3.jpg 800w,
                              ../assets/img/grocery-app/img-3.jpg 480w,
                              ../assets/img/grocery-app/img-3.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-                        <img class="mt-10 h-full md:h-full w-full object-cover"
+                        <img class="mt-10 h-full md:h-full w-full object-cover cursor-zoom-in"
                             src="../assets/img/grocery-app/img-3.jpg" alt="Final image">
                     </picture>
                     <div class="space-y-6 mt-6">
@@ -229,12 +231,12 @@
                             user base we aim to serve. Through empathetic storytelling and data-driven insights, these
                             personas help ensure that the app is tailored to meet the needs of real users in real-world
                             scenarios.</p>
-                        <picture class="flex justify-center mx-auto">
+                        <picture class="flex justify-center mx-auto fullscreen-container">
                             <source srcset="../assets/img/grocery-app/user-personas.jpg 800w,
                                      ../assets/img/grocery-app/user-personas.jpg 480w,
                                      ../assets/img/grocery-app/user-personas.jpg 320w"
                                 sizes="(max-width: 800px) 100vw, 800px">
-                            <img class="mt-10 h-full md:h-full w-full object-cover"
+                            <img class="mt-10 h-full md:h-full w-full object-cover cursor-zoom-in"
                                 src="../assets/img/grocery-app/user-personas.jpg" alt="Final image">
                         </picture>
                     </div>
@@ -247,12 +249,12 @@
                     exploring various
                     layouts and features. This process helps me visualize the app structure and functionality
                     before moving on to digital wireframes and prototypes.</p>
-                <picture class="flex justify-center mx-auto">
+                <picture class="flex justify-center mx-auto fullscreen-container">
                     <source srcset="../assets/img/grocery-app/sketches.jpg 800w,
                                  ../assets/img/grocery-app/sketches.jpg 480w,
                                  ../assets/img/grocery-app/sketches.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-                    <img class="mt-10 h-full md:h-full w-full object-cover" src="../assets/img/grocery-app/sketches.jpg"
-                        alt="Final image">
+                    <img class="mt-10 h-full md:h-full w-full object-cover cursor-zoom-in"
+                        src="../assets/img/grocery-app/sketches.jpg" alt="Final image">
                 </picture>
             </div>
             <div class="px-0 md:px-10 lg:px-[200px] flex flex-col items-start justify-center text-start">
@@ -263,12 +265,12 @@
                     fidelity and then refined into high fidelity prototypes. Prototyping these flows in high fidelity
                     allows for a detailed assessment of usability and hierarchy. Throughout the defining phase, I
                     experimented with various concepts and layouts.</p>
-                <picture class="flex justify-center mx-auto">
+                <picture class="flex justify-center mx-auto fullscreen-container">
                     <source srcset="../assets/img/grocery-app/wireframes.jpg 800w,
                                      ../assets/img/grocery-app/wireframes.jpg 480w,
                                      ../assets/img/grocery-app/wireframes.jpg 320w"
                         sizes="(max-width: 800px) 100vw, 800px">
-                    <img class="mt-10 h-full md:h-full w-full object-cover"
+                    <img class="mt-10 h-full md:h-full w-full object-cover cursor-zoom-in"
                         src="../assets/img/grocery-app/wireframes.jpg" alt="Final image">
                 </picture>
             </div>
@@ -279,12 +281,12 @@
                     features of the final solution for the grocery delivery app. Each screen is designed to prioritize
                     usability, functionality, and aesthetics, providing users with an enjoyable and efficient shopping
                     experience.</p>
-                <picture class="flex justify-center mx-auto">
+                <picture class="flex justify-center mx-auto fullscreen-container">
                     <source srcset="../assets/img/grocery-app/final-screens.jpg 800w,
                                          ../assets/img/grocery-app/final-screens.jpg 480w,
                                          ../assets/img/grocery-app/final-screens.jpg 320w"
                         sizes="(max-width: 800px) 100vw, 800px">
-                    <img class="mt-10 h-full md:h-full w-full object-cover"
+                    <img class="mt-10 h-full md:h-full w-full object-cover cursor-zoom-in"
                         src="../assets/img/grocery-app/final-screens.jpg" alt="Final image">
                 </picture>
             </div>
@@ -306,7 +308,7 @@
             <hr class="my-3 border-gray-300 sm:mx-auto lg:my-6" />
             <div class="sm:flex sm:items-center sm:justify-between align-middle">
                 <div class="flex mt-4 sm:justify-center sm:mt-0 order-2 mb-2 md:mb-0">
-                    <ul class="flex gap-8 text-slate-800">
+                    <ul class="flex gap-6 text-slate-800">
                         <li
                             class="opacity-70 hover:opacity-100 transition-all ease-in-out duration-300 hover:text-[#F36F64]">
                             <div class="flex items-center gap-3">
@@ -331,6 +333,16 @@
                                 <span class="hover:animate-bounce">
                                     <a href="https://github.com/marijapopeska" class="home__social-icon text-2xl "><i
                                             class='bx bxl-github'></i></a>
+                                </span>
+                            </div>
+                        </li>
+                        <li
+                            class="opacity-70 hover:opacity-100 transition-all ease-in-out duration-300 hover:text-[#F36F64]">
+                            <div class="flex items-center gap-3">
+                                <span class="hover:animate-bounce">
+                                    <a href="mailto:marija.popeska@gmail.com" class="home__social-icon text-2xl">
+                                        <i class='bx bx-envelope'></i>
+                                    </a>
                                 </span>
                             </div>
                         </li>
