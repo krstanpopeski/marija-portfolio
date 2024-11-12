@@ -6,10 +6,6 @@
 - **Dribbble Profile:**
   [Marija Popeska Dribbble](https://dribbble.com/marijapopeska)
 
-# CV
-
-  [CV-Marija Popeska.pdf](https://github.com/marijapopeska/Portfolio/files/14065318/CV-Marija.Popeska.pdf)
-
 # Courses
 
 - **Figma UI/UX Design Advanced (Udemy):**
