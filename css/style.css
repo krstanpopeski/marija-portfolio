@@ -38,6 +38,20 @@ body {
   line-height: inherit;
 }
 
+@media (min-width: 2000px) {
+  .w-3xl {
+    width: 80%;
+  }
+
+  .w1-3xl {
+    width: 60%;
+  }
+
+  .w2-3xl {
+    width: 50%;
+  }
+}
+
 /* Import Fonts */
 
 @font-face {
