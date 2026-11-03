@@ -52,7 +52,7 @@
 		rel="stylesheet">
 </head>
 
-<body class="font-lato">
+<body class="font-lato text-base">
 	<!-- Navbar -->
 	<nav class="fixed top-0 w-full z-50 bg-white shadow-sm">
 		<div class="flex items-center justify-center py-6 px-[24px]">
@@ -82,12 +82,12 @@
 	<section id="about"
 		class="sticky top top-0 w-full h-[650px] bg-[#F36F64] pt-[200px] pb-[200px] lg:px-[300px] px-[24px] z-0">
 		<div class="flex flex-col items-center justify-center text-center" data-aos="fade-left" data-aos-duration="700">
-			<h3 class="mb-10 lg:whitespace-nowrap text-2xl font-futura lg:text-5xl text-slate-50">
+			<h1 class="mb-10 lg:whitespace-nowrap text-2xl font-futura lg:text-5xl text-slate-50">
 				Hello, I'm <span>Marija Popeska</span>
-			</h3>
+			</h1>
 			<p class="text-[18px] lg:text-[22px] text-slate-50 flex flex-col justify-center lg:w-[100vh]">
-				I'm a UX Designer & Developer who believes in the power of combining technology
-				and design to create something truly magical
+				I'm a UX Designer and Developer who loves creating simple, useful things by bringing design and
+				technology together.
 			</p>
 
 			<div class="z-50 relative">
@@ -122,185 +122,104 @@
 	</section>
 
 	<!-- Work -->
-	<section id="work" class="bg-white relative h-full lg:px-[300px] px-[24px] md:px-[24px] pt-1">
-		<section class="container space-y-20 mx-auto p-10 md:py-20 px-0 md:p-20 md:px-0">
-			<!-- Project Employee Notification System -->
-			<div id="employee-dashboard">
-				<a href="./pages/employee-notification-system.html">
-					<article class="flex flex-col justify-center text-center">
-						<div>
-							<h1
-								class="mb-6 text-3xl md:text-3xl lg:text-5xl font-futura max-xl:text-4xl max-sm:text-3xl text-slate-600">
+	<section id="work" class="bg-white relative h-full px-[24px] pt-1">
+		<div class="flex justify-center">
+			<div class="w-full lg:w-[120vh] py-16 md:py-24">
+				<p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">Selected work</p>
+				<div class="mt-10 grid gap-6 lg:gap-8 sm:grid-cols-2">
+					<a href="./pages/employee-notification-system.html"
+						class="group block rounded-xl bg-[#FDF5F4] p-5 lg:p-6 transition-colors duration-300 hover:bg-[#FBEAE8]">
+						<div class="relative aspect-[16/10] overflow-hidden rounded-lg bg-white">
+							<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+								src="./assets/img/employee-notification-system/image_3.jpg" alt="The employee dashboard of the notification system">
+							<span
+								class="absolute left-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 font-futura text-xs text-[#F36F64]">01</span>
+						</div>
+						<div class="mt-5">
+							<h2 class="font-futura text-2xl lg:text-3xl text-slate-800 transition-colors group-hover:text-[#F36F64]">
 								Employee Notification System
-							</h1>
-							<p class="text-slate-600 text-[18px] md:text-[22px]">Employee Notification System: Project
-								with
-								Next.js and Tailwind CSS</p>
+							</h2>
 						</div>
-						<div
-							class="transform hover:-translate-y-2 mx-auto mt-6 md:mt-10 max-w-[700px] bg-cover bg-center h-[300px] md:h-[550px] lg:h-[550px] duration-500 cursor-pointer relative">
-							<div class="absolute inset-0 bg-black opacity-30 rounded-3xl"></div>
-							<div
-								class="absolute inset-0 hover:bg-[#793a34] hover:bg-opacity-50 transform duration-300 rounded-3xl">
-							</div>
-							<picture>
-								<source srcset="./assets/img/employee-notification-system/image_3.jpg 800w,
-												 ./assets/img/employee-notification-system/image_3.jpg 480w,
-												 ./assets/img/employee-notification-system/image_3.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-								<img class="w-full h-full bg-center object-cover rounded-3xl"
-									src="./assets/img/employee-notification-system/image_3.jpg"
-									alt="employee-dashboard image">
-							</picture>
+						<p class="text-slate-600 mt-2">Project with Next.js and Tailwind CSS</p>
+					</a>
+					<a href="./pages/employee-dashboard.html"
+						class="group block rounded-xl bg-[#FDF5F4] p-5 lg:p-6 transition-colors duration-300 hover:bg-[#FBEAE8]">
+						<div class="relative aspect-[16/10] overflow-hidden rounded-lg bg-white">
+							<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+								src="./assets/img/employee-dashboard/goals-overview.jpg" alt="Goals overview in the Employee Dashboard">
+							<span
+								class="absolute left-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 font-futura text-xs text-[#F36F64]">02</span>
 						</div>
-					</article>
-				</a>
-			</div>
-			<!-- Project Employee Dashboard -->
-			<div id="employee-dashboard">
-				<a href="./pages/employee-dashboard.html">
-					<article class="flex flex-col justify-center text-center">
-						<div>
-							<h1
-								class="mb-6 text-3xl md:text-3xl lg:text-5xl font-futura max-xl:text-4xl max-sm:text-3xl text-slate-600">
-								Employee Dashboard - Netcetera
-							</h1>
-							<p class="text-slate-600 text-[18px] md:text-[22px]">Employee Dashboard: Intern Project with
-								SvelteKit and Tailwind CSS</p>
+						<div class="mt-5">
+							<h2 class="font-futura text-2xl lg:text-3xl text-slate-800 transition-colors group-hover:text-[#F36F64]">
+								Employee Dashboard
+							</h2>
 						</div>
-						<div
-							class="transform hover:-translate-y-2 mx-auto mt-6 md:mt-10 max-w-[700px] bg-cover bg-center h-[300px] md:h-[550px] lg:h-[550px] duration-500 cursor-pointer relative">
-							<div class="absolute inset-0 bg-black opacity-30 rounded-3xl"></div>
-							<div
-								class="absolute inset-0 hover:bg-[#793a34] hover:bg-opacity-50 transform duration-300 rounded-3xl">
-							</div>
-							<picture>
-								<source srcset="./assets/img/employee-dashboard/goals-overview.jpg 800w,
-												 ./assets/img/employee-dashboard/goals-overview.jpg 480w,
-												 ./assets/img/employee-dashboard/goals-overview.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-								<img class="w-full h-full bg-center object-cover rounded-3xl"
-									src="./assets/img/employee-dashboard/goals-overview.jpg"
-									alt="employee-dashboard image">
-							</picture>
+						<p class="text-slate-600 mt-2">Intern project at Netcetera with SvelteKit and Tailwind CSS</p>
+					</a>
+					<a href="./pages/project-1.html"
+						class="group block rounded-xl bg-[#FDF5F4] p-5 lg:p-6 transition-colors duration-300 hover:bg-[#FBEAE8]">
+						<div class="relative aspect-[16/10] overflow-hidden rounded-lg bg-white">
+							<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+								src="./assets/img/dipsakus/hiking-club-img.jpg" alt="The Dipsakus hiking club website">
+							<span
+								class="absolute left-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 font-futura text-xs text-[#F36F64]">03</span>
 						</div>
-					</article>
-				</a>
-			</div>
-			<!-- Project 1 -->
-			<div id="project-1">
-				<a href="./pages/project-1.html">
-					<article class="flex flex-col justify-center text-center">
-						<div>
-							<h1
-								class="mb-6 text-3xl md:text-3xl lg:text-5xl font-futura max-xl:text-4xl max-sm:text-3xl text-slate-600">
+						<div class="mt-5">
+							<h2 class="font-futura text-2xl lg:text-3xl text-slate-800 transition-colors group-hover:text-[#F36F64]">
 								Dipsakus
-							</h1>
-							<p class="text-slate-600 text-[18px] md:text-[22px]">UX Design case study: research, design,
-								and development journey</p>
+							</h2>
 						</div>
-						<div
-							class="transform hover:-translate-y-2 mx-auto mt-6 md:mt-10 max-w-[700px] bg-cover bg-center h-[300px] md:h-[550px] lg:h-[550px] duration-500 cursor-pointer relative">
-							<div class="absolute inset-0 bg-black opacity-30 rounded-3xl"></div>
-							<div
-								class="absolute inset-0 hover:bg-[#793a34] hover:bg-opacity-50 transform duration-300 rounded-3xl">
-							</div>
-							<picture>
-								<source srcset="./assets/img/dipsakus/hiking-club-img.jpg 800w,
-												 ./assets/img/dipsakus/hiking-club-img.jpg 480w,
-												 ./assets/img/dipsakus/hiking-club-img.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-								<img class="w-full h-full bg-center object-cover rounded-3xl"
-									src="./assets/img/dipsakus/hiking-club-img.jpg" alt="Dipsakus image">
-							</picture>
+						<p class="text-slate-600 mt-2">UX Design case study: research, design, and development journey</p>
+					</a>
+					<a href="./pages/project-2.html"
+						class="group block rounded-xl bg-[#FDF5F4] p-5 lg:p-6 transition-colors duration-300 hover:bg-[#FBEAE8]">
+						<div class="relative aspect-[16/10] overflow-hidden rounded-lg bg-white">
+							<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+								src="./assets/img/grocery-app/grocery-app.jpg" alt="Screens from the grocery app">
+							<span
+								class="absolute left-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 font-futura text-xs text-[#F36F64]">04</span>
 						</div>
-					</article>
-				</a>
+						<div class="mt-5">
+							<h2 class="font-futura text-2xl lg:text-3xl text-slate-800 transition-colors group-hover:text-[#F36F64]">
+								Grocery App
+							</h2>
+						</div>
+						<p class="text-slate-600 mt-2">Designing an intuitive mobile app for seamless grocery delivery experience</p>
+					</a>
+					<a href="./pages/project-3.html"
+						class="group block rounded-xl bg-[#FDF5F4] p-5 lg:p-6 transition-colors duration-300 hover:bg-[#FBEAE8]">
+						<div class="relative aspect-[16/10] overflow-hidden rounded-lg bg-white">
+							<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+								src="./assets/img/cinevers/cinevers.jpg" alt="The Cinevers movie website">
+							<span
+								class="absolute left-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 font-futura text-xs text-[#F36F64]">05</span>
+						</div>
+						<div class="mt-5">
+							<h2 class="font-futura text-2xl lg:text-3xl text-slate-800 transition-colors group-hover:text-[#F36F64]">
+								Cinevers
+							</h2>
+						</div>
+						<p class="text-slate-600 mt-2">Your gateway to the world of movies</p>
+					</a>
+					<a href="./pages/collection.html"
+						class="group block rounded-xl bg-[#FDF5F4] p-5 lg:p-6 transition-colors duration-300 hover:bg-[#FBEAE8]">
+						<div class="relative aspect-[16/10] overflow-hidden rounded-lg bg-white">
+							<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+								src="./assets/img/collection/img-1.jpg" alt="Work from the design collection">
+							<span
+								class="absolute left-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 font-futura text-xs text-[#F36F64]">06</span>
+						</div>
+						<div class="mt-5">
+							<h2 class="font-futura text-2xl lg:text-3xl text-slate-800 transition-colors group-hover:text-[#F36F64]">
+								Design collection showcase
+							</h2>
+						</div>
+						<p class="text-slate-600 mt-2">Showcasing diverse projects and solutions</p>
+					</a>
+				</div>
 			</div>
-
-			<!-- Project 2 -->
-			<div>
-				<a href="./pages/project-2.html">
-					<article class="flex flex-col justify-center text-center">
-						<div>
-							<h1
-								class="mb-6 text-3xl md:text-3xl lg:text-5xl font-futura max-xl:text-4xl max-sm:text-3xl text-slate-600">
-								Grocery App</h1>
-							<p class="text-slate-600 text-[18px] md:text-[22px]">Designing an intuitive mobile app for
-								seamless grocery delivery experience</p>
-						</div>
-						<div
-							class="transform hover:-translate-y-2 mx-auto mt-6 md:mt-10 max-w-[700px] bg-cover bg-center h-[300px] md:h-[550px] lg:h-[550px] duration-500 cursor-pointer relative">
-							<div class="absolute inset-0 bg-black opacity-30 rounded-3xl"></div>
-							<div
-								class="absolute inset-0 hover:bg-[#793a34] hover:bg-opacity-50 transform duration-300 rounded-3xl">
-							</div>
-							<picture>
-								<source srcset="./assets/img/grocery-app/grocery-app.jpg 800w,
-												 ./assets/img/grocery-app/grocery-app.jpg 480w,
-												 ./assets/img/grocery-app/grocery-app.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-								<img class="w-full h-full bg-center object-cover rounded-3xl"
-									src="./assets/img/grocery-app/grocery-app.jpg" alt="Grocery image">
-							</picture>
-						</div>
-					</article>
-				</a>
-			</div>
-			<!-- Project 3 -->
-			<div>
-				<a href="./pages/project-3.html">
-					<article class="flex flex-col justify-center text-center">
-						<div>
-							<h1
-								class="mb-6 text-3xl md:text-3xl lg:text-5xl font-futura max-xl:text-4xl max-sm:text-3xl text-slate-600">
-								Cinevers</h1>
-							<p class="text-slate-600 text-[18px] md:text-[22px]">Cinevers -
-								your gateway to the world of movies</p>
-						</div>
-						<div
-							class="transform hover:-translate-y-2 mx-auto mt-6 md:mt-10 max-w-[700px] bg-cover bg-center h-[300px] md:h-[550px] lg:h-[550px] duration-500 cursor-pointer relative">
-							<div class="absolute inset-0 bg-black opacity-30 rounded-3xl"></div>
-							<div
-								class="absolute inset-0 hover:bg-[#793a34] hover:bg-opacity-50 transform duration-300 rounded-3xl">
-							</div>
-							<picture>
-								<source srcset="./assets/img/cinevers/cinevers.jpg 800w,
-												 ./assets/img/cinevers/cinevers.jpg 480w,
-												 ./assets/img/cinevers/cinevers.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-								<img class="w-full h-full bg-center object-cover rounded-3xl"
-									src="./assets/img/cinevers/cinevers.jpg" alt="Grocery image">
-							</picture>
-						</div>
-					</article>
-				</a>
-			</div>
-			<!-- Collection -->
-			<div>
-				<a href="./pages/collection.html">
-					<article class="flex flex-col justify-center text-center">
-						<div>
-							<h1
-								class="mb-6 text-3xl md:text-3xl lg:text-5xl font-futura max-xl:text-4xl max-sm:text-3xl text-slate-600">
-								Design collection showcase</h1>
-						</div>
-						<p class="text-slate-600 text-[18px] md:text-[22px]">
-							Showcasing diverse projects and solutions
-						</p>
-						<div
-							class="transform hover:-translate-y-2 mx-auto mt-6 md:mt-10 max-w-[700px] bg-cover bg-center h-[300px] md:h-[550px] lg:h-[550px] duration-500 cursor-pointer relative">
-							<div class="absolute inset-0 bg-black opacity-20 rounded-3xl"></div>
-							<div
-								class="absolute inset-0 hover:bg-[#793a34] hover:bg-opacity-50 transform duration-300 rounded-3xl">
-							</div>
-							<picture>
-								<source srcset="./assets/img/collection/img-1.jpg 800w,
-												 ./assets/img/collection/img-1.jpg 480w,
-												 ./assets/img/collection/img-1.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-								<img class="w-full h-full bg-center object-cover rounded-3xl"
-									src="./assets/img/collection/img-1.jpg" alt="Grocery image">
-							</picture>
-						</div>
-					</article>
-				</a>
-			</div>
-		</section>
+		</div>
 	</section>
 
 	<!-- Footer -->

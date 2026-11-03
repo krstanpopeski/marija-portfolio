@@ -1,6 +1,5 @@
-<h1>hello</h1>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
 	<!-- Meta tags added -->
@@ -8,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Marija Popeska">
 	<meta name="keywords" content="ux designer, architecture, digital experience, portfolio">
-	<meta name="description" content="Employee Dashboard: Intern Project with SvelteKit and Tailwind CSS">
+	<meta name="description" content="Employee Dashboard: My Internship Project at Netcetera">
 	<meta name="robots" content="index, follow">
 	<meta name="googlebot" content="index, follow">
 	<meta name="google" content="nositelinkssearchbox">
@@ -19,7 +18,7 @@
 	<meta property="og:image:height" content="627">
 	<meta property="og:url" content="https://www.marijapopeska.com">
 	<meta property="og:title" content="Employee Dashboard">
-	<meta property="og:description" content="Intern Project with SvelteKit and Tailwind CSS">
+	<meta property="og:description" content="My Internship Project at Netcetera">
 	<title>Employee Dashboard</title>
 
 	<!-- =====BOX ICONS===== -->
@@ -37,7 +36,7 @@
 		rel="stylesheet">
 </head>
 
-<body class="font-lato text-base md:text-xl">
+<body class="font-lato text-base">
 	<!-- Navbar -->
 	<nav class="fixed top-0 w-full z-50 bg-white shadow-sm">
 		<div class="flex items-center justify-center py-6 px-[24px]">
@@ -63,324 +62,274 @@
 		</div>
 	</nav>
 
-	<section class="pt-[150px] md:pt-[200px] lg:pt-[200px] pb-[50px] px-[24px] flex justify-center">
-		<div class="lg:w-[100vh] w-full">
-			<div class="flex items-center justify-center text-center">
-				<div data-aos="fade-left" data-aos-duration="700">
-					<h3
-						class="mb-6 md:mb-10 text-3xl md:text-3xl font-futura lg:text-5xl max-xl:text-4xl max-sm:text-3xl text-[#F36F64]">
-						Employee Dashboard
-					</h3>
-					<p class="text-slate-600">
-						Employee Dashboard: Intern Project with SvelteKit and Tailwind CSS
-					</p>
-				</div>
-			</div>
-			<div data-aos="fade-left" data-aos-duration="700">
-				<h3 class="mt-10 md:mt-20 mb-6 md:mb-10 text-2xl md:text-3xl font-futura lg:text-4xl text-slate-600">
-					My Internship at Netcetera
-				</h3>
-				<p class="text-slate-600 mb-3"> I recently completed an exciting internship at Netcetera, where I
-					worked closely with a team
-					of talented professionals to develop impactful digital solutions. This experience provided
-					me with invaluable insight into collaborative design and development processes.</p>
-				<picture class="flex justify-center">
-					<source srcset="../assets/img/employee-dashboard/presentation.jpg 800w,
-                                             ../assets/img/employee-dashboard/presentation.jpg 480w,
-                                             ../assets/img/employee-dashboard/presentation.jpg 320w"
-						sizes="(max-width: 800px) 100vw, 800px">
-					<img class="mt-10 h-[300px] md:h-[1000px] w-full 2xl:w-fit object-cover cursor-zoom-in"
-						src="../assets/img/employee-dashboard/presentation.jpg" alt="EmployeeDashboard">
-				</picture>
-			</div>
+    <!-- Hero -->
+    <header class="flex justify-center px-[24px] pt-[150px] lg:pt-[220px] pb-12 lg:pb-16">
+        <div class="w-full lg:w-[120vh]">
+            <p class="font-futura text-xs tracking-[0.3em] uppercase text-[#F36F64]">Case study</p>
+            <h1 class="font-futura text-5xl lg:text-7xl text-slate-800 mt-4">Employee Dashboard</h1>
+            <p class="text-slate-600 text-lg lg:text-2xl mt-5 max-w-2xl">
+                My Internship Project at Netcetera
+            </p>
+        </div>
+    </header>
 
-			<div data-aos="fade-left" data-aos-duration="700">
-				<h3 class="mt-10 md:mt-20 mb-6 md:mb-10 text-2xl md:text-3xl font-futura lg:text-4xl text-slate-600">
-					Overview of My Role
-				</h3>
-				<p class="text-slate-600 mb-3">
-					During my internship at Netcetera, I worked on developing user-centric web applications using modern
-					technologies like SvelteKit and Tailwind CSS. One of my main responsibilities was implementing the
-					Employee Dashboard, where I turned the provided design into a fully functional front-end. This
-					experience allowed me to contribute to real-world projects while learning best practices in UX
-					design, coding, and project collaboration.
-				</p>
-			</div>
+    <!-- Facts strip -->
+    <div class="flex justify-center px-[24px]">
+        <div class="w-full lg:w-[120vh] border-y border-slate-200 py-10">
+            <div class="grid gap-8 sm:grid-cols-3">
+                <div>
+                    <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">Role</p>
+                    <p class="text-slate-600 text-base mt-2">Frontend development intern</p>
+                </div>
+                <div>
+                    <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">Company</p>
+                    <p class="text-slate-600 text-base mt-2">Netcetera</p>
+                </div>
+                <div>
+                    <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">Built with</p>
+                    <p class="text-slate-600 text-base mt-2">SvelteKit and Tailwind CSS</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-			<div data-aos="fade-left" data-aos-duration="700">
-				<h3 class="mt-10 md:mt-20 mb-6 md:mb-10 text-2xl md:text-3xl font-futura lg:text-4xl text-slate-600">
-					Tools and Technologies Used in the Employee Dashboard
-				</h3>
-				<ol class="list-decimal pl-6 space-y-4 text-slate-600">
-					<li>
-						<span class="font-bold">SvelteKit:</span> A modern web framework that made the development
-						process faster and smoother.
-					</li>
-					<li>
-						<span class="font-bold">Tailwind CSS:</span> A utility-first CSS framework that helped me create
-						responsive, custom styles without writing traditional CSS.
-					</li>
-					<li>
-						<span class="font-bold">ShadCN:</span> A component library that provided accessible and reusable
-						UI components for the project.
-					</li>
-					<li>
-						<span class="font-bold">Lucide:</span> An icon library that I used for implementing consistent,
-						scalable icons across the dashboard.
-					</li>
-					<li>
-						<span class="font-bold">Jira:</span> Used for project management, ensuring that all tasks were
-						organized, assigned, and tracked throughout the development process.
-					</li>
-					<li>
-						<span class="font-bold">Bitbucket:</span> A Git-based repository hosting service that
-						facilitated version control and collaboration, allowing for code reviews and tracking of changes
-						during development.
-					</li>
-				</ol>
-				<picture class="flex justify-center">
-					<source srcset="../assets/img/employee-dashboard/tools.jpg 800w,
-                                             ../assets/img/employee-dashboard/tools.jpg 480w,
-                                             ../assets/img/employee-dashboard/tools.jpg 320w"
-						sizes="(max-width: 800px) 100vw, 800px">
-					<img class="mt-10 h-full w-full cursor-zoom-in" src="../assets/img/employee-dashboard/tools.jpg"
-						alt="EmployeeDashboard">
-				</picture>
-			</div>
+    <section class="flex justify-center px-[24px] pb-[50px] pt-14 lg:pt-20">
+        <div class="w-full lg:w-[120vh] lg:grid lg:grid-cols-[180px_minmax(0,1fr)] lg:gap-16">
 
-			<div data-aos="fade-left" data-aos-duration="700">
-				<h3 class="mt-10 md:mt-20 mb-6 md:mb-10 text-2xl md:text-3xl font-futura lg:text-4xl text-slate-600">
-					What is the Employee Dashboard Project?
-				</h3>
-				<p class="text-slate-600 mb-3">The Employee Dashboard is a tool designed to help team leaders and
-					employees set, track, and achieve their professional goals. It provides a way to manage goals,
-					receive feedback, track team progress, and document important notes—all in one place.
+            <!-- Sticky section nav -->
+            <aside class="hidden lg:block">
+                <nav class="sticky top-[120px] text-base">
+                    <a data-toc href="#internship"
+                        class="text-[#F36F64] font-bold block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">01</span>&nbsp;&nbsp;Internship
+                    </a>
+                    <a data-toc href="#role"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">02</span>&nbsp;&nbsp;My Role
+                    </a>
+                    <a data-toc href="#tools"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">03</span>&nbsp;&nbsp;Tools
+                    </a>
+                    <a data-toc href="#dashboard"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">04</span>&nbsp;&nbsp;The Dashboard
+                    </a>
+                    <a data-toc href="#components"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">05</span>&nbsp;&nbsp;Components
+                    </a>
+                    <a data-toc href="#card"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">06</span>&nbsp;&nbsp;Card Component
+                    </a>
+                    <a data-toc href="#flexibility"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">07</span>&nbsp;&nbsp;Flexibility
+                    </a>
+                    <a data-toc href="#types"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">08</span>&nbsp;&nbsp;Card Types
+                    </a>
+                    <a data-toc href="#consistency"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">09</span>&nbsp;&nbsp;Consistency
+                    </a>
+                </nav>
+            </aside>
 
-					The core idea behind the Employee Dashboard is to make goal management and performance tracking
-					easier for both employees and their team leaders.</p>
-				<picture class="flex justify-center">
-					<source srcset="../assets/img/employee-dashboard/goals-overview.jpg 800w,
-                                             ../assets/img/employee-dashboard/goals-overview.jpg 480w,
-                                             ../assets/img/employee-dashboard/goals-overview.jpg 320w"
-						sizes="(max-width: 800px) 100vw, 800px">
-					<img class="mt-10 h-[300px] md:h-[500px] w-full object-cover cursor-zoom-in"
-						src="../assets/img/employee-dashboard/goals-overview.jpg" alt="EmployeeDashboard">
-				</picture>
-			</div>
+            <!-- Content column -->
+            <div class="min-w-0 space-y-20 lg:space-y-28">
 
-			<div class="flex items-start justify-center text-start">
-				<div data-aos="fade-left" data-aos-duration="700">
-					<h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-						Team Leader can:
-					</h3>
-					<ul class="list-none pl-4 text-slate-600">
-						<li
-							class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-2 before:h-2 before:bg-indigo-600 before:rounded-full">
-							Set and manage their own professional goals.
-						</li>
-						<li
-							class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-2 before:h-2 before:bg-indigo-600 before:rounded-full">
-							Track the progress of goals of their team members.
-						</li>
-						<li
-							class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-2 before:h-2 before:bg-indigo-600 before:rounded-full">
-							See feedback from others on their performance.
-						</li>
-						<li
-							class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-2 before:h-2 before:bg-indigo-600 before:rounded-full">
-							Suggest promotions based on individual progress and performance over time.
-						</li>
-					</ul>
+            <section id="internship" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">01</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">My Internship at Netcetera</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">During my internship at Netcetera, I had the chance to work with a great team and get a closer look at how real projects are built. It was a great opportunity to learn, try new things and put my knowledge into practice.</p>
+                <p class="text-slate-600 leading-relaxed">I got to work on an Employee Dashboard, where I was responsible for turning the provided designs into a working frontend. It was my first experience working on a project like this as part of a professional team, and I learned a lot along the way.</p>
+                <picture class="mt-10 fullscreen-container block cursor-zoom-in">
+                    <source srcset="../assets/img/employee-dashboard/presentation.jpg 800w,
+                                    ../assets/img/employee-dashboard/presentation.jpg 480w,
+                                    ../assets/img/employee-dashboard/presentation.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/employee-dashboard/presentation.jpg" alt="The Employee Dashboard presented at the end of the internship">
+                </picture>
+            </section>
+            <section id="role" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">02</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">My Role</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">My main task was to build the frontend of the Employee Dashboard using SvelteKit and Tailwind CSS.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">I worked with the designs provided by the design team and focused on turning them into working pages and reusable components. I also had the opportunity to work with different UI elements, understand how they fit together and make sure everything looked and worked as expected.</p>
+                <p class="text-slate-600 leading-relaxed">Throughout the internship, I worked with the team, followed the development process and used tools that helped us organize tasks and keep track of our progress.</p>
+            </section>
+            <section id="tools" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">03</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Tools and Technologies</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <div class="grid gap-5 sm:grid-cols-2">
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">SvelteKit</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">I used SvelteKit to build the frontend and organize the different pages and components.</p>
+                    </div>
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Tailwind CSS</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">I used Tailwind CSS to style the dashboard and keep the design consistent across the application.</p>
+                    </div>
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">ShadCN</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">I worked with ready made UI components that helped keep the interface consistent and accessible.</p>
+                    </div>
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Lucide</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">I used Lucide icons throughout the dashboard to keep the interface clean and consistent.</p>
+                    </div>
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Jira</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">We used Jira to organize tasks, follow progress and keep track of what needed to be done.</p>
+                    </div>
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Bitbucket</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">We used Bitbucket to manage the code, share changes and work together with the rest of the team.</p>
+                    </div>
+                </div>
+                <picture class="mt-10 fullscreen-container block cursor-zoom-in">
+                    <source srcset="../assets/img/employee-dashboard/tools.jpg 800w,
+                                    ../assets/img/employee-dashboard/tools.jpg 480w,
+                                    ../assets/img/employee-dashboard/tools.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/employee-dashboard/tools.jpg" alt="The tools used throughout the project">
+                </picture>
+            </section>
+            <section id="dashboard" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">04</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">What is the Employee Dashboard?</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">The Employee Dashboard is an application that helps employees and team leaders keep track of professional goals, feedback and progress.</p>
+                <p class="text-slate-600 leading-relaxed">Everything is organized in one place, making it easier for employees to follow their development and for team leaders to keep track of their teams.</p>
+                <picture class="mt-10 fullscreen-container block cursor-zoom-in">
+                    <source srcset="../assets/img/employee-dashboard/goals-overview.jpg 800w,
+                                    ../assets/img/employee-dashboard/goals-overview.jpg 480w,
+                                    ../assets/img/employee-dashboard/goals-overview.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/employee-dashboard/goals-overview.jpg" alt="Overview of goals in the dashboard">
+                </picture>
+                <div class="grid gap-5 sm:grid-cols-2 mt-10">
+                <div class="rounded-lg border border-slate-200 p-6">
+                    <h3 class="font-futura text-lg text-[#F36F64]">Team leaders can</h3>
+                    <ul class="space-y-3 mt-4 text-base text-slate-600">
+                        <li class="border-l-2 border-[#F36F64] pl-4">Set and manage their own professional goals.</li>
+                        <li class="border-l-2 border-[#F36F64] pl-4">Follow the progress of their team members.</li>
+                        <li class="border-l-2 border-[#F36F64] pl-4">View feedback about their performance.</li>
+                        <li class="border-l-2 border-[#F36F64] pl-4">Suggest promotions based on employee progress and performance.</li>
+                    </ul>
+                </div>
+                <div class="rounded-lg border border-slate-200 p-6">
+                    <h3 class="font-futura text-lg text-[#F36F64]">Team members can</h3>
+                    <ul class="space-y-3 mt-4 text-base text-slate-600">
+                        <li class="border-l-2 border-[#F36F64] pl-4">Set personal and professional goals.</li>
+                        <li class="border-l-2 border-[#F36F64] pl-4">Receive feedback and keep personal notes.</li>
+                        <li class="border-l-2 border-[#F36F64] pl-4">Stay up to date with their progress.</li>
+                        <li class="border-l-2 border-[#F36F64] pl-4">Keep track of their development and communicate with their team leaders.</li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+            <section id="components" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">05</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Working with Components</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">One of the first things I focused on was understanding the design and identifying which elements could be reused across different pages.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">I went through the designs and picked out common elements such as buttons, cards, tooltips, badges and input fields. Instead of building each one separately, I worked on creating reusable components that could be used throughout the dashboard.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">Once the components were ready, I started putting them together to build the different pages. This helped me keep the same design across the application and made it easier to work on each page.</p>
+                <p class="text-slate-600 leading-relaxed">The images below show some of the components I worked on and how they were used throughout the dashboard.</p>
+                <picture class="mt-10 fullscreen-container block cursor-zoom-in">
+                    <source srcset="../assets/img/employee-dashboard/components.jpg 800w,
+                                    ../assets/img/employee-dashboard/components.jpg 480w,
+                                    ../assets/img/employee-dashboard/components.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/employee-dashboard/components.jpg" alt="A selection of the reusable components">
+                </picture>
+            </section>
+            <section id="card" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">06</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Building the Card Component</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">One of the more challenging parts of this project was building the card component.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">The dashboard used cards to display different types of information, including goals, feedback, team members and notes. Even though they shared a similar layout, each card had its own content and small differences.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">I wanted to create one component that could work for all these cases instead of building a separate card for every page.</p>
+                <p class="text-slate-600 leading-relaxed">I divided the card into three main parts:</p>
+                <div class="mt-8">
+                    <div class="grid gap-5 sm:grid-cols-3">
+                        <div class="rounded-lg border border-slate-200 p-6">
+                            <h3 class="font-futura text-lg text-[#F36F64]">Header</h3>
+                            <p class="text-slate-600 leading-relaxed mt-3 text-base">This part contains the title, labels and other information that helps identify the card. It can also include action buttons and dropdown menus.</p>
+                        </div>
+                        <div class="rounded-lg border border-slate-200 p-6">
+                            <h3 class="font-futura text-lg text-[#F36F64]">Main Content</h3>
+                            <p class="text-slate-600 leading-relaxed mt-3 text-base">This is where the main information is displayed, such as goal descriptions, feedback messages or notes.</p>
+                        </div>
+                        <div class="rounded-lg border border-slate-200 p-6">
+                            <h3 class="font-futura text-lg text-[#F36F64]">Footer</h3>
+                            <p class="text-slate-600 leading-relaxed mt-3 text-base">This section is used for additional details like progress bars, timestamps and action buttons.</p>
+                        </div>
+                    </div>
+                </div>
+                <picture class="mt-10 fullscreen-container block cursor-zoom-in">
+                    <source srcset="../assets/img/employee-dashboard/cards.jpg 800w,
+                                    ../assets/img/employee-dashboard/cards.jpg 480w,
+                                    ../assets/img/employee-dashboard/cards.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/employee-dashboard/cards.jpg" alt="Card components in their different states">
+                </picture>
+            </section>
+            <section id="flexibility" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">07</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Making the Card Component Flexible</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">After building the basic structure, I added props to control how each card looked and what it displayed.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">For example, some cards needed a progress bar, while others needed status labels such as &ldquo;Draft&rdquo;, &ldquo;Expired&rdquo; or &ldquo;Completed&rdquo;. Using props made it possible to show or hide certain elements depending on the type of card.</p>
+                <p class="text-slate-600 leading-relaxed">This allowed me to use the same component in different parts of the dashboard without having to repeat the same code.</p>
+            </section>
+            <section id="types" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">08</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Different Types of Cards</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <div class="grid gap-5 sm:grid-cols-2">
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Goals Cards</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">These cards display the goal title, description and current progress. I also added status labels such as &ldquo;In Progress&rdquo; and &ldquo;Completed&rdquo; to make it easier to see where each goal stands.</p>
+                    </div>
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Feedback Cards</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">Feedback cards had a few different states, so I used conditional rendering in Svelte to show the right content depending on the feedback status. This helped keep the cards flexible while making each state easy to recognize.</p>
+                    </div>
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Team Cards</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">These cards display information about team members, including their names, roles and feedback summaries. I focused on keeping the layout consistent and making the information easy to scan.</p>
+                    </div>
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Notes Cards</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">Notes cards include a title, the note itself and the date of the last update. Since notes can have different lengths, I made sure the layout could handle different amounts of content without affecting the overall design.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="consistency" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">09</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Keeping Everything Consistent</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">While working on the dashboard, I paid attention to keeping the same look and feel across all pages.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">I reused components wherever possible and followed the same spacing, typography and styling throughout the application. This made the interface more consistent and also helped keep the code easier to manage.</p>
+                <p class="text-slate-600 leading-relaxed">This part of the project taught me a lot about working with reusable components and showed me how much easier development becomes when everything is properly organized.</p>
+                <h3 class="font-futura text-xl lg:text-2xl text-slate-800 mt-10 mb-5">Technologies</h3>
+                <ul class="flex flex-wrap gap-3">
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">SvelteKit</li>
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">Tailwind CSS</li>
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">ShadCN</li>
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">Lucide</li>
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">Jira</li>
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">Bitbucket</li>
+                </ul>
+            </section>
 
-					<h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-						Team Members can:
-					</h3>
-					<ul class="list-none pl-4 text-slate-600">
-						<li
-							class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-2 before:h-2 before:bg-indigo-600 before:rounded-full">
-							Set their personal goals, receive feedback, and write important notes.
-						</li>
-						<li
-							class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-2 before:h-2 before:bg-indigo-600 before:rounded-full">
-							Collaborate more effectively with their team leaders and team members.
-						</li>
-						<li
-							class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-2 before:h-2 before:bg-indigo-600 before:rounded-full">
-							Stay on top of their own career progress.
-						</li>
-					</ul>
-				</div>
-			</div>
-
-			<!-- Recognizing and Building Components -->
-
-			<section>
-				<div class="flex flex-col items-start justify-center text-start">
-					<div>
-						<h3 class="mt-10 md:mt-20 mb-10 text-2xl md:text-3xl font-futura lg:text-4xl text-slate-600">
-							Recognizing and Building Components
-						</h3>
-						<div>
-							<h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-								Identifying Components</h3>
-							<p class="text-slate-600">Carefully studying the design to identify all reusable components,
-								such as buttons, cards, tooltips, badges, input fields. etc. This was essential to
-								ensure
-								consistency and reusability across the entire application.</p>
-						</div>
-					</div>
-					<div>
-						<h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-							Creating the Page Layouts</h3>
-						<p class="text-slate-600">After building the components, I integrated them into the layout of
-							each
-							page—for example. Each page was constructed by composing the individual components into a
-							cohesive design.
-						</p>
-						<p class="text-slate-600 mt-10">The following image shows a few selected components from the
-							project, out of
-							many available, highlighting
-							specific elements to showcase their functionality and visual design within the overall
-							dashboard.
-						</p>
-						<picture class="flex justify-center">
-							<source srcset="../assets/img/employee-dashboard/components.jpg 800w,
-                                             ../assets/img/employee-dashboard/components.jpg 480w,
-                                             ../assets/img/employee-dashboard/components.jpg 320w"
-								sizes="(max-width: 800px) 100vw, 800px">
-							<img class="mt-10 h-[300px] md:h-full w-full 2xl:w-fit cursor-zoom-in"
-								src="../assets/img/employee-dashboard/components.jpg" alt="EmployeeDashboard">
-						</picture>
-					</div>
-					<div>
-						<p class="text-slate-600">One of the more challenging tasks I faced during my internship was
-							building the
-							card component for the Employee Dashboard. Although the designs were provided by a talented
-							designer, it
-							was up to me to bring these designs to life using SvelteKit and Tailwind CSS. The card
-							component
-							was a
-							crucial part of the application, as it needed to be flexible enough to handle multiple use
-							cases
-							like
-							goals, feedback, team progress, and notes.
-						</p>
-						<h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-							Developing the Card Component
-						</h3>
-						<p class="text-slate-600 mb-6">The card component was designed to be adaptable, so I built it
-							with
-							three main
-							slots:
-						</p>
-						<ol class="list-disc pl-6 space-y-4 text-slate-600">
-							<li>
-								<span class="font-bold">Header:</span>This section was used for titles or key labels
-								like
-								the goal
-								category, team member's name, or other identifying information. It also included action
-								buttons
-								dropdowns, etc. which allowed users to manage the content directly from the card.
-							</li>
-							<li>
-								<span class="font-bold">Main Content:</span> The main body of the card, where detailed
-								information like
-								descriptions, feedback messages, or notes would be displayed.
-							</li>
-							<li>
-								<span class="font-bold">Footer:</span> A section dedicated to extra details such as
-								progress
-								indicators,
-								timestamps, action buttons etc.
-							</li>
-						</ol>
-						<p class="text-slate-600 mt-10">The image below represents an overview of a few of these card
-							components
-							in
-							action, showcasing their different states and adaptations.
-						</p>
-						<picture class="flex justify-center">
-							<source srcset="../assets/img/employee-dashboard/cards.jpg 800w,
-                                             ../assets/img/employee-dashboard/cards.jpg 480w,
-                                             ../assets/img/employee-dashboard/cards.jpg 320w"
-								sizes="(max-width: 800px) 100vw, 800px">
-							<img class="mt-10 h-[300px] md:h-full w-full 2xl:w-fit cursor-zoom-in"
-								src="../assets/img/employee-dashboard/cards.jpg" alt="EmployeeDashboard">
-						</picture>
-						<h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-							Adding Flexibility with Props
-						</h3>
-						<p class="text-slate-600">I made the component even more adaptable by introducing props that
-							controlled its
-							behavior and appearance. For example, a prop could show or hide the progress bar on a goals
-							card
-							or display
-							for example
-							a status label like “Draft” or “Expired” on a feedback card. This way, the same base
-							component
-							could serve
-							different purposes, depending on the data passed to it.
-						</p>
-						<h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-							Tailoring for Specific Needs
-						</h3>
-						<ol class="list-disc pl-6 space-y-4 text-slate-600">
-							<li>
-								<span class="font-bold">Goals Cards:</span> These cards needed to display the goal’s
-								title,
-								description, and current status. I used Tailwind CSS to style status labels like “In
-								Progress” or
-								“Completed” so that users could easily recognize them.
-							</li>
-							<li>
-								<span class="font-bold">Feedback Cards:</span> This was a bit trickier as feedback cards
-								could represent different states.Using conditional rendering in Svelte, I could
-								dynamically
-								adjust the
-								card's appearance and content based on the feedback status. This setup ensures that
-								users
-								can quickly
-								identify the feedback type and act on it appropriately.
-							</li>
-							<li>
-								<span class="font-bold">Team Cards:</span> Team cards focus on displaying key
-								information
-								about
-								team members and their roles. These cards include slots for names, titles, and feedback
-								summaries. Using
-								Tailwind CSS’s utility classes, I applied consistent spacing, typography, and color
-								schemes
-								to maintain a
-								professional look.
-							</li>
-							<li>
-								<span class="font-bold">Notes Cards:</span>Notes cards include a header for the note
-								title,
-								a main content
-								section for the note's body, and a timestamp to track the last modification. The
-								flexible
-								layout ensures
-								that these cards can adapt to varying amounts of content without breaking the design.
-							</li>
-						</ol>
-						<h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-							Ensuring Consistency and Reusability
-						</h3>
-						<p class="text-slate-600">Consistency was crucial for the dashboard’s overall user experience. I
-							studied the
-							designs carefully to identify common patterns and elements, such as buttons, icons, badges,
-							etc.
-							By
-							developing these as separate, reusable components, I was able to integrate them into the
-							card
-							and other
-							parts of the dashboard, streamlining development and keeping the UI cohesive.
-						</p>
-					</div>
-				</div>
-			</section>
-		</div>
-	</section>
+            </div>
+        </div>
+    </section>
 
 	<!-- Footer -->
 	<div class="flex justify-center px-6">
@@ -443,6 +392,29 @@
 	<script src="../js/main.js"></script>
 	<!-- Iconify -->
 	<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+	<!-- Highlight the section currently in view in the side nav -->
+	<script>
+		(function () {
+			var links = document.querySelectorAll('[data-toc]');
+			if (!links.length || !('IntersectionObserver' in window)) return;
+			function setActive(id) {
+				links.forEach(function (link) {
+					var on = link.getAttribute('href') === '#' + id;
+					link.classList.toggle('text-[#F36F64]', on);
+					link.classList.toggle('font-bold', on);
+					link.classList.toggle('text-slate-400', !on);
+				});
+			}
+			var observer = new IntersectionObserver(function (entries) {
+				entries.forEach(function (entry) {
+					if (entry.isIntersecting) setActive(entry.target.id);
+				});
+			}, { rootMargin: '-120px 0px -65% 0px' });
+			document.querySelectorAll('section[id]').forEach(function (section) {
+				observer.observe(section);
+			});
+		})();
+	</script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <!-- Meta tags added -->
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Marija Popeska">
     <meta name="keywords" content="ux designer, architecture, digital experience, portfolio">
-    <meta name="description" content="Explore the UX design case study of Dipsakus, a hiking club website.">
+    <meta name="description" content="UX design and frontend development for Dipsakus, a hiking club website.">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta name="google" content="nositelinkssearchbox">
@@ -18,7 +18,7 @@
     <meta property="og:image:height" content="627">
     <meta property="og:url" content="https://www.marijapopeska.com">
     <meta property="og:title" content="Dipsakus UX Design Case Study">
-    <meta property="og:description" content="Explore the UX design case study of Dipsakus, a hiking club website.">
+    <meta property="og:description" content="UX design and frontend development for Dipsakus, a hiking club website.">
     <title>Dipsakus UX Design Case Study</title>
 
     <!-- =====BOX ICONS===== -->
@@ -36,7 +36,7 @@
         rel="stylesheet">
 </head>
 
-<body class="font-lato text-base md:text-xl">
+<body class="font-lato text-base">
     <!-- Navbar -->
     <nav class="fixed top-0 w-full z-50 bg-white shadow-sm">
         <div class="flex items-center justify-center py-6 px-[24px]">
@@ -62,445 +62,351 @@
         </div>
     </nav>
 
-    <section class="pt-[150px] md:pt-[200px] lg:pt-[200px] pb-[50px] px-[24px] flex justify-center">
-        <div class="lg:w-[100vh] w-full">
-            <div class="flex items-center justify-center text-center">
-                <div data-aos="fade-left" data-aos-duration="700">
-                    <h3
-                        class="mb-6 md:mb-10 text-3xl md:text-3xl font-futura lg:text-5xl max-xl:text-4xl max-sm:text-3xl text-[#F36F64]">
-                        Dipsakus
-                    </h3>
-                    <p class="text-slate-600">
-                        UX Design Case study: Elevating the Dipsakus hiking club experience
-                    </p>
+    <!-- Hero -->
+    <header class="relative flex min-h-[72vh] items-end overflow-hidden">
+        <img class="absolute inset-0 h-full w-full object-cover" src="../assets/img/dipsakus/unsplash_1.jpg"
+            alt="Hikers on a mountain trail">
+        <div class="absolute inset-0 bg-slate-900/55"></div>
+        <div class="relative z-10 flex w-full justify-center px-[24px] pb-16 pt-[180px]">
+            <div class="w-full lg:w-[120vh]">
+                <p class="font-futura text-xs tracking-[0.3em] uppercase text-white/80">Case study</p>
+                <h1 class="font-futura text-5xl lg:text-7xl text-white mt-4">Dipsakus</h1>
+                <p class="text-white/90 text-lg lg:text-2xl mt-5 max-w-2xl">
+                    UX Design and Frontend Development for a Hiking Club Website
+                </p>
+                <a class="inline-block mt-8 border-b-2 border-[#F36F64] pb-1 text-white text-base transition-colors hover:text-[#F36F64]" href="https://dipsakus.mk/">
+                    Visit the website
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Facts strip -->
+    <div class="flex justify-center px-[24px]">
+        <div class="w-full lg:w-[120vh] border-b border-slate-200 py-10">
+            <div class="grid gap-8 sm:grid-cols-3">
+                <div>
+                    <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">Role</p>
+                    <p class="text-slate-600 text-base mt-2">UX design and frontend development</p>
+                </div>
+                <div>
+                    <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">Team</p>
+                    <p class="text-slate-600 text-base mt-2">Marija Popeska with Krstan Popeski</p>
+                </div>
+                <div>
+                    <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">Built with</p>
+                    <p class="text-slate-600 text-base mt-2">Next.js and Tailwind CSS</p>
                 </div>
             </div>
-            <div>
-                <div class="flex items-start justify-center text-start">
-                    <div data-aos="fade-left" data-aos-duration="700">
-                        <h3
-                            class="mt-10 md:mt-20 mb-6 md:mb-10 text-2xl md:text-3xl font-futura lg:text-4xl text-slate-600">
-                            Introduction
-                        </h3>
-                        <p class="text-slate-600 mb-3">The Dipsakus hiking club website aims to provide a user-friendly
-                            platform
-                            for
-                            hiking enthusiasts to discover, plan, and participate in hiking adventures organized by the
-                            club.
-                            The website seeks to cater to both existing members and potential new members by offering
-                            comprehensive information about upcoming tours, past experiences, club news, and resources
-                            for
-                            hiking enthusiasts.</p>
-                        <a class="text-[#F36F64] underline" href="https://dipsakus.mk/">https://dipsakus.mk/</a>
-                        <picture class="fullscreen-container">
-                            <source srcset="../assets/img/dipsakus/unsplash_1.jpg 800w,
-                                             ../assets/img/dipsakus/unsplash_1.jpg 480w,
-                                             ../assets/img/dipsakus/unsplash_1.jpg 320w"
-                                sizes="(max-width: 800px) 100vw, 800px">
-                            <img class="mt-10 h-[300px] md:h-[500px] w-full object-cover cursor-zoom-in"
-                                src="../assets/img/dipsakus/unsplash_1.jpg" alt="Dipsakus">
+        </div>
+    </div>
+
+    <section class="flex justify-center px-[24px] pb-[50px] pt-14 lg:pt-20">
+        <div class="w-full lg:w-[120vh] lg:grid lg:grid-cols-[180px_minmax(0,1fr)] lg:gap-16">
+
+            <!-- Sticky section nav -->
+            <aside class="hidden lg:block">
+                <nav class="sticky top-[120px] text-base">
+                        <a data-toc href="#intro"
+                            class="text-[#F36F64] font-bold block py-1 transition-colors hover:text-[#F36F64]">
+                            <span class="tabular-nums">01</span>&nbsp;&nbsp;Introduction
+                        </a>
+                        <a data-toc href="#role"
+                            class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                            <span class="tabular-nums">02</span>&nbsp;&nbsp;My Role
+                        </a>
+                        <a data-toc href="#process"
+                            class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                            <span class="tabular-nums">03</span>&nbsp;&nbsp;Design Process
+                        </a>
+                        <a data-toc href="#discover"
+                            class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                            <span class="tabular-nums">04</span>&nbsp;&nbsp;Discover
+                        </a>
+                        <a data-toc href="#insights"
+                            class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                            <span class="tabular-nums">05</span>&nbsp;&nbsp;Research Insights
+                        </a>
+                        <a data-toc href="#define"
+                            class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                            <span class="tabular-nums">06</span>&nbsp;&nbsp;Define
+                        </a>
+                        <a data-toc href="#develop"
+                            class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                            <span class="tabular-nums">07</span>&nbsp;&nbsp;Develop
+                        </a>
+                        <a data-toc href="#deliver"
+                            class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                            <span class="tabular-nums">08</span>&nbsp;&nbsp;Deliver
+                        </a>
+                        <a data-toc href="#final"
+                            class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                            <span class="tabular-nums">09</span>&nbsp;&nbsp;Final Design
+                        </a>
+                </nav>
+            </aside>
+
+            <!-- Content column -->
+            <div class="min-w-0 space-y-20 lg:space-y-28">
+
+            <section id="intro" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">01</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Introduction</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">Dipsakus is a hiking club that brings people together through outdoor activities and hiking trips. The goal of this project was to create a website where both existing members and people interested in joining the club could easily find information about upcoming hikes, past trips, club news and other useful resources.</p>
+                <p class="text-slate-600 leading-relaxed">I wanted to make it easier for people to learn about the club, explore its activities and find everything they need before joining a hike.</p>
+            </section>
+            <section id="role" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">02</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">My Role</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">This was a personal project that I worked on together with my brother, Krstan Popeski, who is a software engineer.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">I was responsible for UX design and frontend development. I worked on the research, wireframes, visual design and implementation of the website using Next.js and Tailwind CSS.</p>
+                <p class="text-slate-600 leading-relaxed">Krstan worked on the backend, including the server side structure, database and main functionality. We worked together throughout the project, combining our skills to bring the website to life.</p>
+                <h3 class="font-futura text-xl lg:text-2xl text-slate-800 mt-10 mb-5">Main Tasks</h3>
+                <ul class="flex flex-wrap gap-3">
+                    <li class="rounded-full border border-slate-300 px-4 py-1.5 text-base text-slate-600">User research and competitor analysis</li>
+                    <li class="rounded-full border border-slate-300 px-4 py-1.5 text-base text-slate-600">User personas and journey mapping</li>
+                    <li class="rounded-full border border-slate-300 px-4 py-1.5 text-base text-slate-600">Wireframing and prototyping</li>
+                    <li class="rounded-full border border-slate-300 px-4 py-1.5 text-base text-slate-600">UI design</li>
+                    <li class="rounded-full border border-slate-300 px-4 py-1.5 text-base text-slate-600">Frontend development with Next.js and Tailwind CSS</li>
+                    <li class="rounded-full border border-slate-300 px-4 py-1.5 text-base text-slate-600">Responsive design</li>
+                </ul>
+            </section>
+            <section id="process" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">03</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Design Process: Double Diamond</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">I used the Double Diamond process to guide the project, from understanding the users and defining the main problems to exploring ideas and building the final website.</p>
+                <picture class="mt-8 fullscreen-container block cursor-zoom-in">
+                    <source srcset="../assets/img/dipsakus/double-diamond.jpg 800w,
+                                    ../assets/img/dipsakus/double-diamond.jpg 480w,
+                                    ../assets/img/dipsakus/double-diamond.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="w-full h-auto" src="../assets/img/dipsakus/double-diamond.jpg" alt="The Double Diamond design process diagram">
+                </picture>
+            </section>
+            <section id="discover" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">04</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Discover: Understanding the Users</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">I started by researching hiking communities and looking into how people find and choose hiking trips. I wanted to understand what information they look for, what makes them feel comfortable joining a group and what could make the experience easier.</p>
+                <div class="space-y-12 mt-10">
+                    <div class="space-y-5">
+                        <h3 class="font-futura text-xl lg:text-2xl text-slate-800">SWOT Analysis</h3>
+                        <p class="text-slate-600 leading-relaxed">I used a SWOT analysis to look at the strengths and weaknesses of the existing experience, as well as possible opportunities and challenges for the website.</p>
+                        <picture class="fullscreen-container block cursor-zoom-in">
+                            <source srcset="../assets/img/dipsakus/SWOT.jpg 800w,
+                                            ../assets/img/dipsakus/SWOT.jpg 480w,
+                                            ../assets/img/dipsakus/SWOT.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                            <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/dipsakus/SWOT.jpg" alt="SWOT analysis of the hiking club experience">
                         </picture>
                     </div>
-                </div>
-            </div>
-
-            <div class="flex items-start justify-center text-start">
-                <div data-aos="fade-left" data-aos-duration="700">
-                    <h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-                        My role
-                    </h3>
-                    <p class="text-slate-600">
-                        This is my personal project, where I assumed a diverse role in conceptualizing, designing, and
-                        implementing the Dipsakus Hiking Club website. Collaborating closely with my brother, an
-                        experienced
-                        software engineer, we worked as a team to seamlessly merge UX
-                        design with frontend development skills. Together, we crafted a coherent and user-centric
-                        digital
-                        platform for the hiking club. From initial user research and wireframe creation to coding
-                        responsive
-                        layouts and optimizing performance, we oversaw every aspect of the project's design and
-                        development
-                        lifecycle.
-                    </p>
-                    <h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-                        Team Collaboration
-                    </h3>
-                    <ol class=" list-disc pl-4 text-slate-600">
-                        <li class="mb-3">
-                            <span class="font-bold">Marija Popeska:</span> As a UX designer and frontend developer, I
-                            led
-                            the design process and implemented the user interface using Next.js and TailwindCSS.
-                        </li>
-                        <li>
-                            <span class="font-bold">Krstan Popeski:</span> An experienced senior software engineer, he
-                            managed backend development, server-side architecture, database integration, and
-                            collaborated on
-                            frontend functionalities.
-                        </li>
-                    </ol>
-
-                    <h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-                        Main Tasks
-                    </h3>
-                    <ul class="text-slate-600">
-                        <li>1. User research</li>
-                        <li>2. Wireframing & prototyping</li>
-                        <li>3. Implementing frontend code using Next.js and Tailwind CSS</li>
-                        <li>4. Responsive design implementation</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Design process -->
-
-            <section>
-                <div class="flex flex-col items-start justify-center text-start">
-                    <div>
-                        <h3 class="mt-10 md:mt-20 mb-10 text-2xl md:text-3xl font-futura lg:text-4xl text-slate-600">
-                            Design Process: Double Diamond Method
-                        </h3>
-                        <p>
-                            In this project, I applied the Double Diamond design process to develop an intuitive and
-                            user-centered solution for a hiking app. The Double Diamond framework allowed me to explore,
-                            define, develop, and deliver a solution iteratively. Below is a detailed explanation of each
-                            phase, including the specific activities I undertook, such as SWOT analysis, user
-                            interviews,
-                            personas, wireframes, and more.
-                        </p>
-
-                        <picture class="flex justify-center mx-auto w2-3xl">
-                            <source srcset="../assets/img/dipsakus/double-diamond.jpg 800w,
-                                                         ../assets/img/dipsakus/double-diamond.jpg 480w,
-                                                         ../assets/img/dipsakus/double-diamond.jpg 320w"
-                                sizes="(max-width: 800px) 100vw, 800px">
-                            <img class="h-full md:h-full w-full 2xl:w-fit cursor-zoom-in"
-                                src="../assets/img/dipsakus/double-diamond.jpg" alt="Dipsakus">
+                    <div class="space-y-5">
+                        <h3 class="font-futura text-xl lg:text-2xl text-slate-800">Competitor Analysis</h3>
+                        <p class="text-slate-600 leading-relaxed">I explored other hiking and outdoor platforms to see how they present trips, organize information and communicate with their communities. This helped me identify useful ideas and areas where the Dipsakus website could offer a better experience.</p>
+                    </div>
+                    <div class="space-y-5">
+                        <h3 class="font-futura text-xl lg:text-2xl text-slate-800">User Interviews</h3>
+                        <p class="text-slate-600 leading-relaxed">I spoke with potential users to learn more about their hiking habits, how they discover new trips and what information they need before taking part in an activity.</p>
+                        <picture class="fullscreen-container block cursor-zoom-in">
+                            <source srcset="../assets/img/dipsakus/questions.jpg 800w,
+                                            ../assets/img/dipsakus/questions.jpg 480w,
+                                            ../assets/img/dipsakus/questions.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                            <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/dipsakus/questions.jpg" alt="Interview questions, first page">
                         </picture>
-
+                        <picture class="fullscreen-container block cursor-zoom-in">
+                            <source srcset="../assets/img/dipsakus/questions-2.jpg 800w,
+                                            ../assets/img/dipsakus/questions-2.jpg 480w,
+                                            ../assets/img/dipsakus/questions-2.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                            <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/dipsakus/questions-2.jpg" alt="Interview questions, second page">
+                        </picture>
                     </div>
-
-                    <!-- Discover -->
-                    <div>
-                        <h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-                            1. Discover Phase (Divergence)</h3>
-                        <p class="text-slate-600">In this phase, I focused on gathering insights to understand the
-                            users, their needs, and the problems they face. This involved qualitative and quantitative
-                            research techniques to help me empathize with users and gain a deep understanding of the
-                            project.
-                        </p>
-
-                        <ol class=" list-disc pl-4 text-slate-600 mt-10">
-                            <li class="mb-6">
-                                <span class="font-bold">SWOT Analysis:</span> I performed a SWOT analysis to
-                                assess the strengths, weaknesses, opportunities, and threats related to the hiking app.
-                                This
-                                helped me identify areas that needed improvement and pinpointed key opportunities for
-                                innovation.
-                            </li>
-                            <picture class="flex justify-center mx-auto w2-3xl">
-                                <source srcset="../assets/img/dipsakus/SWOT.jpg 800w,
-                                                             ../assets/img/dipsakus/SWOT.jpg 480w,
-                                                             ../assets/img/dipsakus/SWOT.jpg 320w"
-                                    sizes="(max-width: 800px) 100vw, 800px">
-                                <img class="h-full md:h-full w-full 2xl:w-fit cursor-zoom-in"
-                                    src="../assets/img/dipsakus/SWOT.jpg" alt="Dipsakus">
-                            </picture>
-                            <li class="mb-6 mt-6">
-                                <span class="font-bold">Competitor Analysis:</span> I researched other
-                                hiking and outdoor apps to understand their strengths and weaknesses. This helped me
-                                pinpoint gaps in the market and understand what features users liked or disliked in
-                                similar
-                                apps.
-                            </li>
-                            <li class="mb-6 mt-6">
-                                <span class="font-bold">User Interviews:</span> I conducted interviews
-                                with potential users to gather qualitative insights. Through these interviews, I learned
-                                about their needs, pain points, and desires when planning hikes.
-                            </li>
-                            <picture class="flex justify-center mx-auto w2-3xl">
-                                <source srcset="../assets/img/dipsakus/questions.jpg 800w,
-                                                             ../assets/img/dipsakus/questions.jpg 480w,
-                                                             ../assets/img/dipsakus/questions.jpg 320w"
-                                    sizes="(max-width: 800px) 100vw, 800px">
-                                <img class="h-full md:h-full w-full 2xl:w-fit cursor-zoom-in"
-                                    src="../assets/img/dipsakus/questions.jpg" alt="Dipsakus">
-                            </picture>
-                            <picture class="flex justify-center mx-auto w2-3xl">
-                                <source srcset="../assets/img/dipsakus/questions-2.jpg 800w,
-                                                             ../assets/img/dipsakus/questions-2.jpg 480w,
-                                                             ../assets/img/dipsakus/questions-2.jpg 320w"
-                                    sizes="(max-width: 800px) 100vw, 800px">
-                                <img class="h-full md:h-full w-full 2xl:w-fit cursor-zoom-in"
-                                    src="../assets/img/dipsakus/questions-2.jpg" alt="Dipsakus">
-                            </picture>
-                            <li class="mb-6 mt-6">
-                                <span class="font-bold">Empathy Mapping:</span> To deepen my understanding, I
-                                created empathy maps that helped visualize the thoughts, feelings, and needs of the
-                                users.
-                                This
-                                ensured I could design with empathy and address the emotional drivers and motivations of
-                                the
-                                users.
-                            </li>
-                            <picture class="flex justify-center mx-auto w2-3xl">
-                                <source srcset="../assets/img/dipsakus/emphaty.jpg 800w,
-                                                             ../assets/img/dipsakus/emphaty.jpg 480w,
-                                                             ../assets/img/dipsakus/emphaty.jpg 320w"
-                                    sizes="(max-width: 800px) 100vw, 800px">
-                                <img class="h-full md:h-full w-full 2xl:w-fit cursor-zoom-in"
-                                    src="../assets/img/dipsakus/emphaty.jpg" alt="Dipsakus">
-                            </picture>
-                            <li class="mb-6 mt-6">
-                                <span class="font-bold">Analyze Research Insights:</span>
-                                <ol class="list-decimal pl-4 text-slate-600 mt-6 space-y-4">
-                                    <li><span class="font-bold">User Motivations:</span> Users
-                                        were motivated by a desire for connection, nature
-                                        exploration, and personal fitness. Group hikes were seen as an opportunity for
-                                        socializing and sharing experiences, especially among beginner hikers who seek
-                                        supportive environments.
-                                    </li>
-                                    <li><span class="font-bold">Common Pain Points:</span> Users struggled
-                                        with finding hikes tailored to their fitness levels, unclear communication about
-                                        event details, scattered resources, and a poor mobile experience on
-                                        non-optimized
-                                        platforms.
-                                    </li>
-                                    <li><span class="font-bold">Key User Behaviors:</span> Users
-                                        primarily researched hikes on social media and forums. They preferred platforms
-                                        with
-                                        vibrant, image-rich content and sought reviews and recommendations before making
-                                        decisions.
-                                    </li>
-                                    <li><span class="font-bold">Desired Features:</span> Features like
-                                        personalized recommendations, event scheduling and reminders, community
-                                        engagement,
-                                        and clear support for beginners were highly valued.
-                                    </li>
-                                    <li><span class="font-bold">Emotional Drivers:</span> Users were
-                                        excited about exploring scenic routes and achieving personal milestones, but
-                                        also
-                                        experienced anxiety about keeping up with others and being unprepared. Trust in
-                                        accurate, up-to-date information was a crucial emotional driver.
-                                    </li>
-                                </ol>
-                            </li>
-                        </ol>
-
+                    <div class="space-y-5">
+                        <h3 class="font-futura text-xl lg:text-2xl text-slate-800">Empathy Mapping</h3>
+                        <p class="text-slate-600 leading-relaxed">I used empathy maps to organize the insights from my research and get a better understanding of what users think, feel and expect when looking for a hiking experience.</p>
+                        <picture class="fullscreen-container block cursor-zoom-in">
+                            <source srcset="../assets/img/dipsakus/emphaty.jpg 800w,
+                                            ../assets/img/dipsakus/emphaty.jpg 480w,
+                                            ../assets/img/dipsakus/emphaty.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                            <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/dipsakus/emphaty.jpg" alt="Empathy map built from the user research">
+                        </picture>
                     </div>
-
-                    <div>
-                        <h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-                            2. Define Phase (Convergence)</h3>
-                        <p class="text-slate-600"> After gathering insights from the Discover phase, I refined the
-                            design
-                            challenge and began to focus on the specifics of the project, defining the problem and
-                            outlining
-                            the direction for solutions.
-                        </p>
-
-                        <ol class="list-decimal pl-4 text-slate-600 mt-10 space-y-4">
-                            <li><span class="font-bold">User personas:</span> Developed user personas based on insights
-                                from
-                                user interviews and
-                                demographic research.
-                                Created fictional representations of typical users, including their goals, preferences,
-                                and
-                                challenges related to hiking and club membership.
-                            </li>
-                            <picture class="flex justify-center">
-                                <source srcset="../assets/img/dipsakus/user-personas.jpg 800w,
-                                                     ../assets/img/dipsakus/user-personas.jpg 480w,
-                                                     ../assets/img/dipsakus/user-personas.jpg 320w"
-                                    sizes="(max-width: 800px) 100vw, 800px">
-                                <img class=" h-full w-full 2xl:w-fit cursor-zoom-in"
-                                    src="../assets/img/dipsakus/user-personas.jpg" alt="Journey map">
-                            </picture>
-                            <li><span class="font-bold">The
-                                    user journey map:</span> The user journey map represents the holistic experience of
-                                a
-                                user, from their
-                                initial awareness of the Dipsakus Hiking Club to their ongoing engagement as a member.
-                                It
-                                outlines key stages that users go through, including awareness, consideration,
-                                acquisition,
-                                and
-                                service.
-                            </li>
-                            <picture class="flex justify-center">
-                                <source srcset="../assets/img/dipsakus/journey-map.jpg 800w,
-                                                     ../assets/img/dipsakus/journey-map.jpg 480w,
-                                                     ../assets/img/dipsakus/journey-map.jpg 320w"
-                                    sizes="(max-width: 800px) 100vw, 800px">
-                                <img class=" mt-0 xl:mt-6 h-full w-full 2xl:w-fit cursor-zoom-in"
-                                    src="../assets/img/dipsakus/journey-map.jpg" alt="Journey map">
-                            </picture>
-                        </ol>
-                    </div>
-
-                    <div>
-                        <h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-                            3. Develop Phase (Divergence)</h3>
-                        <p class="text-slate-600"> During this phase, I started prototyping and brainstorming ideas,
-                            creating
-                            flowcharts, sketches, and wireframes to explore solutions and iterate on the design.
-                        </p>
-
-                        <ol class="list-decimal pl-4 text-slate-600 mt-6 space-y-4">
-                            <li><span class="font-bold">Brainstorming:</span> This involved exploring various ways to
-                                improve personalization, event scheduling, and community engagement.
-                            </li>
-                            <picture class="flex justify-center">
-                                <source srcset="../assets/img/dipsakus/brainstorming.jpg 800w,
-                                                     ../assets/img/dipsakus/brainstorming.jpg 480w,
-                                                     ../assets/img/dipsakus/brainstorming.jpg 320w"
-                                    sizes="(max-width: 800px) 100vw, 800px">
-                                <img class="mt-0 xl:mt-6 h-full w-full 2xl:w-fit cursor-zoom-in"
-                                    src="../assets/img/dipsakus/brainstorming.jpg" alt="Journey map">
-                            </picture>
-                            <li><span class="font-bold">Flowchart:</span> This helped visualize how users would interact
-                                with the app step by step.
-                            </li>
-                            <picture class="flex justify-center">
-                                <source srcset="../assets/img/dipsakus/user-flow.jpg 800w,
-                                                     ../assets/img/dipsakus/user-flow.jpg 480w,
-                                                     ../assets/img/dipsakus/user-flow.jpg 320w"
-                                    sizes="(max-width: 800px) 100vw, 800px">
-                                <img class="mt-0 xl:mt-6 h-full w-full 2xl:w-fit cursor-zoom-in"
-                                    src="../assets/img/dipsakus/user-flow.jpg" alt="Journey map">
-                            </picture>
-                            <li><span class="font-bold">Sketching and planing:</span> During the sketching and planning
-                                phase, I generate ideas through sketches,
-                                exploring various
-                                layouts and features. This process helps me visualize the website's structure and
-                                functionality
-                                before moving on to digital wireframes and prototypes.
-                            </li>
-                            <picture class="flex justify-center">
-                                <source srcset="../assets/img/dipsakus/sketches.jpg 800w,
-                                                     ../assets/img/dipsakus/sketches.jpg 480w,
-                                                     ../assets/img/dipsakus/sketches.jpg 320w"
-                                    sizes="(max-width: 800px) 100vw, 800px">
-                                <img class="mt-0 xl:mt-6 h-full w-full 2xl:w-fit cursor-zoom-in"
-                                    src="../assets/img/dipsakus/sketches.jpg" alt="Journey map">
-                            </picture>
-                            <li><span class="font-bold">Wireframes flows:</span> Flows represent the primary navigation
-                                paths and interactions, initially
-                                conceptualized in low
-                                fidelity and then refined into high fidelity prototypes. Prototyping these flows in high
-                                fidelity
-                                allows for a detailed assessment of usability and hierarchy. Throughout the defining
-                                phase,
-                                I
-                                experimented with various concepts and layouts, gathering feedback from users through
-                                questions
-                                like:
-                            </li>
-                            <ul class="mt-6 text-slate-600 decoration-[#F36F64]">
-                                <li>What do they like about the prototype?</li>
-                                <li>What do they dislike about the prototype?</li>
-                                <li>Why did a flow work?</li>
-                                <li>Why did a flow not work?</li>
-                                <li>What would they like to improve?</li>
-                                <li>Does the overall design/flow meet their needs?</li>
-                            </ul>
-                            <picture class="flex justify-center mx-auto">
-                                <source srcset="../assets/img/dipsakus/wireframes-1.jpg 800w,
-                                                         ../assets/img/dipsakus/wireframes-1.jpg 480w,
-                                                         ../assets/img/dipsakus/wireframes-1.jpg 320w"
-                                    sizes="(max-width: 800px) 100vw, 800px">
-                                <img class="mt-0 xl:mt-6 h-full w-full 2xl:w-fit cursor-zoom-in"
-                                    src="../assets/img/dipsakus/wireframes-1.jpg" alt="Wireframes">
-                            </picture>
-
-                            <picture class="flex justify-center mx-auto">
-                                <source srcset="../assets/img/dipsakus/wireframes-2.jpg 800w,
-                                                         ../assets/img/dipsakus/wireframes-2.jpg 480w,
-                                                         ../assets/img/dipsakus/wireframes-2.jpg 320w"
-                                    sizes="(max-width: 800px) 100vw, 800px">
-                                <img class="mt-10 h-full w-full 2xl:w-fit cursor-zoom-in"
-                                    src="../assets/img/dipsakus/wireframes-2.jpg" alt="Wireframes">
-                            </picture>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="flex flex-col items-start justify-center text-start">
-                    <h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-                        Deliver Phase (Convergence) : Final solution Design & Development</h3>
-                    <p class="text-slate-600"> I implemented a design that adapts seamlessly across various devices and
-                        screen sizes. Utilizing
-                        Tailwind CSS, I crafted cards that maintain consistency in layout and styling while ensuring
-                        optimal
-                        readability and usability. Each card showcases essential information such as tour details, news
-                        articles, or user profiles, presented in a visually appealing and easily accessible format.
-                        Through
-                        meticulous attention to detail and adherence to responsive design principles, I aimed to provide
-                        users with a cohesive and engaging experience across all devices.</p>
-                    <!-- First image -->
-                    <picture class="flex justify-center mx-auto">
-                        <source srcset="../assets/img/dipsakus/final-1.jpg 800w,
-                     ../assets/img/dipsakus/final-1.jpg 480w,
-                     ../assets/img/dipsakus/final-1.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-                        <img class="mt-10 h-full w-full 2xl:w-fit cursor-zoom-in"
-                            src="../assets/img/dipsakus/final-1.jpg" alt="Final image">
-                    </picture>
-
-                    <!-- Second image -->
-                    <picture class="flex justify-center mx-auto">
-                        <source srcset="../assets/img/dipsakus/final-2.jpg 800w,
-                     ../assets/img/dipsakus/final-2.jpg 480w,
-                     ../assets/img/dipsakus/final-2.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-                        <img class="mt-10 h-full w-full 2xl:w-fit cursor-zoom-in"
-                            src="../assets/img/dipsakus/final-2.jpg" alt="Final image">
-                    </picture>
-
-                    <!-- Third image -->
-                    <picture class="flex justify-center mx-auto">
-                        <source srcset="../assets/img/dipsakus/final-3.jpg 800w,
-                     ../assets/img/dipsakus/final-3.jpg 480w,
-                     ../assets/img/dipsakus/final-3.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-                        <img class="mt-10 h-full w-full 2xl:w-fit cursor-zoom-in"
-                            src="../assets/img/dipsakus/final-3.jpg" alt="Final image">
-                    </picture>
-
-                    <!-- Fourth image -->
-                    <picture class="flex justify-center mx-auto">
-                        <source srcset="../assets/img/dipsakus/final-4.jpg 800w,
-                     ../assets/img/dipsakus/final-4.jpg 480w,
-                     ../assets/img/dipsakus/final-4.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-                        <img class="mt-10 h-full w-full 2xl:w-fit cursor-zoom-in"
-                            src="../assets/img/dipsakus/final-4.jpg" alt="Final image">
-                    </picture>
-                    <p class="mt-10 text-slate-600">I translated UX design concepts and wireframes into functional
-                        components using Next.js and Tailwind CSS. Leveraging my frontend development skills, I
-                        implemented
-                        responsive layouts and interactive features to enhance user engagement and usability. Key tasks
-                        included structuring the
-                        project, setting up routing, and integrating dynamic data from mock APIs. Additionally, I
-                        focused on
-                        optimizing performance, adhering to best practices, and ensuring accessibility standards
-                        compliance.
-                        Throughout the development process, I collaborated closely with my brother, an experienced
-                        software
-                        engineer, to refine code architecture, address technical challenges, and achieve the desired
-                        functionality. Together, we worked as a team to bring the Dipsakus Hiking Club website to life,
-                        combining UX design principles with robust frontend development techniques to deliver a seamless
-                        digital experience for users.</p>
-                    <picture class="flex justify-center mx-auto">
-                        <source srcset="../assets/img/dipsakus/code.jpg 800w,
-                         ../assets/img/dipsakus/code.jpg 480w,
-                         ../assets/img/dipsakus/code.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-                        <img class="mt-10 h-full w-full 2xl:w-fit cursor-zoom-in" src="../assets/img/dipsakus/code.jpg"
-                            alt="Final image">
-                    </picture>
-                    <ul class="flex gap-3 text-[#F36F64] mt-10 flex-wrap">
-                        <li class=">Figma</li>
-                        <li class=">Tailwind CSS</li>
-                        <li class=">JavaScript</li>
-                        <li class=">Next.js</li>
-                    </ul>
                 </div>
             </section>
+            <section id="insights" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">05</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Research Insights</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">A few important themes came up during the research:</p>
+                <div class="grid gap-5 sm:grid-cols-2 mt-8">
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Finding the right hike</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">People want to know how difficult a trip is and whether it suits their experience and fitness level.</p>
+                    </div>
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Clear information</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">Details about dates, locations, routes and what to bring should be easy to find.</p>
+                    </div>
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">A sense of community</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">For many people, hiking is also about meeting others and sharing experiences.</p>
+                    </div>
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Support for beginners</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">People who are new to hiking may need more information and reassurance before joining a group.</p>
+                    </div>
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Easy access on mobile</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">Users often look for information on their phones, so the website needs to work well on smaller screens.</p>
+                    </div>
+                </div>
+                <p class="text-slate-600 leading-relaxed mt-8">These findings helped me understand what the website should focus on and what information needed to be most visible.</p>
+            </section>
+            <section id="define" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">06</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Define: Identifying the Main Needs</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">After reviewing the research, I organized the findings and focused on the main needs of the users.</p>
+                <div class="space-y-12 mt-10">
+                    <div class="space-y-5">
+                        <h3 class="font-futura text-xl lg:text-2xl text-slate-800">User Personas</h3>
+                        <p class="text-slate-600 leading-relaxed">I created user personas based on the research to represent different types of people who might visit the website. They helped me keep their goals, expectations and challenges in mind during the design process.</p>
+                        <picture class="fullscreen-container block cursor-zoom-in">
+                            <source srcset="../assets/img/dipsakus/user-personas.jpg 800w,
+                                            ../assets/img/dipsakus/user-personas.jpg 480w,
+                                            ../assets/img/dipsakus/user-personas.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                            <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/dipsakus/user-personas.jpg" alt="User personas created from the research">
+                        </picture>
+                    </div>
+                    <div class="space-y-5">
+                        <h3 class="font-futura text-xl lg:text-2xl text-slate-800">User Journey Map</h3>
+                        <p class="text-slate-600 leading-relaxed">I mapped the user journey, from first discovering the Dipsakus club to exploring its activities and deciding to join a hiking trip. This helped me identify the information users need at each step and where the experience could be improved.</p>
+                        <picture class="fullscreen-container block cursor-zoom-in">
+                            <source srcset="../assets/img/dipsakus/journey-map.jpg 800w,
+                                            ../assets/img/dipsakus/journey-map.jpg 480w,
+                                            ../assets/img/dipsakus/journey-map.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                            <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/dipsakus/journey-map.jpg" alt="User journey map from awareness to joining a hike">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+            <section id="develop" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">07</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Develop: Exploring Ideas</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">With a clearer understanding of the users and their needs, I started exploring different ways to organize the website and present its content.</p>
+                <div class="space-y-12 mt-10">
+                    <div class="space-y-5">
+                        <h3 class="font-futura text-xl lg:text-2xl text-slate-800">Brainstorming and Flowcharts</h3>
+                        <p class="text-slate-600 leading-relaxed">I explored ideas for the website's structure and navigation, then created flowcharts to map out how users would move between pages and find the information they needed.</p>
+                        <picture class="fullscreen-container block cursor-zoom-in">
+                            <source srcset="../assets/img/dipsakus/brainstorming.jpg 800w,
+                                            ../assets/img/dipsakus/brainstorming.jpg 480w,
+                                            ../assets/img/dipsakus/brainstorming.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                            <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/dipsakus/brainstorming.jpg" alt="Brainstorming board of website ideas">
+                        </picture>
+                        <picture class="fullscreen-container block cursor-zoom-in">
+                            <source srcset="../assets/img/dipsakus/user-flow.jpg 800w,
+                                            ../assets/img/dipsakus/user-flow.jpg 480w,
+                                            ../assets/img/dipsakus/user-flow.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                            <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/dipsakus/user-flow.jpg" alt="Flowchart of the main user paths">
+                        </picture>
+                    </div>
+                    <div class="space-y-5">
+                        <h3 class="font-futura text-xl lg:text-2xl text-slate-800">Sketching</h3>
+                        <p class="text-slate-600 leading-relaxed">I started with simple sketches to explore different layouts and decide where the main content and features should be placed before moving into digital wireframes.</p>
+                        <picture class="fullscreen-container block cursor-zoom-in">
+                            <source srcset="../assets/img/dipsakus/sketches.jpg 800w,
+                                            ../assets/img/dipsakus/sketches.jpg 480w,
+                                            ../assets/img/dipsakus/sketches.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                            <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/dipsakus/sketches.jpg" alt="Early layout sketches">
+                        </picture>
+                    </div>
+                    <div class="space-y-5">
+                        <h3 class="font-futura text-xl lg:text-2xl text-slate-800">Wireframes and Prototypes</h3>
+                        <p class="text-slate-600 leading-relaxed">I created wireframes to define the page structure, content hierarchy and main user flows. I then developed the designs into more detailed prototypes and reviewed them to see whether the navigation and layout were clear.</p>
+                    </div>
+                </div>
+                <p class="text-slate-600 leading-relaxed mt-10 mb-5">I also gathered feedback and used it to make improvements, focusing on questions such as:</p>
+                <ul class="space-y-3">
+                    <li class="border-l-2 border-[#F36F64] pl-4 text-slate-600">Can users find the information they need?</li>
+                    <li class="border-l-2 border-[#F36F64] pl-4 text-slate-600">Is the navigation clear?</li>
+                    <li class="border-l-2 border-[#F36F64] pl-4 text-slate-600">Does the layout make sense?</li>
+                    <li class="border-l-2 border-[#F36F64] pl-4 text-slate-600">What could be improved?</li>
+                </ul>
+                <div class="space-y-6 mt-10">
+                    <picture class="fullscreen-container block cursor-zoom-in">
+                        <source srcset="../assets/img/dipsakus/wireframes-1.jpg 800w,
+                                        ../assets/img/dipsakus/wireframes-1.jpg 480w,
+                                        ../assets/img/dipsakus/wireframes-1.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                        <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/dipsakus/wireframes-1.jpg" alt="Wireframes of the main pages">
+                    </picture>
+                    <picture class="fullscreen-container block cursor-zoom-in">
+                        <source srcset="../assets/img/dipsakus/wireframes-2.jpg 800w,
+                                        ../assets/img/dipsakus/wireframes-2.jpg 480w,
+                                        ../assets/img/dipsakus/wireframes-2.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                        <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/dipsakus/wireframes-2.jpg" alt="Wireframes of the remaining pages">
+                    </picture>
+                </div>
+            </section>
+            <section id="deliver" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">08</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Deliver: Final Design and Development</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">After exploring and refining the ideas, I moved on to the final design and frontend development.</p>
+                <p class="text-slate-600 leading-relaxed">I designed the website to work across different screen sizes, with a focus on keeping the content clear and easy to browse. I used cards to present information such as hiking trips and club news, making important details easy to scan.</p>
+                <div class="grid gap-5 sm:grid-cols-2 mt-10">
+                    <picture class="fullscreen-container block cursor-zoom-in">
+                        <source srcset="../assets/img/dipsakus/final-1.jpg 800w,
+                                        ../assets/img/dipsakus/final-1.jpg 480w,
+                                        ../assets/img/dipsakus/final-1.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                        <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/dipsakus/final-1.jpg" alt="Final design, home page">
+                    </picture>
+                    <picture class="fullscreen-container block cursor-zoom-in">
+                        <source srcset="../assets/img/dipsakus/final-2.jpg 800w,
+                                        ../assets/img/dipsakus/final-2.jpg 480w,
+                                        ../assets/img/dipsakus/final-2.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                        <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/dipsakus/final-2.jpg" alt="Final design, hiking trips">
+                    </picture>
+                    <picture class="fullscreen-container block cursor-zoom-in">
+                        <source srcset="../assets/img/dipsakus/final-3.jpg 800w,
+                                        ../assets/img/dipsakus/final-3.jpg 480w,
+                                        ../assets/img/dipsakus/final-3.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                        <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/dipsakus/final-3.jpg" alt="Final design, trip details">
+                    </picture>
+                    <picture class="fullscreen-container block cursor-zoom-in">
+                        <source srcset="../assets/img/dipsakus/final-4.jpg 800w,
+                                        ../assets/img/dipsakus/final-4.jpg 480w,
+                                        ../assets/img/dipsakus/final-4.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                        <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/dipsakus/final-4.jpg" alt="Final design, club news">
+                    </picture>
+                </div>
+                <h3 class="font-futura text-xl lg:text-2xl text-slate-800 mt-14 mb-5">Frontend Development</h3>
+                <p class="text-slate-600 leading-relaxed mb-5">I translated the designs and wireframes into working pages and components using Next.js and Tailwind CSS.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">My work included setting up the project structure and routing, building reusable components, creating responsive layouts and adding interactive elements. I also connected the frontend to mock API data and focused on keeping the website organized and easy to use.</p>
+                <p class="text-slate-600 leading-relaxed">Throughout development, I worked closely with Krstan, who handled the backend. We discussed the technical details, worked through challenges and made sure the different parts of the website came together.</p>
+                <picture class="mt-8 fullscreen-container block cursor-zoom-in">
+                    <source srcset="../assets/img/dipsakus/code.jpg 800w,
+                                    ../assets/img/dipsakus/code.jpg 480w,
+                                    ../assets/img/dipsakus/code.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/dipsakus/code.jpg" alt="Project code in the editor">
+                </picture>
+            </section>
+            <section id="final" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">09</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Final Design</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">The final result is a website that gives the Dipsakus hiking club a place to share its activities and connect with people interested in hiking.</p>
+                <p class="text-slate-600 leading-relaxed">The website brings together information about upcoming trips, past experiences and club news in one place, making it easier for visitors to explore the club and find the details they need.</p>
+                <h3 class="font-futura text-xl lg:text-2xl text-slate-800 mt-10 mb-5">Technologies</h3>
+                <ul class="flex flex-wrap gap-3">
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">Next.js</li>
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">Tailwind CSS</li>
+                </ul>
+                <a class="inline-block mt-10 border-b-2 border-[#F36F64] pb-1 text-slate-800 text-base transition-colors hover:text-[#F36F64]" href="https://dipsakus.mk/">Visit the website</a>
+            </section>
+
+            </div>
         </div>
     </section>
 
@@ -565,6 +471,29 @@
     <script src="../js/main.js"></script>
     <!-- Iconify -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- Highlight the section currently in view in the side nav -->
+    <script>
+        (function () {
+            var links = document.querySelectorAll('[data-toc]');
+            if (!links.length || !('IntersectionObserver' in window)) return;
+            function setActive(id) {
+                links.forEach(function (link) {
+                    var on = link.getAttribute('href') === '#' + id;
+                    link.classList.toggle('text-[#F36F64]', on);
+                    link.classList.toggle('font-bold', on);
+                    link.classList.toggle('text-slate-400', !on);
+                });
+            }
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) setActive(entry.target.id);
+                });
+            }, { rootMargin: '-120px 0px -65% 0px' });
+            document.querySelectorAll('section[id]').forEach(function (section) {
+                observer.observe(section);
+            });
+        })();
+    </script>
 </body>
 
 </html>
