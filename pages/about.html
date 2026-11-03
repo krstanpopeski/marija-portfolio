@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <!-- Meta tags added -->
@@ -38,7 +38,7 @@
         rel="stylesheet">
 </head>
 
-<body class="font-lato">
+<body class="font-lato text-base">
     <!-- Navbar -->
     <nav class="fixed top-0 w-full z-50 bg-white shadow-sm">
         <div class="flex items-center justify-center py-6 px-[24px]">
@@ -63,106 +63,97 @@
     </nav>
 
     <section id="about" class="pt-[150px] lg:pt-[200px] pb-[50px] px-[24px]">
-        <div>
-            <div class="flex justify-center">
-                <div class="w-full lg:w-[100vh]" data-aos="fade-left" data-aos-duration="700">
-                    <h3
-                        class="mb-6 flex justify-center items-center text-center font-futura lg:text-5xl text-3xl text-[#F36F64]">
-                        Hello
-                    </h3>
-                    <p
-                        class="mb-10 flex justify-center items-center text-center space-y-6 mt-6 text-base lg:text-xl text-slate-600">
-                        I'm Marija Popeska, a friendly and
-                        collaborative designer</p>
-                    <picture class="flex justify-center">
-                        <source srcset="../assets/img/hello.jpg 800w,
-                                            ../assets/img/hello.jpg 480w,
-                                            ../assets/img/hello.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-                        <img src="../assets/img/hello.jpg" alt="Final image">
-                    </picture>
-                    <div class="space-y-6 mt-6 text-base lg:text-xl text-slate-600">
-                        <p>
-                            Master of Architecture who transitioned into UX Design and Frontend
-                            Development. I seamlessly merge my expertise in physical space design with digital
-                            experience creation.
+
+        <!-- Intro: text beside the portrait -->
+        <div class="flex justify-center">
+            <div class="w-full lg:w-[120vh] lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,0.85fr)] lg:gap-16 lg:items-center">
+                <div>
+                    <p class="font-futura text-xs tracking-[0.3em] uppercase text-[#F36F64]">About</p>
+                    <h1 class="font-futura text-5xl lg:text-7xl text-slate-800 mt-4">Hello</h1>
+                    <p class="text-slate-600 text-base lg:text-lg mt-5 max-w-xl">
+                        I'm Marija Popeska, a friendly and collaborative designer.
+                    </p>
+                    <blockquote class="mt-8 border-l-2 border-[#F36F64] pl-5">
+                        <p class="font-futura text-lg lg:text-xl italic text-[#F36F64]">
+                            Let's create something magical together
                         </p>
-                        <p>With a foundation rooted in Architecture studies, I've honed my skills in crafting
-                            spaces that are not only aesthetically pleasing but also highly functional. This background
-                            provides me with a unique lens through which I approach digital experience creation,
-                            seamlessly blending the principles of physical space design with the intricacies of digital
-                            interface design.
-                        </p>
-                        <p>
-                            My passion lies in creating intuitive and visually engaging digital experiences that
-                            prioritize user satisfaction and drive engagement. Transitioning from architecture to UX
-                            design has equipped me with a diverse set of problem-solving abilities and a fresh
-                            perspective on digital product development.
-                        </p>
-                        <p>
-                            In my journey, I've come to believe that when technology intersects with design, true magic
-                            unfolds. This belief fuels my commitment to crafting digital solutions that not only meet
-                            users' needs but exceed their expectations, transforming ordinary interactions into
-                            extraordinary experiences.
-                        </p>
-                        <p>
-                            If you're seeking a creative collaborator who brings together the best of both worlds - then
-                            I'm thrilled to be your
-                            partner on this exciting journey.
-                        </p>
-                    </div>
-                    <blockquote class="flex justify-center text-xl max-lg:text-lg mt-6 italic text-[#F36F64]">
-                        <p>Let's create something magical together</p>
                     </blockquote>
-                    <div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center mt-10">
-                        <a href="../assets/pdf/CV-Marija-Popeska.pdf" download class="lg:w-auto">
-                            <button
-                                class="bg-[#F36F64] text-white font-bold px-6 h-10 lg:w-full rounded-3xl mb-4 lg:mb-0 lg:mr-4">
-                                Download CV
-                            </button>
-                        </a>
-                        <ul class="flex fade items-center justify-center text-center">
-                            <li class="py-4 px-4 opacity-70 hover:opacity-100 transition-all ease-in-out duration-300">
-                                <div class="flex items-center gap-3">
-                                    <span>
-                                        <a href="https://www.linkedin.com/in/marija-p-b23912167/"
-                                            class="home__social-icon text-2xl text-slate-600 hover:text-[#F36F64]"
-                                            title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="py-4 px-4 opacity-70 hover:opacity-100 transition-all ease-in-out duration-300">
-                                <div class="flex items-center gap-3">
-                                    <span>
-                                        <a href="https://dribbble.com/marijapopeska"
-                                            class="home__social-icon text-2xl text-slate-600 hover:text-[#F36F64]"
-                                            title="Dribbble"><i class='bx bxl-dribbble'></i></a>
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="py-4 px-4 opacity-70 hover:opacity-100 transition-all ease-in-out duration-300">
-                                <div class="flex items-center gap-3">
-                                    <span>
-                                        <a href="https://github.com/marijapopeska"
-                                            class="home__social-icon text-2xl text-slate-600 hover:text-[#F36F64]"
-                                            title="GitHub"><i class='bx bxl-github'></i></a>
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="py-4 px-4 opacity-70 hover:opacity-100 transition-all ease-in-out duration-300">
-                                <div class="flex items-center gap-3">
-                                    <span>
-                                        <a href="mailto:marija.popeska@gmail.com"
-                                            class="home__social-icon text-2xl text-slate-600 hover:text-[#F36F64]">
-                                            <i class='bx bx-envelope'></i>
-                                        </a>
-                                    </span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0">
+                    <picture class="fullscreen-container block cursor-zoom-in">
+                        <source srcset="../assets/img/hello.jpg 800w,
+                                        ../assets/img/hello.jpg 480w,
+                                        ../assets/img/hello.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                        <img class="w-full h-auto" src="../assets/img/hello.jpg" alt="Marija Popeska">
+                    </picture>
                 </div>
             </div>
         </div>
+
+        <!-- Journey -->
+        <div class="flex justify-center mt-20 lg:mt-28">
+            <div class="w-full lg:w-[120vh]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-slate-400">The path so far</p>
+                <div class="relative mt-8">
+                    <div class="absolute left-0 right-0 top-1/2 -translate-y-1/2 hidden h-px bg-slate-200 lg:block"
+                        aria-hidden="true"></div>
+                    <ol class="relative grid gap-8 lg:grid-cols-3 lg:gap-6">
+                        <li class="relative bg-white lg:px-6 lg:text-center">
+                            <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">01</p>
+                            <p class="font-futura text-xl lg:text-2xl text-slate-800 mt-2">Architecture</p>
+                        </li>
+                        <li class="relative bg-white lg:px-6 lg:text-center">
+                            <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">02</p>
+                            <p class="font-futura text-xl lg:text-2xl text-slate-800 mt-2">UX Design</p>
+                        </li>
+                        <li class="relative bg-white lg:px-6 lg:text-center">
+                            <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">03</p>
+                            <p class="font-futura text-xl lg:text-2xl text-slate-800 mt-2">Frontend Development</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bio -->
+        <div class="flex justify-center mt-20 lg:mt-28">
+            <div class="w-full max-w-[65ch] space-y-6">
+                <p class="text-slate-600 leading-relaxed">My journey started with Architecture, where I completed my Master's degree, and later led me to UX Design and Frontend Development. My background in Architecture has shaped the way I think about design and how people interact with the spaces around them. Today, I bring that same way of thinking into the digital world.</p>
+                <p class="text-slate-600 leading-relaxed">I enjoy creating designs that are simple, easy to use and look good. I like trying out different ideas, solving problems and paying attention to details. For me, even the smallest things can make a difference in how someone experiences a product.</p>
+                <p class="text-slate-600 leading-relaxed">What I love about UX Design and Frontend Development is that I get to work on both the design and the development side. I enjoy starting with an idea, working on how it should look and feel, and then seeing it come to life through code.</p>
+                <p class="text-slate-600 leading-relaxed">I'm always curious to learn new things, improve my skills and try different approaches. I also enjoy working with other people, sharing ideas and learning from each other. I believe the best results come when people work well together and enjoy what they do.</p>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="flex justify-center mt-20 lg:mt-28">
+            <div class="w-full lg:w-[120vh] rounded-lg bg-slate-50 px-6 py-12 lg:px-12 text-center">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">Get in touch</p>
+                <a href="../assets/pdf/CV%20Marija%20Popeska.pdf" download
+                    class="mt-6 inline-block rounded-3xl bg-[#F36F64] px-8 py-3 font-bold text-white transition-opacity hover:opacity-90">
+                    Download CV
+                </a>
+                <ul class="mt-8 flex items-center justify-center gap-4">
+                    <li>
+                        <a href="https://www.linkedin.com/in/marija-p-b23912167/" title="LinkedIn"
+                            class="home__social-icon flex h-12 w-12 items-center justify-center rounded-full border border-slate-300 text-2xl text-slate-600 transition-colors hover:border-[#F36F64] hover:text-[#F36F64]"><i class='bx bxl-linkedin'></i></a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/marijapopeska" title="Dribbble"
+                            class="home__social-icon flex h-12 w-12 items-center justify-center rounded-full border border-slate-300 text-2xl text-slate-600 transition-colors hover:border-[#F36F64] hover:text-[#F36F64]"><i class='bx bxl-dribbble'></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/marijapopeska" title="GitHub"
+                            class="home__social-icon flex h-12 w-12 items-center justify-center rounded-full border border-slate-300 text-2xl text-slate-600 transition-colors hover:border-[#F36F64] hover:text-[#F36F64]"><i class='bx bxl-github'></i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:marija.popeska@gmail.com" title="Email"
+                            class="home__social-icon flex h-12 w-12 items-center justify-center rounded-full border border-slate-300 text-2xl text-slate-600 transition-colors hover:border-[#F36F64] hover:text-[#F36F64]"><i class='bx bx-envelope'></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
     </section>
 
     <!-- Footer -->

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
 	<!-- Meta tags added -->
@@ -8,7 +8,7 @@
 	<meta name="author" content="Marija Popeska">
 	<meta name="keywords" content="ux designer, architecture, digital experience, portfolio">
 	<meta name="description"
-		content="Welcome to my personal movie website project, where I've combined my passion for movies with my skills in frontend development.">
+		content="A movie website for discovering movies and TV shows, built with React and the TMDB API.">
 	<meta name="robots" content="index, follow">
 	<meta name="googlebot" content="index, follow">
 	<meta name="google" content="nositelinkssearchbox">
@@ -20,7 +20,7 @@
 	<meta property="og:url" content="https://www.marijapopeska.com">
 	<meta property="og:title" content="Cinevers - Movie Website">
 	<meta property="og:description"
-		content="Welcome to my personal movie website project, where I've combined my passion for movies with my skills in frontend development.">
+		content="A movie website for discovering movies and TV shows, built with React and the TMDB API.">
 	<title>Cinevers - Movie Website</title>
 
 	<!-- =====BOX ICONS===== -->
@@ -38,7 +38,7 @@
 		rel="stylesheet">
 </head>
 
-<body class="font-lato text-base md:text-xl">
+<body class="font-lato text-base">
 	<!-- Navbar -->
 	<nav class="fixed top-0 w-full z-50 bg-white shadow-sm">
 		<div class="flex items-center justify-center py-6 px-[24px]">
@@ -64,272 +64,246 @@
 		</div>
 	</nav>
 
-	<section class="pt-[150px] md:pt-[200px] lg:pt-[200px] pb-[50px] px-[24px] flex justify-center">
-		<div class="lg:w-[100vh] w-full">
-			<div class="flex items-center justify-center text-center">
-				<div data-aos="fade-left" data-aos-duration="700">
-					<h3
-						class="mb-6 md:mb-10 text-3xl md:text-3xl font-futura lg:text-5xl max-xl:text-4xl max-sm:text-3xl text-[#F36F64]">
-						Cinevers
-					</h3>
-					<p class="text-base md:text-xl lg:text-xl text-slate-600">
-						Exploring Cinematic Wonders: Cinevers - Your
-						Gateway to the World of Movies
-					</p>
-				</div>
-			</div>
-			<div>
-				<div class="flex items-start justify-center text-start">
-					<div data-aos="fade-left" data-aos-duration="700">
-						<h3
-							class="mt-10 md:mt-20 mb-6 md:mb-10 text-2xl md:text-3xl font-futura lg:text-4xl text-slate-600">
-							Introduction
-						</h3>
-						<div class="text-slate-600 mb-3 space-y-6">
-							<p>Welcome to my personal movie website project, where I've combined my passion for movies
-								with
-								my skills in frontend development to create a captivating online platform.
-							</p>
-							<p>
-								Using React and TailwindCSS, I've designed a user-friendly interface that showcases a
-								curated selection of movies and TV series. While the project is still in development, it
-								serves as a demonstration of my expertise in frontend development and my ability to
-								integrate APIs for fetching movie data.
-							</p>
-							<p>
-								Throughout this project, I've explored various functionalities, including fetching movie
-								details, displaying movie cards, and implementing responsive design for optimal viewing
-								across different devices.
-							</p>
-							<p>
-
-							</p>
-						</div>
-						<picture class="flex justify-center mx-auto">
-							<source srcset="../assets/img/cinevers/cinevers.jpg 800w,
-						../assets/img/cinevers/cinevers.jpg 480w,
-						../assets/img/cinevers/cinevers.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-							<img class="mt-10 h-full w-full 2xl:w-fit cursor-zoom-in"
-								src="../assets/img/cinevers/cinevers.jpg" alt="Final image">
-						</picture>
-					</div>
-				</div>
-			</div>
-
-			<div class="flex items-start justify-center text-start">
-				<div data-aos="fade-left" data-aos-duration="700">
-					<h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-						My role
-					</h3>
-					<div class="text-slate-600 mb-3 space-y-6">
-						<p>
-							As the sole contributor to this project, I took on the roles of both frontend developer and
-							designer. My responsibilities encompassed every aspect of the project, from
-							conceptualization to
-							implementation.
-						</p>
-						<p>
-							As a frontend developer, I leveraged my expertise in React and TailwindCSS to build the user
-							interface of the movie website. This involved translating design mockups into functional
-							components, implementing responsive layouts, and ensuring seamless navigation across
-							different
-							screen sizes.
-						</p>
-						<p>
-							Additionally, as a designer, I crafted the visual identity of the website, focusing on
-							creating
-							an intuitive and visually appealing experience for users. I made design decisions regarding
-							color schemes, typography, and layout, with the goal of enhancing usability and engagement.
-						</p>
-						<p>
-							Overall, my role as a frontend developer and designer allowed me to bring my vision for the
-							movie website to life, showcasing my skills in both coding and design disciplines.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Design process -->
-			<section>
-				<div class="flex flex-col items-start justify-center text-start">
-					<div class="text-slate-600">
-						<h3 class="mt-10 md:mt-20 mb-10 text-2xl md:text-3xl font-futura lg:text-4xl text-slate-600">
-							Design process
-						</h3>
-						<div>
-							<h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-								Research</h3>
-							<p>Conducted extensive user research to understand the needs and preferences of the target
-								audience. Methods included user interviews, surveys, and competitive analysis. Key
-								findings
-								informed the design decisions and ensured alignment with user expectations.</p>
-						</div>
-						<picture class="flex justify-center mx-auto">
-							<source srcset="../assets/img/cinevers/analyze-1.jpg 800w,
-						../assets/img/cinevers/analyze-1.jpg 480w,
-						../assets/img/cinevers/analyze-1.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-							<img class="mt-10 h-full w-full 2xl:w-fit cursor-zoom-in"
-								src="../assets/img/cinevers/analyze-1.jpg" alt="Final image">
-						</picture>
-					</div>
-					<div>
-						<div>
-							<h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-								User personas</h3>
-							<p class="text-slate-600"> Developed detailed user personas based on research insights.
-								Personas
-								represented diverse segments of the target audience, including their demographics,
-								goals,
-								pain points, and behaviors. These personas served as a guiding framework throughout the
-								design process to create user-centric solutions.</p>
-							<picture class="flex justify-center mx-auto">
-								<source srcset="../assets/img/cinevers/user-personas.jpg 800w,
-								../assets/img/cinevers/user-personas.jpg 480w,
-								../assets/img/cinevers/user-personas.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-								<img class="mt-10 h-full w-full 2xl:w-fit cursor-zoom-in"
-									src="../assets/img/cinevers/user-personas.jpg" alt="Final image">
-							</picture>
-						</div>
-					</div>
-				</div>
-				<div class="flex flex-col items-start justify-center text-start">
-					<h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-						User flow</h3>
-					<p class="text-slate-600">Mapped out the primary navigation paths and interactions users would
-						experience within the app. User flows were designed to ensure intuitive and seamless
-						interactions,
-						guiding users towards their goals efficiently. Iterative refinement of user flows improved
-						usability
-						and streamlined the user journey.</p>
-					<picture class="flex justify-center mx-auto">
-						<source srcset="../assets/img/cinevers/user-flow.jpg 800w,
-							../assets/img/cinevers/user-flow.jpg 480w,
-							../assets/img/cinevers/user-flow.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-						<img class="mt-10 h-full w-full 2xl:w-fit cursor-zoom-in"
-							src="../assets/img/cinevers/user-flow.jpg" alt="Final image">
-					</picture>
-				</div>
-				<div class="flex flex-col items-start justify-center text-start">
-					<h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-						Sketching and planing</h3>
-					<p class="text-slate-600">Initiated the design process with sketching and planning sessions to
-						explore
-						various concepts and ideas. Low-fidelity sketches were used to visualize layout structures and
-						iterate rapidly on design concepts. This phase allowed for creative exploration and alignment on
-						design direction before moving to higher fidelity mockups.</p>
-					<picture class="flex justify-center mx-auto">
-						<source srcset="../assets/img/cinevers/sketches.jpg 800w,
-								../assets/img/cinevers/sketches.jpg 480w,
-								../assets/img/cinevers/sketches.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-						<img class="mt-10 h-full w-full 2xl:w-fit cursor-zoom-in"
-							src="../assets/img/cinevers/sketches.jpg" alt="Final image">
-					</picture>
-				</div>
-				<div class="flex flex-col items-start justify-center text-start">
-					<h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-						Brainstorm</h3>
-					<p class="text-slate-600">Brainstorming is a combination of informal problem solving and lateral
-						thinking. The technique intends for participants to come up with eccentric ideas. Some of these
-						thoughts and ideas are crafted into original and creative solutions to problems, whereas helping
-						to
-						spark additional ideas.</p>
-					<picture class="flex justify-center mx-auto w2-3xl">
-						<source srcset="../assets/img/cinevers/brainstorming.jpg 480w,
-										../assets/img/cinevers/brainstorming.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-						<img class="mt-10 w-full h-full object-cover cursor-zoom-in"
-							src="../assets/img/cinevers/brainstorming.jpg" alt="Final image">
-					</picture>
-					<picture class="flex justify-center mx-auto">
-						<source srcset="../assets/img/cinevers/search-1.jpg 800w,
-									../assets/img/cinevers/search-1.jpg 480w,
-									../assets/img/cinevers/search-1.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-						<img class="mt-10 h-full w-full 2xl:w-fit cursor-zoom-in"
-							src="../assets/img/cinevers/search-1.jpg" alt="Final image">
-					</picture>
-				</div>
-				<div class="flex flex-col items-start justify-center text-start">
-					<h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-						Final solution Design</h3>
-					<div class="text-slate-600 mb-3 space-y-6">
-						<p class="text-slate-600">After iterative design iterations and incorporating feedback from user
-							testing, the final solution design represents a refined and polished version of the movie
-							website.
-							The user interface embodies a seamless and intuitive browsing experience, meticulously
-							crafted
-							to
-							meet the needs and expectations of the target audience.
-						</p>
-						<p>
-							The design prioritizes clarity, consistency, and usability, ensuring that users can
-							effortlessly
-							navigate through the website and access relevant movie information. Visual elements, such as
-							typography, color schemes, and imagery, are thoughtfully chosen to evoke a cinematic
-							atmosphere
-							and
-							enhance engagement.
-						</p>
-					</div>
-					<picture class="flex justify-center mx-auto">
-						<source srcset="../assets/img/cinevers/screen-1.jpg 800w,
-									../assets/img/cinevers/screen-1.jpg 480w,
-									../assets/img/cinevers/screen-1.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-						<img class="mt-10 h-full w-full 2xl:w-fit cursor-zoom-in"
-							src="../assets/img/cinevers/screen-1.jpg" alt="Final image">
-					</picture>
-					<picture class="flex justify-center mx-auto">
-						<source srcset="../assets/img/cinevers/screen-2.jpg 800w,
-									../assets/img/cinevers/screen-2.jpg 480w,
-									../assets/img/cinevers/screen-2.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
-						<img class="mt-10 h-full w-full 2xl:w-fit cursor-zoom-in"
-							src="../assets/img/cinevers/screen-2.jpg" alt="Final image">
-					</picture>
-				</div>
-				<div class="flex flex-col items-start justify-center text-start">
-					<h3 class="mt-10 mb-6 text-xl md:text-3xl font-futura lg:text-2xl text-slate-600">
-						Development</h3>
-					<div class="text-slate-600 mb-3 space-y-6">
-						<p>Implemented the frontend of the movie website using React.js and Tailwind
-							CSS. Leveraged modern JavaScript features and React's component-based architecture to build
-							a
-							dynamic and interactive user interface. Utilized Tailwind CSS for efficient styling and
-							responsive design, ensuring a seamless viewing experience across devices.
-						</p>
-						<p>
-							The codebase is organized into reusable components, enhancing maintainability and
-							scalability.
-							Movie data is fetched from the TMDB API using asynchronous requests with Axios, providing
-							comprehensive information for each movie. The website features multiple pages, including the
-							home page, movie details page, search results page, and filtered content page, each serving
-							specific functionalities and content.
-						</p>
-						<p>
-							Navigation between pages is facilitated by React Router, enabling smooth transitions and a
-							single-page application experience. The development process followed best practices,
-							including
-							modularization, state management, and error handling, to deliver a robust and performant web
-							application.
-						</p>
-						<p>
-							Overall, the development phase focused on translating design mockups into functional
-							components
-							and features, with an emphasis on code quality, efficiency, and user experience.
-						</p>
-						<div>
-							<p> Feel free to check out the project's repository on GitHub:</p>
-							<a class=mt-3 font-bold text-[#F36F64]"
-								href="https://github.com/marijapopeska/Cinevers_react_app.git">Cinevers-Github
-								repository</a>
-						</div>
-						<ul class="flex gap-3 text-[#F36F64] mt-10 flex-wrap">
-							<li class=">Figma</li>
-							<li class=">Tailwind CSS</li>
-							<li class=">JavaScript</li>
-							<li class=">React</li>
-						</ul>
-					</div>
-				</div>
+	<!-- Hero -->
+	<header class="flex justify-center px-[24px] pt-[150px] lg:pt-[220px] pb-12 lg:pb-16">
+		<div class="w-full lg:w-[120vh]">
+			<p class="font-futura text-xs tracking-[0.3em] uppercase text-[#F36F64]">Case study</p>
+			<h1 class="font-futura text-5xl lg:text-7xl text-slate-800 mt-4">Cinevers</h1>
+			<p class="text-slate-600 text-lg lg:text-2xl mt-5 max-w-2xl">
+				A Movie Website for Discovering Movies and TV Shows
+			</p>
+			<a class="inline-block mt-8 border-b-2 border-[#F36F64] pb-1 text-slate-800 text-base transition-colors hover:text-[#F36F64]"
+				href="https://github.com/marijapopeska/Cinevers_react_app.git">View the code on GitHub</a>
 		</div>
-	</section>
+	</header>
+
+	<!-- Facts strip -->
+	<div class="flex justify-center px-[24px]">
+		<div class="w-full lg:w-[120vh] border-y border-slate-200 py-10">
+			<div class="grid gap-8 sm:grid-cols-3">
+                <div>
+                    <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">Role</p>
+                    <p class="text-slate-600 text-base mt-2">Design and frontend development</p>
+                </div>
+                <div>
+                    <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">Type</p>
+                    <p class="text-slate-600 text-base mt-2">Personal project</p>
+                </div>
+                <div>
+                    <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">Built with</p>
+                    <p class="text-slate-600 text-base mt-2">React and Tailwind CSS</p>
+                </div>
+			</div>
+		</div>
+	</div>
+
+	<section class="flex justify-center px-[24px] pb-[50px] pt-14 lg:pt-20">
+		<div class="w-full lg:w-[120vh] lg:grid lg:grid-cols-[180px_minmax(0,1fr)] lg:gap-16">
+
+			<!-- Sticky section nav -->
+			<aside class="hidden lg:block">
+				<nav class="sticky top-[120px] text-base">
+                    <a data-toc href="#intro"
+                        class="text-[#F36F64] font-bold block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">01</span>&nbsp;&nbsp;Introduction
+                    </a>
+                    <a data-toc href="#role"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">02</span>&nbsp;&nbsp;My Role
+                    </a>
+                    <a data-toc href="#research"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">03</span>&nbsp;&nbsp;Research
+                    </a>
+                    <a data-toc href="#personas"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">04</span>&nbsp;&nbsp;User Personas
+                    </a>
+                    <a data-toc href="#flow"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">05</span>&nbsp;&nbsp;User Flow
+                    </a>
+                    <a data-toc href="#sketching"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">06</span>&nbsp;&nbsp;Sketching
+                    </a>
+                    <a data-toc href="#brainstorming"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">07</span>&nbsp;&nbsp;Brainstorming
+                    </a>
+                    <a data-toc href="#final"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">08</span>&nbsp;&nbsp;Final Design
+                    </a>
+                    <a data-toc href="#development"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">09</span>&nbsp;&nbsp;Development
+                    </a>
+				</nav>
+			</aside>
+
+			<!-- Content column -->
+			<div class="min-w-0 space-y-20 lg:space-y-28">
+
+            <section id="intro" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">01</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Introduction</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">Cinevers is a personal project inspired by my interest in movies and TV shows. I wanted to create a website where people can explore different titles, discover something new to watch and easily find information about their favorite movies.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">The project combines my interest in design with frontend development. I worked on the visual design and built the website using React and Tailwind CSS, while connecting it to the TMDB API to display movie and TV show information.</p>
+                <p class="text-slate-600 leading-relaxed">Cinevers is still a work in progress, but it has been a great opportunity to explore new ideas and work with real movie data.</p>
+                <picture class="mt-10 fullscreen-container block cursor-zoom-in">
+                    <source srcset="../assets/img/cinevers/cinevers.jpg 800w,
+                                    ../assets/img/cinevers/cinevers.jpg 480w,
+                                    ../assets/img/cinevers/cinevers.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/cinevers/cinevers.jpg" alt="The Cinevers home page">
+                </picture>
+            </section>
+            <section id="role" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">02</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">My Role</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">I worked on this project on my own, taking care of both the design and frontend development.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">I started by thinking about how the website should look and how users would explore its content. I worked on the layout, colors, typography and overall visual style, with the aim of creating an interface that feels simple and easy to navigate.</p>
+                <p class="text-slate-600 leading-relaxed">After that, I started building the website with React and Tailwind CSS. I created reusable components, connected the TMDB API and worked on the different pages and features.</p>
+            </section>
+            <section id="research" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">03</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Research and Inspiration</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">I started by exploring existing movie websites and platforms to see how they organize and present their content.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">I paid attention to how users browse movies, search for specific titles and find details about what they want to watch. I also looked at different visual styles and layouts to get ideas for Cinevers.</p>
+                <p class="text-slate-600 leading-relaxed">This helped me decide what information should be easy to access and how to keep the browsing experience simple.</p>
+                <picture class="mt-10 fullscreen-container block cursor-zoom-in">
+                    <source srcset="../assets/img/cinevers/analyze-1.jpg 800w,
+                                    ../assets/img/cinevers/analyze-1.jpg 480w,
+                                    ../assets/img/cinevers/analyze-1.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/cinevers/analyze-1.jpg" alt="Analysis of existing movie platforms">
+                </picture>
+            </section>
+            <section id="personas" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">04</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">User Personas</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">I considered different types of people who might use the website, from users who already know what they want to watch to those who are simply looking for something new.</p>
+                <p class="text-slate-600 leading-relaxed">Thinking about these different needs helped me decide which features to focus on, such as browsing movie collections, searching for titles and viewing detailed information about each movie.</p>
+                <picture class="mt-10 fullscreen-container block cursor-zoom-in">
+                    <source srcset="../assets/img/cinevers/user-personas.jpg 800w,
+                                    ../assets/img/cinevers/user-personas.jpg 480w,
+                                    ../assets/img/cinevers/user-personas.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/cinevers/user-personas.jpg" alt="User personas created for Cinevers">
+                </picture>
+            </section>
+            <section id="flow" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">05</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">User Flow</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">I mapped out the main ways users would move through the website.</p>
+                <p class="text-slate-600 leading-relaxed">The main focus was to make it easy to go from the homepage to a movie, explore its details or search for something specific. Planning these flows helped me understand how the different pages should connect and how users could move between them.</p>
+                <picture class="mt-10 fullscreen-container block cursor-zoom-in">
+                    <source srcset="../assets/img/cinevers/user-flow.jpg 800w,
+                                    ../assets/img/cinevers/user-flow.jpg 480w,
+                                    ../assets/img/cinevers/user-flow.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/cinevers/user-flow.jpg" alt="The main user flows through the website">
+                </picture>
+            </section>
+            <section id="sketching" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">06</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Sketching and Planning</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">Before moving into the actual design, I explored different layouts and ideas through sketches.</p>
+                <p class="text-slate-600 leading-relaxed">I experimented with how movie cards, images and information could be presented, and how the main sections of the website should be organized. This gave me a clearer direction before creating the final designs.</p>
+                <picture class="mt-10 fullscreen-container block cursor-zoom-in">
+                    <source srcset="../assets/img/cinevers/sketches.jpg 800w,
+                                    ../assets/img/cinevers/sketches.jpg 480w,
+                                    ../assets/img/cinevers/sketches.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/cinevers/sketches.jpg" alt="Early sketches of the website layouts">
+                </picture>
+            </section>
+            <section id="brainstorming" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">07</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Brainstorming</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">I also spent time exploring ideas for the overall look and feel of Cinevers.</p>
+                <p class="text-slate-600 leading-relaxed">I wanted the website to have a visual style that fits the world of movies while keeping the interface clean and easy to use. I explored different colors, layouts and ways of presenting movie content before deciding on the final direction.</p>
+                <picture class="mt-10 fullscreen-container block cursor-zoom-in">
+                    <source srcset="../assets/img/cinevers/brainstorming.jpg 800w,
+                                    ../assets/img/cinevers/brainstorming.jpg 480w,
+                                    ../assets/img/cinevers/brainstorming.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/cinevers/brainstorming.jpg" alt="Brainstorming the visual direction">
+                </picture>
+            </section>
+            <section id="final" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">08</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Final Design</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">For the final design, I focused on creating a visual experience that makes browsing movies and TV shows enjoyable and straightforward.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">Movie posters and images play an important role in the interface, helping users discover titles at a glance. I also focused on keeping the layout organized, so users can easily find the information they are looking for.</p>
+                <p class="text-slate-600 leading-relaxed">The design was created with different screen sizes in mind, making sure the website remains easy to browse on both desktop and mobile devices.</p>
+                <div class="space-y-6 mt-10">
+                    <picture class="fullscreen-container block cursor-zoom-in">
+                        <source srcset="../assets/img/cinevers/screen-1.jpg 800w,
+                                        ../assets/img/cinevers/screen-1.jpg 480w,
+                                        ../assets/img/cinevers/screen-1.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                        <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/cinevers/screen-1.jpg" alt="Final design of the home page">
+                    </picture>
+                    <picture class="fullscreen-container block cursor-zoom-in">
+                        <source srcset="../assets/img/cinevers/screen-2.jpg 800w,
+                                        ../assets/img/cinevers/screen-2.jpg 480w,
+                                        ../assets/img/cinevers/screen-2.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                        <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/cinevers/screen-2.jpg" alt="Final design of the movie details page">
+                    </picture>
+                </div>
+            </section>
+            <section id="development" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">09</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Development</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">Once the design direction was ready, I started building Cinevers using React and Tailwind CSS.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">I used React's component based structure to create reusable elements and keep the code organized. Tailwind CSS helped me style the interface and build layouts that adapt to different screen sizes.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">One of the main parts of the development was connecting the website to the TMDB API. Using Axios, I fetched movie and TV show data and displayed it throughout the website.</p>
+                <p class="text-slate-600 leading-relaxed">I also worked on different pages and features, including:</p>
+                <div class="grid gap-5 sm:grid-cols-2 mt-8">
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Home Page</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">A place to explore movies and TV shows.</p>
+                    </div>
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Movie Details</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">A page with more information about each selected title.</p>
+                    </div>
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Search Results</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">Allows users to search for specific movies and shows.</p>
+                    </div>
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Filtered Content</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">Helps users explore titles based on selected categories or filters.</p>
+                    </div>
+                </div>
+                <picture class="mt-10 fullscreen-container block cursor-zoom-in">
+                    <source srcset="../assets/img/cinevers/search-1.jpg 800w,
+                                    ../assets/img/cinevers/search-1.jpg 480w,
+                                    ../assets/img/cinevers/search-1.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/cinevers/search-1.jpg" alt="Search results in Cinevers">
+                </picture>
+                <p class="text-slate-600 leading-relaxed mt-10 mb-5">For navigation, I used React Router to connect the different pages and make moving through the website feel smooth.</p>
+                <p class="text-slate-600 leading-relaxed">Working on Cinevers gave me the chance to practice building a complete frontend project, from the initial design ideas to connecting an external API and creating the final interface.</p>
+                <h3 class="font-futura text-xl lg:text-2xl text-slate-800 mt-10 mb-5">Technologies</h3>
+                <ul class="flex flex-wrap gap-3">
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">React</li>
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">Tailwind CSS</li>
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">TMDB API</li>
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">Axios</li>
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">React Router</li>
+                </ul>
+                <h3 class="font-futura text-xl lg:text-2xl text-slate-800 mt-10 mb-5">GitHub Repository</h3>
+                <p class="text-slate-600 leading-relaxed">You can check out the project and its code on GitHub:</p>
+                <a class="inline-block mt-5 border-b-2 border-[#F36F64] pb-1 text-slate-800 text-base transition-colors hover:text-[#F36F64]" href="https://github.com/marijapopeska/Cinevers_react_app.git">Cinevers on GitHub</a>
+            </section>
+
+			</div>
+		</div>
 	</section>
 
 	<!-- Footer -->
@@ -393,6 +367,29 @@
 	<script src="../js/main.js"></script>
 	<!-- Iconify -->
 	<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+	<!-- Highlight the section currently in view in the side nav -->
+	<script>
+		(function () {
+			var links = document.querySelectorAll('[data-toc]');
+			if (!links.length || !('IntersectionObserver' in window)) return;
+			function setActive(id) {
+				links.forEach(function (link) {
+					var on = link.getAttribute('href') === '#' + id;
+					link.classList.toggle('text-[#F36F64]', on);
+					link.classList.toggle('font-bold', on);
+					link.classList.toggle('text-slate-400', !on);
+				});
+			}
+			var observer = new IntersectionObserver(function (entries) {
+				entries.forEach(function (entry) {
+					if (entry.isIntersecting) setActive(entry.target.id);
+				});
+			}, { rootMargin: '-120px 0px -65% 0px' });
+			document.querySelectorAll('section[id]').forEach(function (section) {
+				observer.observe(section);
+			});
+		})();
+	</script>
 </body>
 
 </html>

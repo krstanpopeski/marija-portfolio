@@ -1,6 +1,5 @@
-<h1>hello</h1>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <!-- Meta tags added -->
@@ -8,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Marija Popeska">
     <meta name="keywords" content="ux designer, architecture, digital experience, portfolio">
-    <meta name="description" content="Notification System for Primary Court in Ohrid">
+    <meta name="description" content="Notification System for the Primary Court in Ohrid">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta name="google" content="nositelinkssearchbox">
@@ -18,8 +17,8 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="627">
     <meta property="og:url" content="https://www.marijapopeska.com">
-    <meta property="og:title" content="Notification System for Primary Court in Ohrid">
-    <meta property="og:description" content="Notification System for Primary Court in Ohrid">
+    <meta property="og:title" content="Notification System for the Primary Court in Ohrid">
+    <meta property="og:description" content="Notification System for the Primary Court in Ohrid">
     <title>Employee Notification System</title>
 
     <!-- =====BOX ICONS===== -->
@@ -37,7 +36,7 @@
         rel="stylesheet">
 </head>
 
-<body class="font-lato text-base lg:text-xl">
+<body class="font-lato text-base">
     <!-- Navbar -->
     <nav class="fixed top-0 w-full z-50 bg-white shadow-sm">
         <div class="flex items-center justify-center py-6 px-[24px]">
@@ -63,174 +62,187 @@
         </div>
     </nav>
 
-    <section class="pt-[150px] lg:pt-[200px] pb-[50px] px-[24px] flex justify-center">
-        <div class="lg:w-[100vh] w-full">
-            <div class="flex items-center justify-center text-center">
-                <div data-aos="fade-left" data-aos-duration="700">
-                    <h3
-                        class="mb-6 lg:mb-10 text-3xl font-futura lg:text-5xl max-xl:text-4xl max-sm:text-3xl text-[#F36F64]">
-                        Employee Notification System
-                    </h3>
-                    <p class="text-slate-600">
-                        Notification System for Primary Court in Ohrid
-                    </p>
+    <!-- Hero -->
+    <header class="flex justify-center px-[24px] pt-[150px] lg:pt-[220px] pb-12 lg:pb-16">
+        <div class="w-full lg:w-[120vh]">
+            <p class="font-futura text-xs tracking-[0.3em] uppercase text-[#F36F64]">Case study</p>
+            <h1 class="font-futura text-5xl lg:text-7xl text-slate-800 mt-4">Employee Notification System</h1>
+            <p class="text-slate-600 text-lg lg:text-2xl mt-5 max-w-2xl">
+                Notification System for the Primary Court in Ohrid
+            </p>
+        </div>
+    </header>
+
+    <!-- Facts strip -->
+    <div class="flex justify-center px-[24px]">
+        <div class="w-full lg:w-[120vh] border-y border-slate-200 py-10">
+            <div class="grid gap-8 sm:grid-cols-3">
+                <div>
+                    <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">Role</p>
+                    <p class="text-slate-600 text-base mt-2">UX design and frontend development</p>
+                </div>
+                <div>
+                    <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">Team</p>
+                    <p class="text-slate-600 text-base mt-2">Marija Popeska with Krstan Popeski</p>
+                </div>
+                <div>
+                    <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">Built with</p>
+                    <p class="text-slate-600 text-base mt-2">Next.js and Tailwind CSS</p>
                 </div>
             </div>
-            <div data-aos="fade-left" data-aos-duration="700">
-                <h3 class="mt-10 lg:mt-20 mb-6 lg:mb-10 text-2xl font-futura lg:text-4xl text-slate-600">
-                    Project Overview
-                </h3>
-                <p class="text-slate-600 mb-3">The project is an informative web application designed specifically for
-                    the
-                    Primary Court in Ohrid. Its purpose is to provide employees with an organized and user-friendly
-                    platform
-                    to access essential information and resources. This initiative aimed to streamline internal
-                    communication, improve efficiency, and modernize how court employees interact with institutional
-                    updates
-                    and tools.</p>
-                <picture class="flex justify-center mx-auto">
+        </div>
+    </div>
+
+    <section class="flex justify-center px-[24px] pb-[50px] pt-14 lg:pt-20">
+        <div class="w-full lg:w-[120vh] lg:grid lg:grid-cols-[180px_minmax(0,1fr)] lg:gap-16">
+
+            <!-- Sticky section nav -->
+            <aside class="hidden lg:block">
+                <nav class="sticky top-[120px] text-base">
+                    <a data-toc href="#overview"
+                        class="text-[#F36F64] font-bold block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">01</span>&nbsp;&nbsp;Project Overview
+                    </a>
+                    <a data-toc href="#team"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">02</span>&nbsp;&nbsp;Team
+                    </a>
+                    <a data-toc href="#process"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">03</span>&nbsp;&nbsp;Design Process
+                    </a>
+                    <a data-toc href="#frontend"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">04</span>&nbsp;&nbsp;Frontend
+                    </a>
+                    <a data-toc href="#backend"
+                        class="text-slate-400 block py-1 transition-colors hover:text-[#F36F64]">
+                        <span class="tabular-nums">05</span>&nbsp;&nbsp;Backend
+                    </a>
+                </nav>
+            </aside>
+
+            <!-- Content column -->
+            <div class="min-w-0 space-y-20 lg:space-y-28">
+
+            <section id="overview" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">01</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Project Overview</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">The Primary Court in Ohrid needed a better way to share information with its employees. Important notices, announcements and updates needed to be easier to access, without having to search through different places or ask colleagues for information.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">That's why we created a web application where employees can find everything they need in one place. After logging in, they can check the latest updates, read notifications and access important information related to their work.</p>
+                <p class="text-slate-600 leading-relaxed">The idea was simple: to make everyday communication easier and give employees a platform that feels clear, organized and easy to use.</p>
+                <picture class="mt-10 fullscreen-container block cursor-zoom-in">
                     <source srcset="../assets/img/employee-notification-system/image_3.jpg 800w,
-                                                 ../assets/img/employee-notification-system/image_3.jpg 480w,
-                                                 ../assets/img/employee-notification-system/image_3.jpg 320w"
-                        sizes="(max-width: 800px) 100vw, 800px">
-                    <img class="mt-10 h-[300px] lg:h-[600px] w-full object-cover cursor-zoom-in"
-                        src="../assets/img/employee-notification-system/image_3.jpg" alt="EmployeeDashboard">
+                                    ../assets/img/employee-notification-system/image_3.jpg 480w,
+                                    ../assets/img/employee-notification-system/image_3.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                    <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/employee-notification-system/image_3.jpg" alt="The employee dashboard of the notification system">
                 </picture>
-            </div>
+            </section>
+            <section id="team" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">02</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Team Collaboration</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <div class="grid gap-5 sm:grid-cols-2">
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Marija Popeska</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">I worked on the UX/UI design and frontend development. I was responsible for designing the interface and building the frontend, from the first ideas in Figma to the final implementation.</p>
+                    </div>
+                    <div class="rounded-lg border border-slate-200 p-6">
+                        <h3 class="font-futura text-lg text-[#F36F64]">Krstan Popeski</h3>
+                        <p class="text-slate-600 leading-relaxed mt-3 text-base">Krstan worked on the backend development, including the database, authentication and the main functionality of the application.</p>
+                    </div>
+                </div>
+                <p class="text-slate-600 leading-relaxed mt-8">We worked closely together and had several meetings with the court's administration. These conversations helped us understand what employees needed and gave us a better idea of how the application should work in practice.</p>
+            </section>
+            <section id="process" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">03</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Design Process</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">Before starting with the actual design, I wanted to understand how employees worked and what they needed from the application. We had a few meetings with the court's administration, where we discussed their daily tasks, current challenges and ideas for improving the way information was shared.</p>
+                <div class="space-y-12 mt-10">
+                    <div class="space-y-5">
+                        <h3 class="font-futura text-xl lg:text-2xl text-slate-800">Discovery</h3>
+                        <p class="text-slate-600 leading-relaxed">I focused on understanding the main problems and finding out which parts of the existing process could be made easier. I wanted to make sure the design was based on real needs rather than assumptions.</p>
+                    </div>
+                    <div class="space-y-5">
+                        <h3 class="font-futura text-xl lg:text-2xl text-slate-800">Figma</h3>
+                        <p class="text-slate-600 leading-relaxed">Once I had a better understanding of the requirements, I started working in Figma. I first created wireframes to plan the layout and organize the content. After that, I moved on to the final designs, paying attention to the overall look, spacing and how easy it would be for employees to find what they needed.</p>
+                    </div>
+                </div>
+                <div class="space-y-6 mt-10">
+                    <picture class="fullscreen-container block cursor-zoom-in">
+                        <source srcset="../assets/img/employee-notification-system/image_4.jpg 800w,
+                                        ../assets/img/employee-notification-system/image_4.jpg 480w,
+                                        ../assets/img/employee-notification-system/image_4.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                        <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/employee-notification-system/image_4.jpg" alt="High fidelity design of the notification screen">
+                    </picture>
+                    <picture class="fullscreen-container block cursor-zoom-in">
+                        <source srcset="../assets/img/employee-notification-system/Wireframe_1.jpg 800w,
+                                        ../assets/img/employee-notification-system/Wireframe_1.jpg 480w,
+                                        ../assets/img/employee-notification-system/Wireframe_1.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                        <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/employee-notification-system/Wireframe_1.jpg" alt="Wireframes of the main screens">
+                    </picture>
+                    <picture class="fullscreen-container block cursor-zoom-in">
+                        <source srcset="../assets/img/employee-notification-system/Wireframe_2.jpg 800w,
+                                        ../assets/img/employee-notification-system/Wireframe_2.jpg 480w,
+                                        ../assets/img/employee-notification-system/Wireframe_2.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                        <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/employee-notification-system/Wireframe_2.jpg" alt="Wireframes of the remaining screens">
+                    </picture>
+                </div>
+            </section>
+            <section id="frontend" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">04</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Frontend Development</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">After finishing the designs, I moved on to the frontend development using Next.js and Tailwind CSS.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">I wanted the final result to stay close to the designs in Figma, while making sure everything worked smoothly. Since the application was mainly intended for desktop use, I focused on creating a clean layout that made good use of the available screen space.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">I used Tailwind CSS for styling and created reusable components for elements that appeared across different pages. This helped me keep the design consistent and made it easier to make changes along the way.</p>
+                <p class="text-slate-600 leading-relaxed">I also added interactive elements such as dropdowns, tooltips and buttons to make the application easier to navigate and use.</p>
+                <p class="text-slate-600 leading-relaxed mt-8 mb-5">Some of the things I worked on:</p>
+                <ul class="space-y-3">
+                    <li class="border-l-2 border-[#F36F64] pl-4 text-slate-600">Building the frontend based on the Figma designs.</li>
+                    <li class="border-l-2 border-[#F36F64] pl-4 text-slate-600">Creating reusable components to keep the code organized.</li>
+                    <li class="border-l-2 border-[#F36F64] pl-4 text-slate-600">Using Tailwind CSS for styling and consistent layouts.</li>
+                    <li class="border-l-2 border-[#F36F64] pl-4 text-slate-600">Adding interactive elements such as dropdowns, tooltips and buttons.</li>
+                    <li class="border-l-2 border-[#F36F64] pl-4 text-slate-600">Making sure the interface was clear and easy to use.</li>
+                </ul>
+                <div class="space-y-6 mt-10">
+                    <picture class="fullscreen-container block cursor-zoom-in">
+                        <source srcset="../assets/img/employee-notification-system/image_1.jpg 800w,
+                                        ../assets/img/employee-notification-system/image_1.jpg 480w,
+                                        ../assets/img/employee-notification-system/image_1.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                        <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/employee-notification-system/image_1.jpg" alt="Notification list in the finished application">
+                    </picture>
+                    <picture class="fullscreen-container block cursor-zoom-in">
+                        <source srcset="../assets/img/employee-notification-system/image_2.jpg 800w,
+                                        ../assets/img/employee-notification-system/image_2.jpg 480w,
+                                        ../assets/img/employee-notification-system/image_2.jpg 320w" sizes="(max-width: 800px) 100vw, 800px">
+                        <img class="w-full h-auto rounded-lg border border-slate-200" src="../assets/img/employee-notification-system/image_2.jpg" alt="Notification details in the finished application">
+                    </picture>
+                </div>
+            </section>
+            <section id="backend" class="scroll-mt-[120px]">
+                <p class="font-futura text-xs tracking-[0.25em] uppercase text-[#F36F64]">05</p>
+                <h2 class="font-futura text-3xl lg:text-4xl text-slate-800 mt-3">Backend Development</h2>
+                <div class="mt-5 mb-8 h-px w-16 bg-[#F36F64]"></div>
+                <p class="text-slate-600 leading-relaxed mb-5">Krstan was responsible for the backend development, which handles the main functionality of the application.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">He worked on user authentication using JWT tokens, password hashing and different permissions for regular users and administrators. This allowed the application to control who could access information and who could manage notifications.</p>
+                <p class="text-slate-600 leading-relaxed mb-5">The backend also includes REST APIs for handling notifications and user actions, with MongoDB used to store the data through Mongoose.</p>
+                <p class="text-slate-600 leading-relaxed">Protected routes are managed through middleware, while login and other necessary public routes remain accessible. Docker was also used to make the application easier to deploy and run.</p>
+                <h3 class="font-futura text-xl lg:text-2xl text-slate-800 mt-10 mb-5">Technologies</h3>
+                <ul class="flex flex-wrap gap-3">
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">Next.js</li>
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">Tailwind CSS</li>
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">MongoDB</li>
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">Mongoose</li>
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">JWT</li>
+                    <li class="rounded-full border border-[#F36F64] px-4 py-1.5 text-base text-[#F36F64]">Docker</li>
+                </ul>
+            </section>
 
-            <div data-aos="fade-left" data-aos-duration="700">
-                <h3 class="mt-10 lg:mt-20 mb-6 lg:mb-10 text-2xl font-futura lg:text-4xl text-slate-600">
-                    Team Collaboration
-                </h3>
-                <ol class=" list-disc pl-4 text-slate-600">
-                    <li class="mb-3">
-                        <span class="font-bold">Marija Popeska:</span> As a UX designer and developer, I took the lead
-                        in
-                        designing the user interface and
-                        developing the frontend of the application.
-                    </li>
-                    <li>
-                        <span class="font-bold">Krstan Popeski:</span> A software engineer specializing in backend
-                        development, he managed the server-side
-                        architecture, database integration, and core functionalities of the platform.
-                        We worked closely with the court's administration to understand their specific needs and tailor
-                        the
-                        solution to their requirements.
-                    </li>
-                </ol>
-            </div>
-
-            <div class=" data-aos=" fade-left" data-aos-duration="700">
-                <h3 class="mt-10 lg:mt-20 mb-6 lg:mb-10 text-2xl font-futura lg:text-4xl text-slate-600">
-                    Design Process
-                </h3>
-                <p class="text-slate-600 mb-3">The design process began with several meetings with the court's
-                    administration to gather requirements and understand their workflows.</p>
-                <ol class="list-decimal pl-6 space-y-4 text-slate-600">
-                    <li>
-                        <span class="font-bold">Discovery Phase:</span> I focused on identifying pain points in their
-                        current system and defining user personas to ensure the application addressed their needs
-                        effectively.
-                    </li>
-                    <li>
-                        <span class="font-bold">Figma for Design:</span> I used Figma to create the user interface.
-                        Initial
-                        wireframes were developed to map out the structure and flow of the application. These were
-                        followed
-                        by high-fidelity designs.
-                    </li>
-                </ol>
-                <picture class="flex justify-center mx-auto mt-10 w1-3xl">
-                    <source srcset="../assets/img/employee-notification-system/image_4.jpg 800w,
-                                                     ../assets/img/employee-notification-system/image_4.jpg 480w,
-                                                     ../assets/img/employee-notification-system/image_4.jpg 320w"
-                        sizes="(max-width: 800px) 100vw, 800px">
-                    <img class="h-full lg:h-[600px] w-fit cursor-zoom-in"
-                        src="../assets/img/employee-notification-system/image_4.jpg" alt="EmployeeDashboard">
-                </picture>
-                <picture class="flex justify-center mx-auto mt-10 w1-3xl border">
-                    <source srcset="../assets/img/employee-notification-system/Wireframe_1.jpg 800w,
-                                                     ../assets/img/employee-notification-system/Wireframe_1.jpg 480w,
-                                                     ../assets/img/employee-notification-system/Wireframe_1.jpg 320w"
-                        sizes="(max-width: 800px) 100vw, 800px">
-                    <img class="h-full lg:h-full w-fit cursor-zoom-in"
-                        src="../assets/img/employee-notification-system/Wireframe_1.jpg" alt="EmployeeDashboard">
-                </picture>
-                <picture class="flex justify-center mx-auto mt-10 w1-3xl border">
-                    <source srcset="../assets/img/employee-notification-system/Wireframe_2.jpg 800w,
-                                                     ../assets/img/employee-notification-system/Wireframe_2.jpg 480w,
-                                                     ../assets/img/employee-notification-system/Wireframe_2.jpg 320w"
-                        sizes="(max-width: 800px) 100vw, 800px">
-                    <img class="h-full lg:h-full w-fit cursor-zoom-in"
-                        src="../assets/img/employee-notification-system/Wireframe_2.jpg" alt="EmployeeDashboard">
-                </picture>
-            </div>
-
-
-            <div data-aos="fade-left" data-aos-duration="700">
-                <h3 class="mt-10 lg:mt-20 mb-6 lg:mb-10 text-2xl font-futura lg:text-4xl text-slate-600">
-                    Frontend Development
-                </h3>
-                <p class="text-slate-600 mb-3">For this project, I focused on creating a clean and responsive frontend
-                    for
-                    desktop using Next.js. I utilized its server-side rendering and routing capabilities to structure
-                    the
-                    application efficiently and deliver fast, optimized pages. The file-based routing made managing the
-                    components straightforward and scalable as the project grew.</p>
-                <p class="text-slate-600 mb-3">Tailwind CSS played a key role in styling, allowing me to implement
-                    precise
-                    layouts and maintain a consistent design system. Its utility-first approach made it easy to rapidly
-                    build and adjust the desktop interface while ensuring visual consistency throughout the application.
-                </p>
-                <p class="text-slate-600 mb-3">To enhance development efficiency, I created modular, reusable components
-                    that could be easily integrated across the application. These components not only saved time but
-                    also
-                    ensured the interface remained consistent and maintainable.</p>
-                <p class="text-slate-600 mb-3">Interactive elements, such as dropdowns, tooltips, and buttons, were
-                    implemented to improve user engagement and functionality. Each feature was tailored to create a
-                    seamless
-                    experience on desktop devices.</p>
-
-                <ol class="list-decimal pl-6 space-y-4 text-slate-600">
-                    <li>Pixel-perfect translation of Figma designs into a responsive desktop interface.</li>
-                    <li>Creation of reusable components for consistency and scalability.</li>
-                    <li>Efficient styling with Tailwind CSS for a clean and organized layout.</li>
-                    <li>Added interactive features to enhance the user experience.</li>
-                </ol>
-                <picture class="flex justify-center mx-auto w1-3xl mt-10 border">
-                    <source srcset="../assets/img/employee-notification-system/image_1.jpg 800w,
-                                                     ../assets/img/employee-notification-system/image_1.jpg 480w,
-                                                     ../assets/img/employee-notification-system/image_1.jpg 320w"
-                        sizes="(max-width: 800px) 100vw, 800px">
-                    <img class="h-full lg:h-full w-fit cursor-zoom-in"
-                        src="../assets/img/employee-notification-system/image_1.jpg" alt="EmployeeDashboard">
-                </picture>
-                <picture class="flex justify-center mt-10 mx-auto w1-3xl border">
-                    <source srcset="../assets/img/employee-notification-system/image_2.jpg 800w,
-                                                     ../assets/img/employee-notification-system/image_2.jpg 480w,
-                                                     ../assets/img/employee-notification-system/image_2.jpg 320w"
-                        sizes="(max-width: 800px) 100vw, 800px">
-                    <img class="h-full lg:h-full w-fit cursor-zoom-in"
-                        src="../assets/img/employee-notification-system/image_2.jpg" alt="EmployeeDashboard">
-                </picture>
-            </div>
-
-            <div data-aos="fade-left" data-aos-duration="700">
-                <h3 class="mt-10 lg:mt-20 mb-6 lg:mb-10 text-2xl font-futura lg:text-4xl text-slate-600">
-                    Backend Development
-                </h3>
-                <p class="text-slate-600 mb-3">The backend for the Primary Court Ohrid project handles user
-                    authentication
-                    with JWT tokens and manages user data securely, including password hashing and elevated permissions
-                    for
-                    admins. It provides RESTful APIs for managing notifications and user actions, with data stored in a
-                    MongoDB database using Mongoose. Secure routes are protected with middleware, while specific routes
-                    like
-                    login are whitelisted. The backend is containerized with Docker for efficient deployment and
-                    scalability.</p>
             </div>
         </div>
-
     </section>
 
     <!-- Footer -->
@@ -294,6 +306,29 @@
     <script src="../js/main.js"></script>
     <!-- Iconify -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- Highlight the section currently in view in the side nav -->
+    <script>
+        (function () {
+            var links = document.querySelectorAll('[data-toc]');
+            if (!links.length || !('IntersectionObserver' in window)) return;
+            function setActive(id) {
+                links.forEach(function (link) {
+                    var on = link.getAttribute('href') === '#' + id;
+                    link.classList.toggle('text-[#F36F64]', on);
+                    link.classList.toggle('font-bold', on);
+                    link.classList.toggle('text-slate-400', !on);
+                });
+            }
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) setActive(entry.target.id);
+                });
+            }, { rootMargin: '-120px 0px -65% 0px' });
+            document.querySelectorAll('section[id]').forEach(function (section) {
+                observer.observe(section);
+            });
+        })();
+    </script>
 </body>
 
 </html>
